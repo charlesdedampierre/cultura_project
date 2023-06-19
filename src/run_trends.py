@@ -13,13 +13,12 @@ import os
 import sqlite3
 
 DB_ENV = os.getenv("DB_PATH")
-DATA_PATH = "data"
+DATA_PATH = os.getenv("DATA_PATH")
 
 conn = sqlite3.connect(DB_ENV + "/cultura_1.db")
 
 if not os.path.exists(DATA_PATH):
     os.makedirs(DATA_PATH)
-
 
 if __name__ == "__main__":
     # Individuals' works
@@ -29,8 +28,10 @@ if __name__ == "__main__":
     df_ind_regions = pd.read_sql_query("SELECT * FROM individuals_regions", conn)
 
     # Years
-    df_ind_year = pd.read_sql_query("SELECT * FROM individuals_main_information", conn)
-    df_ind_year = df_ind_year[["individual_wikidata_id", "birthyear"]].drop_duplicates()
+    df_ind = pd.read_sql_query("SELECT * FROM individuals_main_information", conn)
+    df_ind_year = df_ind[["individual_wikidata_id", "birthyear"]].drop_duplicates()
+    df_ind_year = df_ind_year.dropna()
+    df_ind_year["decade"] = df_ind_year["birthyear"].apply(lambda x: round(x / 10) * 10)
 
     df = pd.merge(
         df_ind_works, df_ind_regions, on=["individual_wikidata_id", "individual_name"]
@@ -40,8 +41,6 @@ if __name__ == "__main__":
     ].drop_duplicates()
     df = pd.merge(df, df_ind_year, on="individual_wikidata_id")
 
-    df["decade"] = df["birthyear"].apply(lambda x: round(x / 10) * 10)
-    df["fifty"] = df["birthyear"].apply(lambda x: round(x / 50) * 50)
     df_trends_works = (
         df.groupby(["region_name", "decade"])["work_wikidata_id"]
         .count()
@@ -68,3 +67,19 @@ if __name__ == "__main__":
         1 + df_trends_individuals["cultural_score"]
     )
     df_trends_individuals.to_csv(DATA_PATH + "/df_trends_individuals.csv")
+
+    df_count_work = (
+        df_ind_works.groupby("individual_wikidata_id")["work_wikidata_id"]
+        .count()
+        .rename("count_works")
+        .reset_index()
+    )
+
+    df_ind_regions = pd.read_sql_query("SELECT * FROM individuals_regions", conn)
+
+    df = pd.merge(df_count_work, df_ind_year, how="outer")
+    df = df.fillna(0)  # If no works, then put 0
+    df = pd.merge(df, df_ind_regions, on="individual_wikidata_id")
+    df = df.rename(columns={"count_works": "cultural_score"})
+
+    df.to_csv(DATA_PATH + "/df_indi_works.csv")
