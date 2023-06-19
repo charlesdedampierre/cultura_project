@@ -11,10 +11,10 @@ For more information about the Unseen Species Model, you can find information [h
 
 ### Visualisation of the trends
 
-Change the paramter at the begining of the script and display graph with the following command:
+Change the paramter at the beginning of the [plot_trend R script](r_visual_scripts/plot_trend.R) and display graph with the following command:
 
 ```bash
 python src/run_trends.py
-Rscript r_visual_scripts/trend.R
+Rscript r_visual_scripts/plot_trend.R # call the Rscript
 
 ```

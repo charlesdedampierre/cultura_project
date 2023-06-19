@@ -13,7 +13,7 @@ import os
 import sqlite3
 
 DB_ENV = os.getenv("DB_PATH")
-DATA_PATH = os.getenv("DATA_PATH")
+DATA_PATH = "data"
 
 conn = sqlite3.connect(DB_ENV + "/cultura_1.db")
 
