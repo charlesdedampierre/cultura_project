@@ -18,3 +18,9 @@ python src/run_trends.py
 Rscript r_visual_scripts/plot_trend.R # call the Rscript
 
 ```
+
+- The blue line is the loess regression on the number of works per decade. The scale has been normalized between 0 and 1 where 1 is the higest point on the graph.
+
+- The red dots at individuals. Their score is based on how much works who know they haev done. Everything has been normalizd bewteen 0 and 1 where 1 is the individual with the higest number of works on the graph.
+
+<img src="images/test.png" width="50%" height="50%" align="center" />
