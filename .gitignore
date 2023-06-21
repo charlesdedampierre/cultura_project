@@ -1,6 +1,8 @@
 # Private 
 
+
 *.png
+!images/test.png
 data
 
 
