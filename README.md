@@ -16,7 +16,7 @@ In the env file, add the path to the cultural_1.db (DB_PATH = 'PATH_TO_CULTURA_1
 Then, change the file into an environement variable
 
 ```bash
-
+pip install python-dotenv # install dot-env package
 cp env .env
 
 ```
@@ -27,7 +27,9 @@ Change the paramter at the beginning of the [plot_trend R script](r_visual_scrip
 
 ```bash
 python src/run_trends.py
+# output --> data/
 Rscript r_visual_scripts/plot_trend.R # call the Rscript
+# output --> test.png
 
 ```
 
