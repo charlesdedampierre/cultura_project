@@ -12,10 +12,10 @@ import os
 
 import sqlite3
 
-DB_ENV = os.getenv("DB_PATH")
+DB_PATH = os.getenv("DB_PATH")
 DATA_PATH = "data"
 
-conn = sqlite3.connect(DB_ENV + "/cultura_1.db")
+conn = sqlite3.connect(DB_PATH)
 
 if not os.path.exists(DATA_PATH):
     os.makedirs(DATA_PATH)

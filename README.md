@@ -9,6 +9,18 @@ For more information about the Unseen Species Model, you can find information [h
 
 - Visualisation of the Number of works per decade with Rscript
 
+### Environement variables
+
+In the env file, add the path to the cultural_1.db (DB_PATH = 'PATH_TO_CULTURA_1.0_DB')
+
+Then, change the file into an environement variable
+
+```bash
+
+cp env .env
+
+```
+
 ### Visualisation of the trends
 
 Change the paramter at the beginning of the [plot_trend R script](r_visual_scripts/plot_trend.R) and display graph with the following command:
