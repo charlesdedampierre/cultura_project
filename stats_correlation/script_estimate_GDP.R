@@ -12,10 +12,26 @@ data <- read.table("data_stats.csv",
 # dataSci$CCPpc = dataSci$cultural_score_interpolared / dataSci$population_interpolated
 
 
-model_1 <- lme(gdp_per_capita ~ N_est + year,
+model_1 <- lme(gdp_per_capita ~ score + year,
     random = ~ 1 | region_name,
     data = data
 )
+
+model_2 <- lme(gdp_per_capita ~ N_est + year,
+    random = ~ 1 | region_name,
+    data = data
+)
+
+model_3 <- lme(gdp_per_capita ~ score_cap + year,
+    random = ~ 1 | region_name,
+    data = data
+)
+
+model_4 <- lme(gdp_per_capita ~ N_est_cap + year,
+    random = ~ 1 | region_name,
+    data = data
+)
+
 
 # summary(model_1)
 
