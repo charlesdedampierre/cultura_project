@@ -38,3 +38,13 @@ Rscript r_visual_scripts/plot_trend.R # call the Rscript
 - The red dots at individuals. Their score is based on how much works who know they haev done. Everything has been normalizd bewteen 0 and 1 where 1 is the individual with the higest number of works on the graph.
 
 <img src="images/test.png" width="50%" height="50%" align="center" />
+
+### Run Identifiers Graph
+
+```bash
+python src/run_identifiers.py
+# output --> data/df_identifiers_trends.csv
+python src/run_identifier_fig_.py
+# output --> image.png
+
+```
