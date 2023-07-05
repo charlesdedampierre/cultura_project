@@ -2,7 +2,7 @@ library(nlme)
 
 # path_to_stats = 'data_stats'
 
-data <- read.table("data.csv",
+data <- read.table("data_stats.csv",
     header = TRUE,
     sep = ","
 )
@@ -12,7 +12,7 @@ data <- read.table("data.csv",
 # dataSci$CCPpc = dataSci$cultural_score_interpolared / dataSci$population_interpolated
 
 
-model_1 <- lme(gdp_per_capita ~ score + year,
+model_1 <- lme(gdp_per_capita ~ N_est + year,
     random = ~ 1 | region_name,
     data = data
 )
