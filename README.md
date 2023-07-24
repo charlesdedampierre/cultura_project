@@ -48,3 +48,23 @@ python src/run_identifier_fig_.py
 # output --> image.png
 
 ```
+
+### Create  Dataset
+
+For the stats dataset for to:
+
+notebooks/make_stats.ipynb
+
+the Data for GDP and Population are added from notebooks/plot_gdp.ipynb .It uses files downloaded from the following sheet [Google Sheet](https://docs.google.com/spreadsheets/d/1MGNzF-CcGMDkyYR0M1CS2lzJrGc4bGDVR9zj7H68uA8/edit#gid=1495995572)
+
+### Running Stats
+
+```bash
+
+Rscript stats_correlation/script_estimate_GDP.R
+
+```
+
+### Ploting the score for every region
+
+--> notebooks/plot_facet_catalog_index.ipynb
