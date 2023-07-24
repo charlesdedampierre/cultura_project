@@ -2,36 +2,25 @@ library(nlme)
 
 # path_to_stats = 'data_stats'
 
-data <- read.table("data_stats.csv",
+data <- read.table("data_stats_35.csv",
     header = TRUE,
     sep = ","
 )
-
 
 # data$CCPpc = data$cultural_score_interpolared / data$population_interpolated
 # dataSci$CCPpc = dataSci$cultural_score_interpolared / dataSci$population_interpolated
 
 
-model_1 <- lme(gdp_per_capita ~ score + year,
+model_1 <- lme(gdp_per_capita ~ score_cap + year,
     random = ~ 1 | region_name,
     data = data
 )
 
-model_2 <- lme(gdp_per_capita ~ N_est + year,
-    random = ~ 1 | region_name,
-    data = data
-)
 
-model_3 <- lme(gdp_per_capita ~ score_cap + year,
-    random = ~ 1 | region_name,
-    data = data
-)
-
-model_4 <- lme(gdp_per_capita ~ N_est_cap + year,
-    random = ~ 1 | region_name,
-    data = data
-)
-
+# 0.79
+# N_est_cap
+# score_cap
+# score
 
 # summary(model_1)
 
