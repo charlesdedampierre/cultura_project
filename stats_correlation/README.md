@@ -1,7 +1,7 @@
 The 'make_region_score.ipynb' creates the following columns in the Sqlite3 db:
 - region_score
-- region_score_50 (region score based on the top 50% notable people)
-- region_score_10 (region score based on the top 10% notable people)
+- region_score_top_10 (region score based on the top 50% notable people)
+- region_score_top_10 (region score based on the top 10% notable people)
 
 the 'make_stats.ipynb' creates the following files (depending on the region_score_{} input from the sqlite3)
 - data_stats_filtered.csv (table with the stats of regions merged with region score for all individuals)
