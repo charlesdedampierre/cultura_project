@@ -1,6 +1,7 @@
-from pydantic import BaseModel, Field
 import typing as t
+
 from data_model_region import Country
+from pydantic import BaseModel, Field
 
 
 class ExternalID(BaseModel):

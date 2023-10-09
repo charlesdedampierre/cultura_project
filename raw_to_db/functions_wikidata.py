@@ -1,28 +1,20 @@
-from functions_wikidata_load import (
-    load_occupation_information,
-    load_individual_id_occupation_id,
-    load_individual_info,
-    load_nationality_location,
-    load_birthcity_country,
-)
 import pandas as pd
-from data_model import (
-    Occupation,
-    RawNationality,
-    RawBirthcity,
-    RawIndividual,
-    Individual,
-    ExternalID,
-)
-from tqdm import tqdm
+from data_model import (ExternalID, Individual, Occupation, RawBirthcity,
+                        RawIndividual, RawNationality)
+from functions_wikidata_load import (load_birthcity_country,
+                                     load_individual_id_occupation_id,
+                                     load_individual_info,
+                                     load_nationality_location,
+                                     load_occupation_information)
 from sys_utils import save_model
+from tqdm import tqdm
 
 tqdm.pandas()
-from utils import clean_date, split_wiki
 import typing as t
-from sys_utils import load_model
-
 import warnings
+
+from sys_utils import load_model
+from utils import clean_date, split_wiki
 
 warnings.simplefilter(action="ignore", category=FutureWarning)
 

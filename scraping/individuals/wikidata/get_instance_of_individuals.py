@@ -1,9 +1,10 @@
-from wikidata_extract import WikidataApi
+import sqlite3
+from multiprocessing import Pool
+
+import numpy as np
 import pandas as pd
 from tqdm import tqdm
-from multiprocessing import Pool
-import sqlite3
-import numpy as np
+from wikidata_extract import WikidataApi
 
 # The goal is to get rid of anybody that is not human
 

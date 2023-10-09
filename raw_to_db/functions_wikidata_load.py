@@ -1,10 +1,11 @@
-import pandas as pd
 import glob
+
+import pandas as pd
+from dotenv import load_dotenv
 from utils import split_wiki
 
 # put as an env variable
 
-from dotenv import load_dotenv
 
 load_dotenv()
 import os

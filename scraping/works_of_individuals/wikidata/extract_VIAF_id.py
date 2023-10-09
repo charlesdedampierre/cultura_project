@@ -1,15 +1,15 @@
 import sys
 
 sys.path.append("../")
-from bunka_logger import logger
 import json
-import pandas as pd
-from multiprocessing import Pool
-from tqdm import tqdm
 import sqlite3
+from multiprocessing import Pool
+
 import pandas as pd
 import requests
+from bunka_logger import logger
 from more_itertools import chunked
+from tqdm import tqdm
 
 
 def get_VIAF_information(id=160302178):

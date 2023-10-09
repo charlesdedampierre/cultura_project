@@ -1,7 +1,8 @@
-import pandas as pd
 import sys
-from SPARQLWrapper import SPARQLWrapper, JSON
 from multiprocessing import Pool
+
+import pandas as pd
+from SPARQLWrapper import JSON, SPARQLWrapper
 from tqdm import tqdm
 
 

@@ -1,9 +1,9 @@
-import pandas as pd
-from tqdm import tqdm
-from multiprocessing import Pool
-import requests
 import sqlite3
+from multiprocessing import Pool
 
+import pandas as pd
+import requests
+from tqdm import tqdm
 
 # Page have been filtered as the following: writers, artists and scientist
 # Impact_year = birthdate + 35 ans

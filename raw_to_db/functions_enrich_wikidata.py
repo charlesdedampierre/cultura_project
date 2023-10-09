@@ -1,11 +1,12 @@
-from sys_utils import load_model
-from data_model import RawIndividual, Individual
-from functions_geo import get_country_model
-from utils import round_nearest
 import typing as t
+
 import pandas as pd
 from bunka_logger import logger
+from data_model import Individual, RawIndividual
+from functions_geo import get_country_model
+from sys_utils import load_model
 from tqdm import tqdm
+from utils import round_nearest
 
 tqdm.pandas()
 

@@ -1,14 +1,14 @@
 import sys
 
 sys.path.append("../")
-from bunka_logger import logger
-
 import json
-from api import get_results
-import pandas as pd
-from multiprocessing import Pool
-from tqdm import tqdm
 import os
+from multiprocessing import Pool
+
+import pandas as pd
+from api import get_results
+from bunka_logger import logger
+from tqdm import tqdm
 
 
 def create_directory_if_not_exists(dir_path):
@@ -52,6 +52,7 @@ def final_function(wiki_id):
 
 if __name__ == "__main__":
     import sqlite3
+
     import pandas as pd
 
     # Connect to the database

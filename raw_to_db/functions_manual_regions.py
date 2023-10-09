@@ -1,18 +1,18 @@
-import pandas as pd
 import glob
+import warnings
+
+import numpy as np
+import pandas as pd
 from bunka_logger import logger
 from tqdm import tqdm
-import warnings
-import numpy as np
 
 warnings.simplefilter(action="ignore", category=FutureWarning)
-from sys_utils import load_model, save_model
-from data_model import Individual
 import typing as t
-from tqdm import tqdm
 
-
+from data_model import Individual
 from dotenv import load_dotenv
+from sys_utils import load_model, save_model
+from tqdm import tqdm
 
 load_dotenv()
 import os

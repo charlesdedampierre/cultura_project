@@ -1,13 +1,13 @@
-import pandas as pd
-import typing as t
 import math
+import typing as t
+import warnings
+
+import pandas as pd
 from data_model import Individual
 from data_model_region import Country, CountryFiltered, Region
-from sys_utils import load_model, save_model
 from functions_geo import point_to_coordonate
-
+from sys_utils import load_model, save_model
 from tqdm import tqdm
-import warnings
 
 warnings.simplefilter(action="ignore", category=FutureWarning)
 

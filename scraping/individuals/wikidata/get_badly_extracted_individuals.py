@@ -1,7 +1,8 @@
-from wikidata_extract import WikidataApi
+from multiprocessing import Pool
+
 import pandas as pd
 from tqdm import tqdm
-from multiprocessing import Pool
+from wikidata_extract import WikidataApi
 
 
 def get_individuals(wiki_id):

@@ -1,4 +1,5 @@
 import json
+
 from api import get_results
 
 endpoint_url = "https://query.wikidata.org/sparql"

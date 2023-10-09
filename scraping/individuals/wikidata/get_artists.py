@@ -1,8 +1,8 @@
-from wikidata_extract import WikidataApi
-import pandas as pd
-from tqdm import tqdm
 from multiprocessing import Pool
 
+import pandas as pd
+from tqdm import tqdm
+from wikidata_extract import WikidataApi
 
 # Get all individuals whose occupation is wd:Q266569
 query = """Select ?item ?itemLabel

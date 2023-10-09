@@ -1,6 +1,5 @@
 from wikidata_extract import WikidataApi
 
-
 query = """
 
 Select ?item ?itemLabel

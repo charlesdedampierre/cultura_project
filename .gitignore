@@ -4,6 +4,7 @@
 *.png
 !images/test.png
 data
+raw_data_from_api
 
 
 # Byte-compiled / optimized / DLL files

@@ -1,14 +1,14 @@
+import typing as t
+
+import pandas as pd
+from data_model import Individual, WikipediaPage
 from functions_wikipedia_load import load_sitelinks, load_wikipedia_data
 from sys_utils import load_model
-from data_model import Individual, WikipediaPage
-import pandas as pd
 from tqdm import tqdm
-import typing as t
 
 tqdm.pandas()
 from bunka_logger import logger
 from sys_utils import save_model
-
 
 WIKIPEDIA_RAW_DATA = os.getenv("WIKIPEDIA_RAW_DATA")
 

@@ -3,13 +3,14 @@ import sys
 sys.path.append("../")
 
 import json
-from api import get_results
-import pandas as pd
-from multiprocessing import Pool
-from tqdm import tqdm
 import os
 import sqlite3
+from multiprocessing import Pool
+
+import pandas as pd
+from api import get_results
 from more_itertools import chunked
+from tqdm import tqdm
 
 
 def get_metadata(wiki_id):

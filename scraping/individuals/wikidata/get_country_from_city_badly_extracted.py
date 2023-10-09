@@ -1,7 +1,8 @@
-from wikidata_extract import WikidataApi
-import pandas as pd
 from multiprocessing import Pool
+
+import pandas as pd
 from tqdm import tqdm
+from wikidata_extract import WikidataApi
 
 
 def get_country(wiki_id):

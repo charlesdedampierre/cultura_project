@@ -2,14 +2,12 @@ import sys
 
 sys.path.append("../")
 
-import pandas as pd
 import numpy as np
-
+import pandas as pd
 from dotenv import load_dotenv
 
 load_dotenv()
 import os
-
 import sqlite3
 
 DB_PATH = os.getenv("DB_PATH")

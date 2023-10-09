@@ -1,10 +1,10 @@
 import glob
+
 import pandas as pd
 from dotenv import load_dotenv
 
 load_dotenv()
 import os
-
 
 WIKIDATA_RAW_DATA = os.getenv("WIKIDATA_RAW_DATA")
 

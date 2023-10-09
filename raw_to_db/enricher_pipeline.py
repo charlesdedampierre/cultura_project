@@ -1,25 +1,23 @@
 import typing as t
-from data_model import RawIndividual, Individual
-from data_model_region import Region
 
 from bunka_logger import logger
-from sys_utils import save_model
+from data_model import Individual, RawIndividual
+from data_model_region import Region
+from dotenv import load_dotenv
+from functions_cultural_score import get_cultural_index
 from functions_enrich_wikidata import (
-    raw_to_individuals,
     get_country_code,
     get_impact_years,
+    raw_to_individuals,
 )
-from functions_wikipedia import get_wikipedia_information
-from functions_cultural_score import get_cultural_index
+from functions_manual_regions import pipeline_manual_cleaning_region_global
 from functions_regions import get_individuals_regions, get_regions
 from functions_wikidata import (
-    get_individual_main_wikidata_information,
     get_external_identifiers,
+    get_individual_main_wikidata_information,
 )
-
-from functions_manual_regions import pipeline_manual_cleaning_region_global
-
-from dotenv import load_dotenv
+from functions_wikipedia import get_wikipedia_information
+from sys_utils import save_model
 
 load_dotenv()
 import os

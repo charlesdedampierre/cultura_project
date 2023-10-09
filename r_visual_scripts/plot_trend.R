@@ -33,10 +33,18 @@ plot_trends <- function(df_decade, region_name, min_time, max_time, span) {
 }
 
 
-region_name <- "Low countries"
-min_date <- 1200
-max_date <- 1800
+region_name <- "Italy"
+min_date <- -300
+max_date <- 500
 df_decade <- read.csv(file = "../data/df_trends.csv", sep = ",", header = TRUE)
 
-plot_trend <- plot_trends(df_decade, region_name, min_date, max_date, 0.2)
+
+
+# df_decade <- df_decade %>%
+#    mutate(decade = ceiling(decade / 50) * 50) %>%
+#    group_by(region_name, decade) %>%
+#   summarize(score = sum(score))
+
+
+plot_trend <- plot_trends(df_decade, region_name, min_date, max_date, 0.3)
 ggsave("test.png", plot = plot_trend, dpi = 300, width = 10, height = 8)

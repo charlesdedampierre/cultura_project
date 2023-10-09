@@ -1,8 +1,9 @@
-from wikidata_extract import WikidataApi
-import pandas as pd
-from multiprocessing import Pool
-from tqdm import tqdm
 import sqlite3
+from multiprocessing import Pool
+
+import pandas as pd
+from tqdm import tqdm
+from wikidata_extract import WikidataApi
 
 
 def get_database_id(wiki_id):

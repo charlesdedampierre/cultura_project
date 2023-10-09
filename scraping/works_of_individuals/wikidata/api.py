@@ -3,7 +3,8 @@
 
 
 import sys
-from SPARQLWrapper import SPARQLWrapper, JSON
+
+from SPARQLWrapper import JSON, SPARQLWrapper
 
 
 def get_results(endpoint_url, query):

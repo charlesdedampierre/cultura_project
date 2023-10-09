@@ -1,12 +1,12 @@
-import pandas as pd
 import typing as t
-from data_model import Individual
-from sys_utils import load_model, save_model
-from bunka_logger import logger
-from sklearn.decomposition import PCA
-from sklearn import preprocessing
-
 import warnings
+
+import pandas as pd
+from bunka_logger import logger
+from data_model import Individual
+from sklearn import preprocessing
+from sklearn.decomposition import PCA
+from sys_utils import load_model, save_model
 
 warnings.simplefilter(action="ignore", category=FutureWarning)
 

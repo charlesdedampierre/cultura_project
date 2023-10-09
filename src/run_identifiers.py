@@ -1,13 +1,13 @@
 import sqlite3
+import sys
+
 import pandas as pd
 import plotly.express as px
-import sys
-from plotly.subplots import make_subplots
 import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
 sys.path.append("../")
-from functions_env import DB_PATH, DATA_PATH
-
+from functions_env import DATA_PATH, DB_PATH
 
 conn = sqlite3.connect(DB_PATH)
 cursor = conn.cursor()
