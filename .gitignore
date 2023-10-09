@@ -2,7 +2,6 @@
 
 
 *.png
-!images/test.png
 data
 raw_data_from_api
 notebooks_working
