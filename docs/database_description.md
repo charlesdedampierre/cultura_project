@@ -12,7 +12,7 @@ The data is organized in a SQLite3 format, making it easy to query and retrieve 
 
 The database is a mix of data coming from Wikidata, Wikipedia and enriched Data from other sources.
 
-<img src="../images/Cultura 1.0 - pipeline.png" width="100%" height="100%" align="center" />
+<img src="../images/Cultura 1.0 - pipeline.png" width="80%" height="80%" align="center" />
 
 The ETL Process is in the directory [raw_to_db](../raw_to_db/) where the main function is in the enricher_pipeline.py. The inputs are data as .csv.
 

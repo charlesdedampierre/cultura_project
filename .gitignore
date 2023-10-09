@@ -7,6 +7,7 @@ data
 raw_data_from_api
 notebooks_working
 src
+not_used
 
 
 # Byte-compiled / optimized / DLL files
