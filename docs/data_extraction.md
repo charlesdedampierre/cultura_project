@@ -24,3 +24,11 @@ Data have been extracted using [SPARQLWrapper](https://sparqlwrapper.readthedocs
 The scripts regarding the Wikidata Extraction can be found [here](../scraping/individuals/wikipedia/)
 
 Initially information about individuals have been extracted from Wikipedia, using the Wikipedia API though python.
+
+## Data Enriched for Population & GDP per capita
+
+The GDP per capita & Population are added thought the following notebook [raw_to_db/insert_gdp_population_to_db.ipynb](../raw_to_db/insert_gdp_population_to_db.ipynb).
+
+Population data is interpolatated for every decade.
+
+To get information on how regions are associated to countries, check the [Google Sheet](<https://docs.google.com/spreadsheets/d/1MGNzF-CcGMDkyYR0M1CS2lzJrGc4bGDVR9zj7H68uA8/edit#gid=1495995572>)

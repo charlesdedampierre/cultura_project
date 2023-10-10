@@ -46,7 +46,9 @@ The merging of the id is carried out thanks to the Wikidata_id of entities.
 - `identifiers`: store information the meta-data of Authority Files.
 - `created_work_identifiers`: store information about Authority Files Identifiers of works.
 - `created_work`: store information about the meta-data of individuals' works.
-- `notable_work`: store information about the meta-data of individuals' notable works.
+- `notable_work`: store information about the meta-data of individuals' notable
+- `gpd`: store information about the GDP per capita of main regions
+- `population`: store information about the population of main regions
 
 ## Installation
 
