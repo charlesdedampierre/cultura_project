@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cultura-project"
+version = "0.1.0"
+description = ""
+authors = ["Charles De Dampierre <charlesdedampierre@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "cultura_project" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+loguru = "^0.7.2"
+more-itertools = "^10.1.0"
+jupyterlab = "^4.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
