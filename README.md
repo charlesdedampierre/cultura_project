@@ -1,5 +1,12 @@
 # Cultura Project
 
+The Project has the following steps:
+
+- [Database Extraction and ETL Pipeline](docs/database_description.md)
+- [Computing Immaterial Production](immaterial_index/)
+- [Applying Unseen Species Model to the Immaterial Production](unseen_specie_model/)
+- [Applying Bayesian Statistics for the relationship between GDP per capita and the Immaterial Index](bayesian_statistics/)
+
 ## Implementation
 
 The Cultural 1.0 Database can be downloaded on the [OSF Forum](https://osf.io/2euxr/)
@@ -20,11 +27,11 @@ For more information about the dababase, you can find information [here](docs/da
 
 ## Immaterial Production
 
-- Regions' Immaterial scores are made with [notebooks/make_region_score.ipynb](notebooks/make_region_score.ipynb).The Score of a region is the number of individuals born in that region and referenced in an online catalog.
+- Regions' Immaterial scores are made with [immaterial_index/make_region_score.ipynb](immaterial_index/make_region_score.ipynb).The Score of a region is the number of individuals born in that region and referenced in an online catalog.
 
-- Individuals' Immaterial scores are made with [notebooks/make_individuals_score.ipynb](notebooks/make_individuals_score.ipynb).The Score of an indiviudal is the number of references in online catalogs. For instance Leo Tolstoy as a score of 52 because he exists in the Online Catalogs of 52 different countries.
+- Individuals' Immaterial scores are made with [immaterial_index/make_individuals_score.ipynb](immaterial_index/make_individuals_score.ipynb).The Score of an indiviudal is the number of references in online catalogs. For instance Leo Tolstoy as a score of 52 because he exists in the Online Catalogs of 52 different countries.
 
-To visualize the  figures, call the following R function. You can Change the parameters at the beginning of the [plot_trend R script](figures_trends_R/index.R). To visualize two trends at the same time, use [figures_trends_R/index.R](figures_trends_R/index_comparison.R)
+To visualize the  figures, call the following R function. You can Change the parameters at the beginning of the [plot_trend R script](immaterial_index/figures_trends_R/index.R). To visualize two trends at the same time, use [figures_trends_R/index.R](immaterial_index/figures_trends_R/index_comparison.R)
 
 ```bash
 Rscript figures_trends_R/functions.R
