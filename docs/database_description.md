@@ -15,6 +15,11 @@ Other files called environnement data can be found [here](../environnement_data/
 - [Association between regions and modern countries](../environnement_data/ENS%20-%20Cultural%20Index%20-%20Countries%20Databases%20-%20consolidate_table.csv)
 - [Manual changes of individuals' change nationality](../environnement_data/manual_individuals_check/Golden%20Age%20-%20Individuals%20Check.xlsx)
 
+On the OSF Forum, there are two files:
+
+- the Sqlite3 Database: 'cultura_1.db'
+- A Zip file  'raw_data.zip': containing raw data from wikidata and wikipedia (data can be a bit messy given the numerous evolution of the project, but they give a fair idea of the format when they are downloaded from the Wikidata & Wikipedia API)
+
 ## Data Extraction
 
 The database is a mix of data coming from Wikidata, Wikipedia and enriched Data from other sources.
