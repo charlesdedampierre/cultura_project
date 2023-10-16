@@ -1,4 +1,6 @@
-# Cultura Project
+<img src="images/Cultura 1.0 - cultura_logo.png" width="50%">
+
+The Cultura Project is a research project aiming at re-construction the dynamics of past Civilisations using data from Catalogs Online (Library of Congress, GND, VIAF etc).
 
 The Project has the following steps:
 
@@ -19,3 +21,5 @@ Then, change the file into an environement variable
 pip install python-dotenv # install dot-env package
 cp env .env
 ```
+
+<img src="images/log.png" width="50%">
