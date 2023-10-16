@@ -72,6 +72,8 @@ def get_feature_func(wikidata_id: str = "Q5123331") -> str:
     return {"wiki_id": wikidata_id, "occupations": res}
 
 
+# INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
+
 if __name__ == "__main__":
     data = pd.read_csv("data/wikidata.csv", index_col=[0], low_memory=False)
     # data = data.sample(1000)

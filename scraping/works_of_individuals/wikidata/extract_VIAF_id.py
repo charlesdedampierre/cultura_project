@@ -33,6 +33,8 @@ def get_VIAF_information(id=160302178):
     return df
 """
 
+# INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
+
 if __name__ == "__main__":
     # Connect to the database
     conn = sqlite3.connect("../../src/enricher/cultura_1.db")

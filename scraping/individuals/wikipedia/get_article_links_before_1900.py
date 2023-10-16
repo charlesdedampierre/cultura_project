@@ -41,6 +41,8 @@ def divide_chunks(l, n):
         yield l[i : i + n]
 
 
+# INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
+
 if __name__ == "__main__":
     conn = sqlite3.connect("../cultura.db")
     data = pd.read_sql_query("SELECT * FROM sitelinks_impact_year_before_1900", conn)

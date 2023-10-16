@@ -26,6 +26,8 @@ def get_coordinate(wiki_id):
     return res
 
 
+# INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
+
 if __name__ == "__main__":
     import sqlite3
 

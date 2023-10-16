@@ -31,6 +31,8 @@ def get_sitelinks(wiki_id):
     return res
 
 
+# INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
+
 if __name__ == "__main__":
     writers_uniques = pd.read_csv("data/writers_dedoublons.csv")
     all_writers = list(set(writers_uniques["wiki_id"].to_list()))

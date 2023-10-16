@@ -39,6 +39,7 @@ def get_database_id(wiki_id):
     return res
 
 
+# INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
 if __name__ == "__main__":
     conn = sqlite3.connect("../cultura.db")
 

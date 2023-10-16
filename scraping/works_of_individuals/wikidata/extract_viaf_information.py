@@ -24,6 +24,7 @@ def get_work(data_json):
 data_json = get_VIAF_information(id=160302178)
 df = get_work(data_json)
 
+# INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
 
 if __name__ == "__main__":
     with Pool(8) as p:

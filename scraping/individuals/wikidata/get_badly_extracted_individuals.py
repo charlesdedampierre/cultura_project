@@ -26,6 +26,8 @@ def get_individuals(wiki_id):
     return res
 
 
+# INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
+
 if __name__ == "__main__":
     occupations = pd.read_csv("data/occupations_to_extract_again.csv")
     all_occupations = occupations["wiki_id"].to_list()

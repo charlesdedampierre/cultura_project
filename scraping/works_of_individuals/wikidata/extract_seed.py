@@ -27,6 +27,8 @@ raw_seeds = [
     {"wiki_id": "Q121359", "wiki_label": "infrastructure"},
 ]
 
+# INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
+
 if __name__ == "__main__":
     path = "../raw_data/complex_objects"
 

@@ -34,6 +34,8 @@ def get_page_info(info):
     return res_dict
 
 
+# INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
+
 if __name__ == "__main__":
     """conn = sqlite3.connect("../cultura.db")
     sitelinks = pd.read_sql_query("SELECT * FROM sitelinks", conn)

@@ -29,6 +29,8 @@ def get_country(wiki_id):
     return res
 
 
+# INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
+
 if __name__ == "__main__":
     data = pd.read_csv("data/full_info.csv")
     data = data[data["birthcity"].notna()]

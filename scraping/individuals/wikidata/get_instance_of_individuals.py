@@ -30,6 +30,8 @@ def get_individuals(wiki_id):
     return res
 
 
+# INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
+
 if __name__ == "__main__":
     # Load Database
     conn = sqlite3.connect("cultura.db")

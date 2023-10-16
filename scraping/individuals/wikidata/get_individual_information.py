@@ -44,6 +44,8 @@ def chunks(lst, n):
         yield lst[i : i + n]
 
 
+# INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
+
 if __name__ == "__main__":
     """individuals = pd.read_csv("data/artists_scientists.csv", index_col=[0])
     individuals["wiki_id"] = individuals["item"].apply(

@@ -51,6 +51,8 @@ def final_function(wiki_id):
         return None
 
 
+# INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
+
 if __name__ == "__main__":
     # Connect to the database
     conn = sqlite3.connect("../../src/enricher/cultura_1.db")

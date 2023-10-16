@@ -45,6 +45,7 @@ for occupation in tqdm(all_occupations, total=len(all_occupations)):
 final = pd.concat([art for art in df_art])
 
 """
+# INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
 
 if __name__ == "__main__":
     artist_occupations = pd.read_csv("data/artist_sub_occupations.csv")

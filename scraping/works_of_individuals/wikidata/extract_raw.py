@@ -72,6 +72,8 @@ def final_function(wiki_id):
         return None
 
 
+# INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
+
 if __name__ == "__main__":
     input_paths = glob.glob("../raw_data/complex_objects/*")
     input_path = input_paths[1]
