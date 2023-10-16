@@ -8,6 +8,13 @@ The Database is designed to provide a comprehensive collection of structured inf
 
 The data is organized in a SQLite3 format, making it easy to query and retrieve relevant information.
 
+Other files called environnement data can be found [here](../environnement_data/). The directory contains:
+
+- [GDP Data](../environnement_data/gdp_per_capita_maddison.csv)
+- [Population Data](../environnement_data/ENS%20-%20Cultural%20Index%20-%20Countries%20Databases%20-%20population_consolidate_date_harmonization.csv)
+- [Association between regions and modern countries](../environnement_data/ENS%20-%20Cultural%20Index%20-%20Countries%20Databases%20-%20consolidate_table.csv)
+- [Manual changes of individuals' change nationality](../environnement_data/manual_individuals_check/Golden%20Age%20-%20Individuals%20Check.xlsx)
+
 ## Data Extraction
 
 The database is a mix of data coming from Wikidata, Wikipedia and enriched Data from other sources.

@@ -1,1 +1,10 @@
-DB_PATH = 'PATH_TO_CULTURA_1.0_DB'
+# Path tot the Cultura 1.0 Database
+DB_PATH = ""
+
+# If you want to reproduce the data from the RAW WIKIDATA & WIKIPEDIA Files.
+WIKIDATA_RAW_DATA_PATH = ""
+WIKIPEDIA_RAW_DATA_PATH = ""
+ENVRIONNEMENT_DATA_PATH = ""
+
+# Save data during the Transformation Pipeline
+CHECKPOINTS_PATH = ""

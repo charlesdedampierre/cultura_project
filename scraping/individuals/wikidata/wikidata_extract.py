@@ -87,7 +87,3 @@ if __name__ == "__main__":
 
     result = pd.DataFrame(res)
     result.to_csv("test_occupation.csv")
-
-    """  with open("test_occupation.pickle", "wb") as handle:
-        pickle.dump(res, handle, protocol=pickle.HIGHEST_PROTOCOL)
-    """
