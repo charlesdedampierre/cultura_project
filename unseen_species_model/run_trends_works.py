@@ -39,6 +39,7 @@ if __name__ == "__main__":
     ].drop_duplicates()
     df = pd.merge(df, df_ind_year, on="individual_wikidata_id")
 
+    # NEWLY ADDED TO BE SURE WE ONLY KEEP INDIVIDUALS WITH A REFERENCE IN AN ONLINE CATALOG
     df_individuals = pd.read_sql_query("SELECT * FROM individuals_kept", conn)
     individuals_list = list(set(df_individuals["individual_wikidata_id"]))
     df = df[df["individual_wikidata_id"].isin(individuals_list)]

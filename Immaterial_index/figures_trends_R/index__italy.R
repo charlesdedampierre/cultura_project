@@ -68,11 +68,6 @@ plot_trends <- function(df_decade, df_indi, region_name, min_time, max_time, spa
     geom_text(aes(x = 259.5, y = 35, size = 7), label = "Military Anarchy", color = "grey80", angle = 90, vjust = 0.5, hjust = 0) +
     geom_text(aes(x = 334, y = 35, size = 7), label = "Constantinian dynasty", color = "grey80", angle = 90, vjust = 0.5, hjust = 0)
 
-
-
-
-
-
   return(myplot)
 }
 
