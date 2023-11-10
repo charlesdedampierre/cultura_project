@@ -8,6 +8,9 @@ src
 not_used
 raw_data
 
+!unseen_species_model/data
+
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

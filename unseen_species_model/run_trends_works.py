@@ -39,6 +39,11 @@ if __name__ == "__main__":
     ].drop_duplicates()
     df = pd.merge(df, df_ind_year, on="individual_wikidata_id")
 
+    df_individuals = pd.read_sql_query("SELECT * FROM individuals_kept", conn)
+    individuals_list = list(set(df_individuals["individual_wikidata_id"]))
+    df = df[df["individual_wikidata_id"].isin(individuals_list)]
+
+    """
     df_trends_works = (
         df.groupby(["region_name", "decade"])["work_wikidata_id"]
         .count()
@@ -49,6 +54,7 @@ if __name__ == "__main__":
         1 + df_trends_works["cultural_score"]
     )
     df_trends_works.to_csv(DATA_PATH + "/df_trends_works.csv")
+
 
     df_trends_individuals = df[
         ["individual_wikidata_id", "region_name", "decade"]
@@ -65,6 +71,8 @@ if __name__ == "__main__":
         1 + df_trends_individuals["cultural_score"]
     )
     df_trends_individuals.to_csv(DATA_PATH + "/df_trends_individuals.csv")
+
+     """
 
     df_count_work = (
         df_ind_works.groupby("individual_wikidata_id")["work_wikidata_id"]
