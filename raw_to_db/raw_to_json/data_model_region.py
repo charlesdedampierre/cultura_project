@@ -5,7 +5,7 @@ from pydantic import BaseModel
 
 class Country(BaseModel):
     name: str
-    code: str
+    iso_a3: str
 
 
 class CountryFiltered(BaseModel):

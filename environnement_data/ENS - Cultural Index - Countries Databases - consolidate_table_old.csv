@@ -1,0 +1,292 @@
+region_code,region,country_name,country_code,min_date,max_date,min_latitude,max_latitude,min_longitude,max_longitude,space_based
+re_latin,Latin World,Tunisia,tn,-100.0,500.0,,,,,0
+re_latin,Latin World,Algeria,dz,-100.0,500.0,,,,,0
+re_latin,Latin World,Morocco,ma,-100.0,500.0,,,,,0
+re_latin,Latin World,Romania,ro,-100.0,500.0,,,,,0
+re_latin,Latin World,Croatia,hr,-100.0,500.0,,,,,0
+re_latin,Latin World,Serbia,rs,-100.0,500.0,,,,,0
+re_latin,Latin World,Bosnia and Herzegovina,ba,-100.0,500.0,,,,,0
+re_latin,Latin World,Slovenia,si,-100.0,500.0,,,,,0
+re_latin,Latin World,France,fr,-100.0,500.0,,,,,0
+re_latin,Latin World,United Kingdom,gb,-100.0,500.0,,,,,0
+re_latin,Latin World,Germany,de,-100.0,500.0,,,,,0
+re_latin,Latin World,Switzerland,ch,-100.0,500.0,,,,,0
+re_latin,Latin World,Austria,at,-100.0,500.0,,,,,0
+re_latin,Latin World,Spain,es,-100.0,500.0,,,,,0
+re_latin,Latin World,Portugal,pt,-100.0,500.0,,,,,0
+re_latin,Latin World,Italy,it,-300.0,500.0,,,,,0
+re_greek_world,Greek World,Ukraine,ua,-800,700,,,,,0
+re_greek_world,Greek World,Albania,al,-800,1500.0,,,,,0
+re_greek_world,Greek World,Montenegro,me,-800,1500.0,,,,,0
+re_greek_world,Greek World,Kosovo,?,-800,1500.0,,,,,0
+re_greek_world,Greek World,Turkey,tr,-800,1400.0,,,,,0
+re_greek_world,Greek World,Greece,gr,-800,1900,,,,,0
+re_greek_world,Greek World,Bulgaria,bg,-800,1500.0,,,,,0
+re_greek_world,Greek World,Romania,ro,-800,1400.0,,,,,0
+re_greek_world,Greek World,France,fr,-800,-300.0,,,,,0
+re_greek_world,Greek World,Italy,it,-800,-300.0,,,,,0
+re_greek_world,Greek World,Libya,ly,-800,700,,,,,0
+re_greek_world,Greek World,Egypt,eg,-300.0,700,,,,,0
+re_greek_world,Greek World,Israel,il,-300.0,700,,,,,0
+re_greek_world,Greek World,"Palestine, State of",ps,-800,1900.0,,,,,0
+re_greek_world,Greek World,Lebanon,lb,-300.0,700,,,,,0
+re_greek_world,Greek World,Syrian Arab Republic,sy,-300.0,700,,,,,0
+re_greek_world,Greek World,Jordan,jo,-300.0,700,,,,,0
+re_greek_world,Greek World,Cyprus,cy,-800.0,1900.0,,,,,0
+re_greek_world,Greek World,Iraq,iq,-300.0,700,,,,,0
+re_mediterreanean,mediterranean World,Tunisia,tn,-100.0,500.0,,,,,0
+re_mediterreanean,mediterranean World,Algeria,dz,-100.0,500.0,,,,,0
+re_mediterreanean,mediterranean World,Morocco,ma,-100.0,500.0,,,,,0
+re_mediterreanean,mediterranean World,Romania,ro,-100.0,500.0,,,,,0
+re_mediterreanean,mediterranean World,Croatia,hr,-100.0,500.0,,,,,0
+re_mediterreanean,mediterranean World,Serbia,rs,-100.0,500.0,,,,,0
+re_mediterreanean,mediterranean World,Bosnia and Herzegovina,ba,-100.0,500.0,,,,,0
+re_mediterreanean,mediterranean World,Slovenia,si,-100.0,500.0,,,,,0
+re_mediterreanean,mediterranean World,France,fr,-100.0,500.0,,,,,0
+re_mediterreanean,mediterranean World,United Kingdom,gb,-100.0,500.0,,,,,0
+re_mediterreanean,mediterranean World,Germany,de,-100.0,500.0,,,,,0
+re_mediterreanean,mediterranean World,Switzerland,ch,-100.0,500.0,,,,,0
+re_mediterreanean,mediterranean World,Austria,at,-100.0,500.0,,,,,0
+re_mediterreanean,mediterranean World,Spain,es,-100.0,500.0,,,,,0
+re_mediterreanean,mediterranean World,Portugal,pt,-100.0,500.0,,,,,0
+re_mediterreanean,mediterranean World,Italy,it,-300.0,500.0,,,,,0
+re_mediterreanean,mediterranean World,Ukraine,ua,-800,700,,,,,0
+re_mediterreanean,mediterranean World,Albania,al,-800,1500.0,,,,,0
+re_mediterreanean,mediterranean World,Montenegro,me,-800,1500.0,,,,,0
+re_mediterreanean,mediterranean World,Kosovo,?,-800,1500.0,,,,,0
+re_mediterreanean,mediterranean World,Turkey,tr,-800,1400.0,,,,,0
+re_mediterreanean,mediterranean World,Greece,gr,-800,1900,,,,,0
+re_mediterreanean,mediterranean World,Bulgaria,bg,-800,1500.0,,,,,0
+re_mediterreanean,mediterranean World,Romania,ro,-800,-100.0,,,,,0
+re_mediterreanean,mediterranean World,Romania,ro,500.0,1400.0,,,,,0
+re_mediterreanean,mediterranean World,France,fr,-800,-300.0,,,,,0
+re_mediterreanean,mediterranean World,Italy,it,-800,-300.0,,,,,0
+re_mediterreanean,mediterranean World,Libya,ly,-800,700,,,,,0
+re_mediterreanean,mediterranean World,Egypt,eg,-300.0,700,,,,,0
+re_mediterreanean,mediterranean World,Israel,il,-300.0,700,,,,,0
+re_mediterreanean,mediterranean World,Lebanon,lb,-300.0,700,,,,,0
+re_mediterreanean,mediterranean World,Syrian Arab Republic,sy,-300.0,700,,,,,0
+re_mediterreanean,mediterranean World,Jordan,jo,-300.0,700,,,,,0
+re_mediterreanean,mediterranean World,Cyprus,cy,-800.0,1900.0,,,,,0
+re_mediterreanean,mediterranean World,Iraq,iq,-300.0,700,,,,,0
+re_muslim_world,Muslim world,Tunisia,tn,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,Algeria,dz,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,Morocco,ma,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,Libya,ly,-800,1900.1,,,,,0
+re_muslim_world,Muslim world,Egypt,eg,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,Israel,il,-800,1100.0,,,,,0
+re_muslim_world,Muslim world,Israel,il,1300.0,1900.0,,,,,0
+re_muslim_world,Muslim world,Lebanon,lb,-800,1100.0,,,,,0
+re_muslim_world,Muslim world,Lebanon,lb,1300.0,1900.0,,,,,0
+re_muslim_world,Muslim world,Syrian Arab Republic,sy,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,Jordan,jo,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,Iraq,iq,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,Kuwait,kw,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,Oman,om,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,United Arab Emirates,ae,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,Saudi Arabia,sa,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,Bahrain,bh,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,Yemen,ye,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,"Iran, Islamic Republic of",ir,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,Afghanistan,af,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,Kyrgyzstan,kg,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,Uzbekistan,uz,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,Turkmenistan,tm,-800,1900.0,,,,,0
+re_muslim_world,Muslim world,Azerbaijan,az,-800,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Romania,ro,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Bulgaria,bg,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Albania,al,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Montenegro,me,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Serbia,rs,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Bosnia and Herzegovina,ba,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Slovenia,si,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Croatia,hr,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Greece,gr,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Cyprus,cy,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Belarus,by,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Russian Federation,ru,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Ukraine,ua,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Latvia,lv,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Estonia,ee,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Slovakia,sk,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Lithuania,lt,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Czechia,cz,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Poland,pl,-800.0,1900.0,,,,,0
+re_eastern_europe,Eastern Europe,Hungary,hu,-800.0,1900.0,,,,,0
+re_balkans,Balkans,Bulgaria,bg,-800.0,1900.0,,,,,0
+re_balkans,Balkans,Greece,gr,-800.0,1900.0,,,,,0
+re_balkans,Balkans,Albania,al,-800.0,1900.0,,,,,0
+re_balkans,Balkans,Montenegro,me,-800.0,1900.0,,,,,0
+re_balkans,Balkans,Serbia,rs,-800.0,1900.0,,,,,0
+re_balkans,Balkans,Bosnia and Herzegovina,ba,-800.0,1900.0,,,,,0
+re_balkans,Balkans,Croatia,hr,-800.0,1900.0,,,,,0
+re_nordic_countries,Nordic countries,Sweden,se,500.0,1900.0,,,,,0
+re_nordic_countries,Nordic countries,Norway,no,500.0,1900.0,,,,,0
+re_nordic_countries,Nordic countries,Denmark,dk,500.0,1900.0,,,,,0
+re_nordic_countries,Nordic countries,Iceland,is,500.0,1900.0,,,,,0
+re_nordic_countries,Nordic countries,Finland,fi,500.0,1900.0,,,,,0
+re_northwestern_europe,Northwestern Europe,Sweden,se,-800.0,1900.0,,,,,0
+re_northwestern_europe,Northwestern Europe,Norway,no,-800.0,1900.0,,,,,0
+re_northwestern_europe,Northwestern Europe,Denmark,dk,-800.0,1900.0,,,,,0
+re_northwestern_europe,Northwestern Europe,France,fr,-800.0,1900.0,,,,,0
+re_northwestern_europe,Northwestern Europe,Ireland,ie,-800.0,1900.0,,,,,0
+re_northwestern_europe,Northwestern Europe,United Kingdom,gb,-800.0,1900.0,,,,,0
+re_northwestern_europe,Northwestern Europe,Iceland,is,-800.0,1900.0,,,,,0
+re_northwestern_europe,Northwestern Europe,Finland,fi,-800.0,1900.0,,,,,0
+re_northwestern_europe,Northwestern Europe,Belgium,be,-800.0,1900.0,,,,,0
+re_northwestern_europe,Northwestern Europe,Netherlands,nl,-800.0,1900.0,,,,,0
+re_northwestern_europe,Northwestern Europe,Germany,de,-800.0,1900.0,,,,,0
+re_northwestern_europe,Northwestern Europe,Switzerland,ch,-800.0,1900.0,,,,,0
+re_northwestern_europe,Northwestern Europe,Austria,at,-800.0,1900.0,,,,,0
+re_western_europe,Western Europe,Sweden,se,-800.0,1900.0,,,,,0
+re_western_europe,Western Europe,Norway,no,-800.0,1900.0,,,,,0
+re_western_europe,Western Europe,Denmark,dk,-800.0,1900.0,,,,,0
+re_western_europe,Western Europe,France,fr,-800.0,1900.0,,,,,0
+re_western_europe,Western Europe,Ireland,ie,-800.0,1900.0,,,,,0
+re_western_europe,Western Europe,United Kingdom,gb,-800.0,1900.0,,,,,0
+re_western_europe,Western Europe,Iceland,is,-800.0,1900.0,,,,,0
+re_western_europe,Western Europe,Finland,fi,-800.0,1900.0,,,,,0
+re_western_europe,Western Europe,Belgium,be,-800.0,1900.0,,,,,0
+re_western_europe,Western Europe,Netherlands,nl,-800.0,1900.0,,,,,0
+re_western_europe,Western Europe,Germany,de,-800.0,1900.0,,,,,0
+re_western_europe,Western Europe,Switzerland,ch,-800.0,1900.0,,,,,0
+re_western_europe,Western Europe,Austria,at,-800.0,1900.0,,,,,0
+re_western_europe,Western Europe,Spain,es,-800.0,1900.0,,,,,0
+re_western_europe,Western Europe,Portugal,pt,-800.0,1900.0,,,,,0
+re_western_europe,Western Europe,Italy,it,-800.0,1900.0,,,,,0
+re_british_islands,British Islands,Ireland,ie,500.0,1900.0,,,,,0
+re_british_islands,British Islands,United Kingdom,gb,500.0,1900.0,,,,,0
+re_low_countries,Low countries,Belgium,be,500.0,1900.0,,,,,0
+re_low_countries,Low countries,Netherlands,nl,500.0,1900.0,,,,,0
+re_german_world,German world,Germany,de,500.0,1900.0,,,,,0
+re_german_world,German world,Switzerland,ch,500.0,1900.0,,,,,0
+re_german_world,German world,Austria,at,500.0,1900.0,,,,,0
+re_southwestern_europe,Southwestern Europe,Portugal,pt,-800.0,1900.0,,,,,0
+re_southwestern_europe,Southwestern Europe,Italy,it,-800.0,1900.0,,,,,0
+re_southwestern_europe,Southwestern Europe,Spain,it,-800.0,1900.0,,,,,0
+re_greece,Greece,Greece,gr,1500,1900.0,,,,,0
+re_greece,Greece,Cyprus,cy,1500,1900.0,,,,,0
+re_ottoman_turkey,Ottoman Turkey,Turkey,tr,1400.0,1900.0,,,,,0
+re_slav_world,Slav world,Belarus,by,500.0,1900,,,,,0
+re_slav_world,Slav world,Russian Federation,ru,500.0,1900,,,,,0
+re_slav_world,Slav world,Ukraine,ua,500.0,1900,,,,,0
+re_central_europe,Central Europe,Latvia,lv,500.0,1900,,,,,0
+re_central_europe,Central Europe,Estonia,ee,500.0,1900,,,,,0
+re_central_europe,Central Europe,Slovakia,sk,500.0,1900,,,,,0
+re_central_europe,Central Europe,Lithuania,lt,500.0,1900,,,,,0
+re_central_europe,Central Europe,Czechia,cz,500.0,1900,,,,,0
+re_central_europe,Central Europe,Poland,pl,500.0,1900,,,,,0
+re_central_europe,Central Europe,Hungary,hu,500.0,1900,,,,,0
+re_arabian_peninsula,Arabian peninsula,Kuwait,kw,-800.0,1900.0,,,,,0
+re_arabian_peninsula,Arabian peninsula,Oman,om,-800.0,1900.0,,,,,0
+re_arabian_peninsula,Arabian peninsula,United Arab Emirates,ae,-800.0,1900.0,,,,,0
+re_arabian_peninsula,Arabian peninsula,Saudi Arabia,sa,-800.0,1900.0,,,,,0
+re_arabian_peninsula,Arabian peninsula,Bahrain,bh,-800.0,1900.0,,,,,0
+re_arabian_peninsula,Arabian peninsula,Yemen,ye,-800,1900.0,,,,,0
+re_persian_world,Persian world,"Iran, Islamic Republic of",ir,-800.0,1900.0,,,,,0
+re_persian_world,Persian world,Afghanistan,af,-800.0,1900.0,,,,,0
+re_persian_world,Persian world,Kyrgyzstan,kg,-800.0,1900.0,,,,,0
+re_persian_world,Persian world,Uzbekistan,uz,-800.0,1900.0,,,,,0
+re_persian_world,Persian world,Turkmenistan,tm,-800.0,1900.0,,,,,0
+re_persian_world,Persian world,Azerbaijan,az,-800.0,1900.0,,,,,0
+re_chinese_world,Chinese world,"Taiwan, Province of China",tw,-800.0,1900.0,,,,,0
+re_chinese_world,Chinese world,China,cn,-800.0,1900.0,,,,,0
+re_indian_world,Indian world,India,in,-800.0,1900.0,,,,,0
+re_indian_world,Indian world,Pakistan,pk,-800.0,1900.0,,,,,0
+re_indian_world,Indian world,Bangladesh,bd,-800.0,1900.0,,,,,0
+re_indian_world,Indian world,Sri Lanka,lk,-800.0,1900.0,,,,,0
+re_indian_world,Indian world,Nepal,np,-800.0,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Romania,ro,1600,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Greece,gr,1500,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Cyprus,cy,1500,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Turkey,tr,1400.0,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Romania,ro,1400.0,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Bulgaria,bg,1400.0,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Albania,al,1400.0,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Kovoso,al,1400.0,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Montenegro,me,1400.0,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Serbia,rs,1400.0,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Bosnia and Herzegovina,ba,1500,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Israel,il,1600,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Lebanon,lb,1600,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Syrian Arab Republic,sy,1600,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Jordan,jo,1600,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Iraq,iq,1600,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Kuwait,kw,1600,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Oman,om,1600,1900.0,,,,,0
+re_ottoman_world,Ottoman world,United Arab Emirates,ae,1600,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Saudi Arabia,sa,1600,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Bahrain,bh,1600,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Yemen,ye,-800,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Algeria,dz,1600,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Morocco,ma,1600,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Libya,ly,1600,1900.0,,,,,0
+re_ottoman_world,Ottoman world,Egypt,eg,1600,1900.0,,,,,0
+re_sweden,Sweden,Sweden,se,-800.0,1900.0,,,,,0
+re_norway,Norway,Norway,no,-800.0,1900.0,,,,,0
+re_denmark,Denmark,Denmark,dk,-800.0,1900.0,,,,,0
+re_france,France,France,fr,-800.0,1900.0,,,,,0
+re_ireland,Ireland,Ireland,ie,-800.0,1900.0,,,,,0
+re_united_kingdom,United Kingdom,United Kingdom,gb,-800.0,1900.0,,,,,0
+re_iceland,Iceland,Iceland,is,-800.0,1900.0,,,,,0
+re_finland,Finland,Finland,fi,-800.0,1900.0,,,,,0
+re_belgium,Belgium,Belgium,be,-800.0,1900.0,,,,,0
+re_netherlands,Netherlands,Netherlands,nl,-800.0,1900.0,,,,,0
+re_germany,Germany,Germany,de,-800.0,1900.0,,,,,0
+re_switzerland,Switzerland,Switzerland,ch,-800.0,1900.0,,,,,0
+re_austria,Austria,Austria,at,-800.0,1900.0,,,,,0
+re_spain,Spain,Spain,es,-800.0,1900.0,,,,,0
+re_portugal,Portugal,Portugal,pt,-800.0,1900.0,,,,,0
+re_italy,Italy,Italy,it,-800.0,1900.0,,,,,0
+re_arabic_world,Arabic world,Tunisia,tn,-800,1900.0,,,,,0
+re_arabic_world,Arabic world,Algeria,dz,-800,1900.0,,,,,0
+re_arabic_world,Arabic world,Morocco,ma,-800,1900.0,,,,,0
+re_arabic_world,Arabic world,Libya,ly,-800,1900.1,,,,,0
+re_arabic_world,Arabic world,Egypt,eg,-800,1900.0,,,,,0
+re_arabic_world,Arabic world,"Palestine, State of",ps,-800,1900.0,,,,,0
+re_arabic_world,Arabic world,Israel,il,-800,1100.0,,,,,0
+re_arabic_world,Arabic world,Israel,il,1300.0,1900.0,,,,,0
+re_arabic_world,Arabic world,Lebanon,lb,-800,1100.0,,,,,0
+re_arabic_world,Arabic world,Lebanon,lb,1300.0,1900.0,,,,,0
+re_arabic_world,Arabic world,Syrian Arab Republic,sy,-800,1900.0,,,,,0
+re_arabic_world,Arabic world,Jordan,jo,-800,1900.0,,,,,0
+re_arabic_world,Arabic world,Iraq,iq,-800,1900.0,,,,,0
+re_arabic_world,Arabic world,Kuwait,kw,-800,1900.0,,,,,0
+re_arabic_world,Arabic world,Oman,om,-800,1900.0,,,,,0
+re_arabic_world,Arabic world,United Arab Emirates,ae,-800,1900.0,,,,,0
+re_arabic_world,Arabic world,Saudi Arabia,sa,-800,1900.0,,,,,0
+re_arabic_world,Arabic world,Bahrain,bh,-800,1900.0,,,,,0
+re_arabic_world,Arabic world,Yemen,ye,-800,1900.0,,,,,0
+re_japan,Japan,Japan,jp,0,1900,,,,,0
+re_korea,Korea,"Korea, Democratic People's Republic of",kp,0,1900,,,,,0
+re_korea,Korea,"Korea, Republic of",kr,0,1900,,,,,0
+re_south_east_asia,South East Asia,Viet Nam,vn,0,1900,,,,,0
+re_south_east_asia,South East Asia,Thailand,th,0,1900,,,,,0
+re_south_east_asia,South East Asia,Lao People's Democratic Republic,la,0,1900,,,,,0
+re_south_east_asia,South East Asia,Cambodia,kh,0,1900,,,,,0
+re_south_east_asia,South East Asia,Malaysia,my,0,1900,,,,,0
+re_south_east_asia,South East Asia,Indonesia,id,0,1900,,,,,0
+re_south_east_asia,South East Asia,Philippines,ph,0,1900,,,,,0
+re_south_east_asia,South East Asia,Myanmar,mm,0,1900,,,,,0
+re_south_china,Southern China,"Taiwan, Province of China",tw,-800.0,1900.0,,33,,,1
+re_south_china,Southern China,China,cn,-800.0,1900.0,,33,,,1
+re_north_china,Northern China,"Taiwan, Province of China",tw,-800.0,1900.0,33,,,,1
+re_north_china,Northern China,China,cn,-800.0,1900.0,33,,,,1
+re_south_india,Southern India,India,in,-800.0,1900.0,,21,,,1
+re_south_india,Southern India,Pakistan,pk,-800.0,1900.0,,21,,,1
+re_south_india,Southern India,Bangladesh,bd,-800.0,1900.0,,21,,,1
+re_south_india,Southern India,Sri Lanka,lk,-800.0,1900.0,,21,,,1
+re_south_india,Southern India,Nepal,np,-800.0,1900.0,,21,,,1
+re_north_india,Northern India,India,in,-800.0,1900.0,21,,,,1
+re_north_india,Northern India,Pakistan,pk,-800.0,1900.0,21,,,,1
+re_north_india,Northern India,Bangladesh,bd,-800.0,1900.0,21,,,,1
+re_north_india,Northern India,Sri Lanka,lk,-800.0,1900.0,21,,,,1
+re_north_india,Northern India,Nepal,np,-800.0,1900.0,21,,,,1
+re_north_japan,Northern Japan,Japan,jp,0,1900,,,138,,1
+re_south_japan,Southern Japan,Japan,jp,0,1900,,,,138,1
+re_south_italy,Southern Italy,Italy,it,-800.0,1900.0,,42,,,1
+re_north_italy,Northern Italy,Italy,it,-800.0,1900.0,42,,,,1
+re_yangtze,Yangtze,"Taiwan, Province of China",tw,-800.0,1900.0,25,33,117,122,1
+re_yangtze,Yangtze,China,cn,-800.0,1900.0,25,33,117,122,1
+re_south_france,Southern France,France,fr,-800.0,1900.0,,46,,,1
+re_north_france,Northern France,France,fr,-800.0,1900.0,46,,,,1

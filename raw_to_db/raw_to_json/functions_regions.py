@@ -81,7 +81,7 @@ def get_regions(path=DATA_ENV_PATH) -> t.List[Region]:
     region_model = list(df_region_model["region_model"])
 
     df_region["country_model"] = df_region.apply(
-        lambda x: Country(name=x["country_name"], code=x["country_code"]), axis=1
+        lambda x: Country(name=x["country_name"], iso_a3=x["iso_a3"]), axis=1
     )
 
     df_region["country_filtered_model"] = df_region.apply(
@@ -119,7 +119,7 @@ def get_individuals_regions(
     individual_country = [
         {
             "wiki_id": x.id.wikidata_id,
-            "country_code": x.country.code,
+            "iso_a3": x.country.iso_a3,
             "range": x.impact_years,
         }
         for x in individual_country
@@ -135,7 +135,7 @@ def get_individuals_regions(
 
     df_reg_all = [
         {
-            "country_code": [y.country.code for y in x.countries_filtered],
+            "iso_a3": [y.country.iso_a3 for y in x.countries_filtered],
             "region_code": x.code,
             "region_name": x.name,
             "spaced_based": x.space_based,
@@ -152,7 +152,7 @@ def get_individuals_regions(
     df_reg_all = pd.DataFrame(df_reg_all)
     df_reg_all = df_reg_all.explode(
         [
-            "country_code",
+            "iso_a3",
             "min_year",
             "max_year",
             "min_latitude",
@@ -174,7 +174,7 @@ def get_individuals_regions(
     df_reg = df_reg.explode("impact_year").reset_index(drop=True)
     df_reg = df_reg.drop("range", axis=1)
 
-    final_non_space = pd.merge(df_ind, df_reg, on=["country_code", "impact_year"])
+    final_non_space = pd.merge(df_ind, df_reg, on=["iso_a3", "impact_year"])
     final_non_space = (
         final_non_space[["wiki_id", "region_code"]]
         .drop_duplicates()
@@ -188,7 +188,7 @@ def get_individuals_regions(
         [
             {
                 "wiki_id": x.id.wikidata_id,
-                "country_code": x.country.code,
+                "iso_a3": x.country.iso_a3,
                 "birthcity_location": [y.location for y in x.id.raw_birthcities],
                 "range": x.impact_years,
             }
@@ -232,7 +232,7 @@ def get_individuals_regions(
     df_ref_space = df_ref_space.drop("range", axis=1)
 
     final_space = pd.merge(
-        df_ref_space, df_individual_space, on=["country_code", "impact_year"]
+        df_ref_space, df_individual_space, on=["iso_a3", "impact_year"]
     )
 
     final_space["min_latitude"] = final_space["min_latitude"].fillna(-90)

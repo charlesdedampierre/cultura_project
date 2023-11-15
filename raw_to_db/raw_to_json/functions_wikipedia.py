@@ -5,6 +5,7 @@ from data_model import Individual, WikipediaPage
 from functions_wikipedia_load import load_sitelinks, load_wikipedia_data
 from sys_utils import load_model
 from tqdm import tqdm
+import os
 
 tqdm.pandas()
 from bunka_logger import logger
@@ -91,7 +92,6 @@ if __name__ == "__main__":
     from dotenv import load_dotenv
 
     load_dotenv()
-    import os
 
     CHECKPOINT_PATH = os.getenv("CHECKPOINT_PATH")
 
