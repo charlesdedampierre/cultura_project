@@ -30,6 +30,15 @@ class RawBirthcity(BaseModel):
     country_location: str = None
 
 
+class RawDeathcity(BaseModel):
+    wikidata_id: str = None
+    name: str = None
+    location: str = (None,)
+    country_wikidata_id: str = None
+    country_name: str = None
+    country_location: str = None
+
+
 class RawIndividual(BaseModel):
     wikidata_id: str
     name: str = None
@@ -37,6 +46,7 @@ class RawIndividual(BaseModel):
     gender: t.List[str] = None
     raw_nationalities: t.List[RawNationality] = None
     raw_birthcities: t.List[RawBirthcity] = None
+    raw_deathcities: t.Optional[t.List[RawDeathcity]] = None  # Make it Optional
     occupations: t.List[Occupation] = None
 
 

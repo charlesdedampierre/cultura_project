@@ -1,5 +1,4 @@
 import typing as t
-
 from bunka_logger import logger
 from data_model import Individual, RawIndividual
 from data_model_region import Region
@@ -46,7 +45,7 @@ class Enricher:
         logger.info("Get Country Code of Individuals")
         individuals: t.List[Individual] = get_country_code(individuals)
 
-        logger.info("Get Impact years of Individuals")
+        # logger.info("Get Impact years of Individuals")
         individuals: t.List[Individual] = get_impact_years(individuals)
 
         logger.info("Save Checkpoint 2")
@@ -61,11 +60,11 @@ class Enricher:
         logger.info("Save Checkpoint 3")
         save_model(individuals, name=CHECKPOINT_PATH + "/checkpoint_3.jsonl")
 
-        logger.info("Compute Cultural Index of Individuals")
-        individuals: t.List[Individual] = get_cultural_index(individuals)
+        # logger.info("Compute Cultural Index of Individuals")
+        # individuals: t.List[Individual] = get_cultural_index(individuals)
 
-        logger.info("Save Checkpoint 4")
-        save_model(individuals, name=CHECKPOINT_PATH + "checkpoint_4.jsonl")
+        # logger.info("Save Checkpoint 4")
+        # save_model(individuals, name=CHECKPOINT_PATH + "checkpoint_4.jsonl")
 
         logger.info("Get Region Model form .csv")
         regions: t.List[Region] = get_regions()

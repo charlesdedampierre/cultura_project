@@ -284,7 +284,7 @@ if __name__ == "__main__":
 
     logger.info("Load checkpoint number 4")
     individuals: t.List[Individual] = load_model(
-        Individual, name=CHECKPOINT_PATH + "/checkpoint_4.jsonl"
+        Individual, name=CHECKPOINT_PATH + "/checkpoint_3.jsonl"
     )
     logger.info("Get Region of Individuals")
     new_individuals: t.List[Individual] = get_individuals_regions(individuals, regions)
@@ -292,8 +292,11 @@ if __name__ == "__main__":
     logger.info("Save checkpoint number 5")
     save_model(new_individuals, name=CHECKPOINT_PATH + "/checkpoint_5.jsonl")
 
+    """
     logger.info("Clean occupations")
     from functions_manual_regions import pipeline_manual_cleaning_region_global
 
     new_individuals = pipeline_manual_cleaning_region_global(new_individuals)
     save_model(new_individuals, name=CHECKPOINT_PATH + "/individuals.jsonl")
+
+    """

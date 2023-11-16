@@ -14,5 +14,10 @@ def load_model(model, name="data.jsonl"):
     with open(name, "r") as f:
         for line in f:
             data.append(json.loads(line))
-    list_model = [model(**x) for x in data]
+
+    list_model = []
+
+    for x in data:
+        list_model.append(model(**x))
+
     return list_model

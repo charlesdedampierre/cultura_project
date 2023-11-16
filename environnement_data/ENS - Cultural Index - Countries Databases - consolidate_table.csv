@@ -23,6 +23,8 @@ re_arabic_world,Arabic world,United Arab Emirates,ARE,ae,-800,1900.0,,,,,0
 re_arabic_world,Arabic world,Saudi Arabia,SAU,sa,-800,1900.0,,,,,0
 re_arabic_world,Arabic world,Yemen,YEM,ye,-800,1900.0,,,,,0
 re_austria,Austria,Austria,AUT,at,-800.0,1900.0,,,,,0
+re_balkans,Balkans,North Macedonia,MKD,,-800.0,1900.0,,,,,0
+re_balkans,Balkans,Kosovo,-99,,-800.0,1900.0,,,,,0
 re_balkans,Balkans,Bulgaria,BGR,bg,-800.0,1900.0,,,,,0
 re_balkans,Balkans,Greece,GRC,gr,-800.0,1900.0,,,,,0
 re_balkans,Balkans,Albania,ALB,al,-800.0,1900.0,,,,,0
@@ -71,6 +73,7 @@ re_german_world,German world,Austria,AUT,at,500.0,1900.0,,,,,0
 re_germany,Germany,Germany,DEU,de,-800.0,1900.0,,,,,0
 re_greece,Greece,Greece,GRC,gr,1500,1900.0,,,,,0
 re_greece,Greece,Cyprus,CYP,cy,1500,1900.0,,,,,0
+re_greece,Greece,North Macedonia,MKD,,1500,1900.0,,,,,0
 re_greek_world,Greek World,Ukraine,UKR,ua,-800,700,,,,,0
 re_greek_world,Greek World,Albania,ALB,al,-800,1500.0,,,,,0
 re_greek_world,Greek World,Montenegro,MNE,me,-800,1500.0,,,,,0
@@ -101,6 +104,8 @@ re_italy,Italy,Italy,ITA,it,-800.0,1900.0,,,,,0
 re_japan,Japan,Japan,JPN,jp,0,1900,,,,,0
 re_korea,Korea,North Korea,PRK,kp,0,1900,,,,,0
 re_korea,Korea,South Korea,KOR,kr,0,1900,,,,,0
+re_latin,Latin World,Belgium,BEL,,-100.0,500.0,,,,,0
+re_latin,Latin World,Luxembourg,LUX,,-100.0,500.0,,,,,0
 re_latin,Latin World,Tunisia,TUN,tn,-100.0,500.0,,,,,0
 re_latin,Latin World,Algeria,DZA,dz,-100.0,500.0,,,,,0
 re_latin,Latin World,Morocco,MAR,ma,-100.0,500.0,,,,,0

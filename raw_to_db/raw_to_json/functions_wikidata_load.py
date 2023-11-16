@@ -111,6 +111,44 @@ def load_individual_id_occupation_id() -> pd.DataFrame:
     return data
 
 
+def load_deathcity():
+    df_deathcity_ind = pd.read_csv(
+        WIKIDATA_RAW_DATA + "/individuals_deathcity.csv", index_col=[0]
+    )
+    df_deathcity_ind = df_deathcity_ind[
+        ["wiki_id", "deathcity", "deathcityLabel"]
+    ].dropna()
+    df_deathcity_ind["deathcity"] = df_deathcity_ind["deathcity"].apply(
+        lambda x: split_wiki(x)
+    )
+    df_deathcity_ind = df_deathcity_ind.reset_index(drop=True)
+    df_deathcity = df_deathcity_ind[["deathcity", "deathcityLabel"]].drop_duplicates()
+    df_deathcity.columns = ["wikidata_id", "name"]
+
+    df_deathcity_location = pd.read_csv(
+        WIKIDATA_RAW_DATA + "/deathcity_location.csv", index_col=[0]
+    )
+    df_deathcity_location.columns = [
+        "wikidata_id",
+        "country_wikidata_id",
+        "contry_name",
+        "location",
+    ]
+    df_deathcity_location["country_wikidata_id"] = df_deathcity_location[
+        "country_wikidata_id"
+    ].apply(lambda x: split_wiki(x))
+    df_deathcity_location = df_deathcity_location.dropna()
+
+    final_deathcity = pd.merge(
+        df_deathcity_location, df_deathcity, on="wikidata_id", how="outer"
+    )
+    final_deathcity = final_deathcity[~final_deathcity["location"].isna()]
+    df_deathcity_ind = df_deathcity_ind.dropna()
+
+    # final_deathcity = final_deathcity.drop_duplicates("wikidata_id", keep="first")
+    return df_deathcity_ind, final_deathcity
+
+
 def load_birthcity_country():
     data_art_sci = pd.read_csv(
         WIKIDATA_RAW_DATA + "/country_from_birthcity.csv", index_col=[0]

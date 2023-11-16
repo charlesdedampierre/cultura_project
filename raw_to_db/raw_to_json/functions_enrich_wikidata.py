@@ -8,6 +8,9 @@ from sys_utils import load_model
 from tqdm import tqdm
 from utils import round_nearest
 
+from data_model_region import Country
+import geopandas as gpd
+
 tqdm.pandas()
 
 
@@ -36,6 +39,162 @@ def raw_to_individuals(raw_individuals: t.List[RawIndividual]) -> t.List[Individ
 
 
 def get_country_code(individuals: t.List[Individual]) -> t.List[Individual]:
+    # Birthcities
+    individual_birthcities = [
+        {
+            "individual_wikidata_id": x.id.wikidata_id,
+            "location": [y.location for y in x.id.raw_birthcities],
+        }
+        for x in individuals
+        if x.id.raw_birthcities != None
+    ]
+
+    df_individual_location = pd.DataFrame(individual_birthcities)
+    df_individual_location = df_individual_location.explode("location")
+    df_individual_location = df_individual_location[
+        df_individual_location["location"] != "nan"
+    ]
+    df_individual_location = df_individual_location.dropna()
+
+    df_unique_locations = df_individual_location[["location"]].drop_duplicates()
+    df_unique_locations["country_model"] = df_unique_locations[
+        "location"
+    ].progress_apply(lambda x: get_country_model(x))
+    df_unique_locations = df_unique_locations.dropna()
+
+    df_unique_locations["country_name"] = df_unique_locations["country_model"].apply(
+        lambda x: x.name
+    )
+
+    df_final = pd.merge(df_individual_location, df_unique_locations, on="location")
+    df_final_birthcities = df_final.drop_duplicates(
+        "individual_wikidata_id", keep="first"
+    )
+    df_final_birthcities = df_final_birthcities[
+        ["individual_wikidata_id", "country_name"]
+    ].drop_duplicates()
+    df_final_birthcities["origin"] = "birthcity"
+
+    # Deathcities (There was an issue regarding the loading, hence the diffenrent way of loading)
+    df_individual_location = pd.DataFrame(
+        {
+            "individual_wikidata_id": [x.id.wikidata_id for x in individuals],
+            "deathcities": [x.id.raw_deathcities for x in individuals],
+        }
+    )
+    df_individual_location = df_individual_location.dropna()
+    df_individual_location = df_individual_location.explode("deathcities")
+
+    def get_location_point(x):
+        try:
+            return x.location
+        except:
+            return None
+
+    df_individual_location["location"] = df_individual_location["deathcities"].apply(
+        lambda x: get_location_point(x)
+    )
+    df_individual_location = df_individual_location.dropna()
+    df_individual_location = df_individual_location.drop("deathcities", axis=1)
+    df_individual_location = df_individual_location.drop_duplicates()
+    df_individual_location = df_individual_location.reset_index(drop=True)
+
+    df_unique_locations = df_individual_location[["location"]].drop_duplicates()
+    df_unique_locations["country_model"] = df_unique_locations[
+        "location"
+    ].progress_apply(lambda x: get_country_model(x))
+    df_unique_locations = df_unique_locations.dropna()
+
+    df_unique_locations["country_name"] = df_unique_locations["country_model"].apply(
+        lambda x: x.name
+    )
+
+    df_final = pd.merge(df_individual_location, df_unique_locations, on="location")
+    df_final_deathcities = df_final.drop_duplicates(
+        "individual_wikidata_id", keep="first"
+    )
+    df_final_deathcities = df_final_deathcities[
+        ["individual_wikidata_id", "country_name"]
+    ].drop_duplicates()
+    df_final_deathcities["origin"] = "deathcity"
+
+    # Nationality
+    individual_nationalities = [
+        {
+            "individual_wikidata_id": x.id.wikidata_id,
+            "location": [y.location for y in x.id.raw_nationalities],
+        }
+        for x in individuals
+        if x.id.raw_nationalities != None
+    ]
+    df_individual_location_nationality = pd.DataFrame(individual_nationalities)
+    df_individual_location_nationality = df_individual_location_nationality.explode(
+        "location"
+    )
+
+    df_unique_locations_nationality = df_individual_location_nationality[
+        ["location"]
+    ].drop_duplicates()
+    df_unique_locations_nationality["country_model"] = df_unique_locations_nationality[
+        "location"
+    ].progress_apply(lambda x: get_country_model(x))
+    df_unique_locations_nationality = df_unique_locations_nationality.dropna()
+
+    df_unique_locations_nationality["country_name"] = df_unique_locations_nationality[
+        "country_model"
+    ].apply(lambda x: x.name)
+
+    df_final_nationality = pd.merge(
+        df_unique_locations_nationality,
+        df_individual_location_nationality,
+        on="location",
+    )
+    df_final_nationality["origin"] = "nationality"
+    df_final_nationality = df_final_nationality[
+        ["individual_wikidata_id", "country_name", "origin"]
+    ].drop_duplicates()
+
+    # Merging the three datasets
+    final = pd.concat(
+        [df_final_deathcities, df_final_nationality, df_final_birthcities]
+    )
+    order = ["deathcity", "birthcity", "nationality"]
+
+    sorting_key = lambda x: order.index(x) if x in order else float("inf")
+
+    # Sort the DataFrame based on the 'origin' column using the custom key
+    final = final.sort_values(by="origin", key=lambda x: x.map(sorting_key))
+    final = final.drop_duplicates("individual_wikidata_id", keep="first")
+    final = final.reset_index(drop=True)
+    final = final.drop_duplicates()
+
+    df_world = gpd.read_file(gpd.datasets.get_path("naturalearth_lowres"))
+    df_world["country_model"] = df_world.apply(
+        lambda x: Country(name=x["name"], iso_a3=x["iso_a3"]), axis=1
+    )
+    df_world = df_world[["name", "country_model"]]
+    df_world = df_world.rename(columns={"name": "country_name"})
+
+    final = pd.merge(df_world, final, on="country_name")
+
+    individual_country = final[["individual_wikidata_id", "country_model"]].to_dict(
+        orient="records"
+    )
+    dict_individual_country = {
+        x["individual_wikidata_id"]: x["country_model"] for x in individual_country
+    }
+
+    # Insert to the model
+    new_individuals = []
+
+    for ind in individuals:
+        ind.country = dict_individual_country.get(ind.id.wikidata_id)
+        new_individuals.append(ind)
+
+    return new_individuals
+
+
+def get_country_code_old(individuals: t.List[Individual]) -> t.List[Individual]:
     individual_birthcities = [
         {
             "individual_wikidata_id": x.id.wikidata_id,
@@ -100,7 +259,6 @@ def get_country_code(individuals: t.List[Individual]) -> t.List[Individual]:
     final = final.sort_values(
         ["individual_wikidata_id", "origin"], ascending=(False, True)
     )
-
     # first birthcity: ascending=(False, True)
     # first nationality: ascending=(False, False)
 

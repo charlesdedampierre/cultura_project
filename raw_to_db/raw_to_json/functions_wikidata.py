@@ -6,6 +6,7 @@ from data_model import (
     RawBirthcity,
     RawIndividual,
     RawNationality,
+    RawDeathcity,
 )
 from functions_wikidata_load import (
     load_birthcity_country,
@@ -13,6 +14,7 @@ from functions_wikidata_load import (
     load_individual_info,
     load_nationality_location,
     load_occupation_information,
+    load_deathcity,
 )
 from sys_utils import save_model
 from tqdm import tqdm
@@ -32,41 +34,6 @@ load_dotenv()
 import os
 
 WIKIDATA_RAW_DATA = os.getenv("WIKIDATA_RAW_DATA")
-
-
-def get_external_identifiers(individuals: t.List[Individual]) -> t.List[Individual]:
-    df_external_id = pd.read_csv(
-        WIKIDATA_RAW_DATA + "/external_identifier_individual_before_1900.csv",
-        index_col=[0],
-    )
-    df_external_id.columns = ["wikidata_id", "name", "individual_id"]
-
-    df_external_id["wikidata_id"] = df_external_id["wikidata_id"].apply(
-        lambda x: split_wiki(x)
-    )
-    df_external_id = df_external_id[
-        ~df_external_id["wikidata_id"].str.contains("Q")
-    ].reset_index(drop=True)
-    df_external_id["external_model"] = df_external_id.progress_apply(
-        lambda x: ExternalID(wikidata_id=x["wikidata_id"], name=x["name"]), axis=1
-    )
-
-    df_external_id = (
-        df_external_id.groupby("individual_id")["external_model"]
-        .apply(list)
-        .reset_index()
-    )
-    dict_external_id = df_external_id.to_dict(orient="records")
-    dict_external_id = {
-        x["individual_id"]: x["external_model"] for x in dict_external_id
-    }
-
-    new_individuals = []
-    for ind in individuals:
-        ind.identifiers = dict_external_id.get(ind.id.wikidata_id)
-        new_individuals.append(ind)
-
-    return new_individuals
 
 
 def get_individual_main_wikidata_information() -> t.List[RawIndividual]:
@@ -91,7 +58,6 @@ def get_individual_main_wikidata_information() -> t.List[RawIndividual]:
     )
 
     # Occupation
-
     occupations_list = []
     for row in df_occupation.to_dict(orient="records"):
         wikidata_id = row["occupation_id"]
@@ -203,6 +169,7 @@ def get_individual_main_wikidata_information() -> t.List[RawIndividual]:
     dict_birthcity_individual = df_birthcity_individual[
         ["wiki_id", "birthcity_model"]
     ].to_dict(orient="records")
+
     dict_birthcity_individual = {
         x["wiki_id"]: x["birthcity_model"] for x in dict_birthcity_individual
     }
@@ -264,6 +231,86 @@ def get_individual_main_wikidata_information() -> t.List[RawIndividual]:
 
         new_individuals.append(ind)
 
+    # Add the deathcity information
+    df_deathcity_ind, final_deathcity = load_deathcity()
+
+    deathcity_list = []
+    for row in final_deathcity.to_dict(orient="records"):
+        wikidata_id = row["wikidata_id"]
+        name = row["name"]
+        country_wikidata_id = row["country_wikidata_id"]
+        # country_location = row["country_location"]
+        country_name = row["contry_name"]
+        location = row["location"]
+
+        deathcity = RawDeathcity(
+            wikidata_id=wikidata_id,
+            name=name,
+            country_wikidata_id=country_wikidata_id,
+            # country_location=country_location,
+            location=location,
+            country_name=country_name,
+        )
+
+        deathcity_list.append(deathcity)
+
+    deathcity_id_deathcity_model = {x.wikidata_id: x for x in deathcity_list}
+    df_deathcity_ind["deathcity_model"] = df_deathcity_ind["deathcity"].apply(
+        lambda x: deathcity_id_deathcity_model.get(x)
+    )
+
+    df_deathcity_ind = (
+        df_deathcity_ind.groupby("wiki_id")["deathcity_model"].apply(list).reset_index()
+    )
+
+    dict_deathcity_individual = df_deathcity_ind[
+        ["wiki_id", "deathcity_model"]
+    ].to_dict(orient="records")
+
+    dict_deathcity_individual = {
+        x["wiki_id"]: x["deathcity_model"] for x in dict_deathcity_individual
+    }
+
+    final_individuals = []
+    for ind in tqdm(individuals_list):
+        ind.raw_deathcities = dict_deathcity_individual.get(ind.wikidata_id, None)
+        final_individuals.append(ind)
+
+    return final_individuals
+
+
+def get_external_identifiers(individuals: t.List[Individual]) -> t.List[Individual]:
+    df_external_id = pd.read_csv(
+        WIKIDATA_RAW_DATA + "/external_identifier_individual_before_1900.csv",
+        index_col=[0],
+    )
+    df_external_id.columns = ["wikidata_id", "name", "individual_id"]
+
+    df_external_id["wikidata_id"] = df_external_id["wikidata_id"].apply(
+        lambda x: split_wiki(x)
+    )
+    df_external_id = df_external_id[
+        ~df_external_id["wikidata_id"].str.contains("Q")
+    ].reset_index(drop=True)
+    df_external_id["external_model"] = df_external_id.progress_apply(
+        lambda x: ExternalID(wikidata_id=x["wikidata_id"], name=x["name"]), axis=1
+    )
+
+    df_external_id = (
+        df_external_id.groupby("individual_id")["external_model"]
+        .apply(list)
+        .reset_index()
+    )
+    dict_external_id = df_external_id.to_dict(orient="records")
+    dict_external_id = {
+        x["individual_id"]: x["external_model"] for x in dict_external_id
+    }
+
+    new_individuals = []
+    for ind in individuals:
+        ind.identifiers = dict_external_id.get(ind.id.wikidata_id)
+        new_individuals.append(ind)
+
     return new_individuals
 
 
@@ -276,7 +323,9 @@ if __name__ == "__main__":
     CHECKPOINT_PATH = os.getenv("CHECKPOINT_PATH")
 
     raw_individuals = get_individual_main_wikidata_information()
-    save_model(raw_individuals, name=CHECKPOINT_PATH + "/raw_individuals.jsonl")
+    print(len(raw_individuals))
+    print(raw_individuals[0])
+    # save_model(raw_individuals, name=CHECKPOINT_PATH + "/raw_individuals.jsonl")
     # print("Success!")
 
     # individuals = load_model(Individual, name="checkpoints_dev/checkpoint_4.jsonl")
