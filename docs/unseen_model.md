@@ -5,7 +5,8 @@ This model is developped by Mike Kestemont & Folgert Karsdorp
 Run:
 
 ```bash
-python run unseen_species_model/run_trends_works.py
+cd unseen_species_model
+python run run_trends_works.py
 ``````
 
 This command creates the .csv file [unseen_species_model/df_indi_works.csv](../unseen_species_model/df_indi_works.csv). For the model, when an individual has not work mentionned anywhere, we kept the individual and assigned the value 0.

@@ -259,6 +259,8 @@ def get_individual_main_wikidata_information() -> t.List[RawIndividual]:
         lambda x: deathcity_id_deathcity_model.get(x)
     )
 
+    df_deathcity_ind = df_deathcity_ind.dropna()
+
     df_deathcity_ind = (
         df_deathcity_ind.groupby("wiki_id")["deathcity_model"].apply(list).reset_index()
     )

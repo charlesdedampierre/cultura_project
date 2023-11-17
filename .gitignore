@@ -10,6 +10,8 @@ raw_data
 
 !unseen_species_model/data
 
+*.db
+
 
 
 # Byte-compiled / optimized / DLL files
