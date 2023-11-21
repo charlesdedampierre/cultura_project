@@ -29,7 +29,6 @@ In the env file, add the path to the cultural_1.db (DB_PATH = 'PATH_TO_CULTURA_1
 Then, change the file into an environement variable
 
 ```bash
-pip install python-dotenv # install dot-env package
 cp env .env
 ```
 
