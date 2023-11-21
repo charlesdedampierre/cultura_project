@@ -1,0 +1,54 @@
+,region_code,region_name
+0,re_british_islands,British Islands
+1,re_northwestern_europe,Northwestern Europe
+2,re_united_kingdom,United Kingdom
+3,re_western_europe,Western Europe
+4,re_eastern_europe,Eastern Europe
+5,re_slav_world,Slav world
+6,re_north_italy,Northern Italy
+7,re_italy,Italy
+8,re_southwestern_europe,Southwestern Europe
+9,re_german_world,German world
+10,re_germany,Germany
+11,re_south_france,Southern France
+12,re_france,France
+13,re_balkans,Balkans
+14,re_belgium,Belgium
+15,re_low_countries,Low countries
+16,re_central_europe,Central Europe
+17,re_austria,Austria
+18,re_denmark,Denmark
+19,re_nordic_countries,Nordic countries
+20,re_netherlands,Netherlands
+21,re_ottoman_world,Ottoman world
+22,re_greek_world,Greek World
+23,re_mediterreanean,mediterranean World
+24,re_spain,Spain
+25,re_north_france,Northern France
+26,re_switzerland,Switzerland
+27,re_south_italy,Southern Italy
+28,re_muslim_world,Muslim world
+29,re_persian_world,Persian world
+30,re_greece,Greece
+31,re_finland,Finland
+32,re_norway,Norway
+33,re_japan,Japan
+34,re_arabic_world,Arabic world
+35,re_sweden,Sweden
+36,re_south_china,Southern China
+37,re_yangtze,Yangtze
+38,re_chinese_world,Chinese world
+39,re_south_japan,Southern Japan
+40,re_iceland,Iceland
+41,re_south_east_asia,South East Asia
+42,re_north_india,Northern India
+43,re_indian_world,Indian world
+44,re_ireland,Ireland
+45,re_north_japan,Northern Japan
+46,re_korea,Korea
+47,re_north_china,Northern China
+48,re_arabian_peninsula,Arabian peninsula
+49,re_latin,Latin World
+50,re_ottoman_turkey,Ottoman Turkey
+51,re_portugal,Portugal
+52,re_south_india,Southern India

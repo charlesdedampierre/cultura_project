@@ -30,6 +30,7 @@ if __name__ == "__main__":
     df_ind_year["decade"] = df_ind_year["productive_year"].apply(
         lambda x: round(x / 10) * 10
     )
+    df_ind_year = df_ind_year[df_ind_year["decade"] <= 1880]
 
     # NEWLY ADDED TO BE SURE WE ONLY KEEP INDIVIDUALS WITH A REFERENCE IN AN ONLINE CATALOG
     df_individuals = pd.read_sql_query("SELECT * FROM individuals_kept", conn)

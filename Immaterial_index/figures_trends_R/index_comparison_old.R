@@ -42,7 +42,7 @@ span <- 0.4
 min_date <- -800
 max_date <- 500
 
-df_decade <- read.csv(file = "../../data/df_region_score.csv", sep = ",", header = TRUE)
+df_decade <- read.csv(file = "../results/df_region_score.csv", sep = ",", header = TRUE)
 
 # Group by decades and sum the scores
 df_decade <- df_decade %>%
@@ -57,7 +57,7 @@ region_2 <- "Italy"
 df_decade <- filter(df_decade, region_name == region_1 | region_name == region_2)
 
 
-df_indi <- read.csv(file = "../../data/df_individuals_score.csv", sep = ",", header = TRUE)
+df_indi <- read.csv(file = "../results/df_individuals_score.csv", sep = ",", header = TRUE)
 df_indi <- filter(df_indi, region_name == region_1 | region_name == region_2)
 
 
