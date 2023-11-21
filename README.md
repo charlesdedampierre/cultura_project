@@ -33,4 +33,11 @@ pip install python-dotenv # install dot-env package
 cp env .env
 ```
 
+In order to be able to run the code, create a new environement using Poetry
+
+```bash
+poetry install # install the packages in the poetry.lock file
+poetry shell # activate the environment
+```
+
 <img src="images/log.png" width="50%">

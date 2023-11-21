@@ -1,10 +1,13 @@
-# Path tot the Cultura 1.0 Database
-DB_PATH = ""
+PROJECT_PATH="CULTURA_PROJECT"
 
-# If you want to reproduce the data from the RAW WIKIDATA & WIKIPEDIA Files.
-WIKIDATA_RAW_DATA_PATH = ""
-WIKIPEDIA_RAW_DATA_PATH = ""
-ENVRIONNEMENT_DATA_PATH = ""
+# Paths used for the creation of results
+NEW_DB_PATH=${PROJECT_PATH}/cultura.db # put the cultura.db as the root of the environement
+DB_PATH=${PROJECT_PATH}/cultura.db
+DATA_PATH=${PROJECT_PATH}/data
 
-# Save data during the Transformation Pipeline
-CHECKPOINTS_PATH = ""
+# Paths used for the creation of the Cultura Database
+CHECKPOINT_PATH=${PROJECT_PATH}/raw_data/checkpoints_dev_2
+WIKIDATA_RAW_DATA=${PROJECT_PATH}/raw_data/wikidata_data
+WIKIPEDIA_RAW_DATA=${PROJECT_PATH}/raw_data/wikipedia_data
+MANUAL_DATA=${PROJECT_PATH}/environnement_data/manual_individuals_check
+DATA_ENV_PATH=${PROJECT_PATH}/environnement_data
