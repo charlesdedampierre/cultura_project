@@ -26,9 +26,11 @@ The database is a mix of data coming from Wikidata, Wikipedia and enriched Data 
 
 <img src="../images/pipeline.png" width="80%" height="80%" align="center" />
 
-The ETL Process is in the directory [raw_to_db](../raw_to_db/) where the main function is in the enricher_pipeline.py. The inputs are data as .csv.
+The ETL Process is in the directory [raw_to_db](../raw_to_db/) where the main function is in the [enricher_pipeline.py](../raw_to_db/raw_to_json/enricher_pipeline.py). The inputs is a Json object of Indiviuduals and Regions.
 
-The Transformation from JSON pydantic Datamodel to the final Sqlite3 Database is in the notebook [json_to_db.ipynb](../raw_to_db/json_to_db.ipynb).
+The Transformation from JSON pydantic Datamodel to the final Sqlite3 Database is in the notebook [json_to_db.ipynb](../raw_to_db/1.%20json_to_db.ipynb).
+
+Then the subset of individuals kept is made thought the following notebook: [json_to_db.ipynb](../raw_to_db/2.%20clean_individuals.ipynb)
 
 ### Data Extracted from Wikidata
 

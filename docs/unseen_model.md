@@ -2,7 +2,7 @@
 
 This model is developped by Mike Kestemont & Folgert Karsdorp
 
-Run:
+Firts, run a script to get the a dataset of the number of works for every individual. This dataset will be used by the unseen species model.
 
 ```bash
 cd unseen_species_model

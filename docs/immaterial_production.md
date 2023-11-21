@@ -4,11 +4,7 @@
 
 - Individuals' Immaterial scores are made with [immaterial_index/make_individuals_score.ipynb](../immaterial_index/make_individuals_score.ipynb).The Score of an indiviudal is the number of references in online catalogs. For instance Leo Tolstoy as a score of 52 because he exists in the Online Catalogs of 52 different countries.
 
-To visualize the  figures, call the following R function. You can Change the parameters at the beginning of the [plot_trend R script](../immaterial_index/figures_trends_R/index.R). To visualize two trends at the same time, use [figures_trends_R/index.R](../immaterial_index/figures_trends_R/index_comparison.R)
-
-```bash
-Rscript Immaterial_index/figures_trends_R/index.R
-```
+To visualize the  figures, call the following R functio .in [plot_trend R script](../immaterial_index/figures_trends_R)
 
 <img src="../images/test.png" width="70%" height="70%" align="center" />
 
