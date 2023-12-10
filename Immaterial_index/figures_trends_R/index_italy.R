@@ -88,6 +88,5 @@ df_decade <- df_decade %>%
 df_indi <- read.csv(file = "../results/df_individuals_score.csv", sep = ",", header = TRUE)
 
 
-
 plot_trend <- plot_trends(df_decade, df_indi, region_name, min_date, max_date, span)
-ggsave("italy.png", plot = plot_trend, dpi = 300, width = 10, height = 8)
+ggsave("results/italy_enriched.png", plot = plot_trend, dpi = 300, width = 10, height = 8)

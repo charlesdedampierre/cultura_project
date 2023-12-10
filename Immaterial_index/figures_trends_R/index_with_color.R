@@ -42,10 +42,10 @@ plot_trends <- function(df_decade, df_indi, region_name, min_time, max_time, spa
 }
 
 
-region_name <- "Italy"
+region_name <- "Western Europe"
 span <- 0.4
-min_date <- -300
-max_date <- 500
+min_date <- 700
+max_date <- 1800
 df_decade <- read.csv(file = "../results/df_region_score.csv", sep = ",", header = TRUE)
 
 # Group by decades and sum the scores
@@ -58,6 +58,5 @@ df_decade <- df_decade %>%
 df_indi <- read.csv(file = "../results/df_individuals_score.csv", sep = ",", header = TRUE)
 
 
-
 plot_trend <- plot_trends(df_decade, df_indi, region_name, min_date, max_date, span)
-ggsave("italy.png", plot = plot_trend, dpi = 300, width = 10, height = 8)
+ggsave("results/western_europe.png", plot = plot_trend, dpi = 300, width = 10, height = 8)

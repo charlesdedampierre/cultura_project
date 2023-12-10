@@ -61,10 +61,10 @@ plot_trends <- function(df_decade, df_indi, region_name, min_time, max_time, spa
     geom_vline(xintercept = c(-480, -323), linetype = "dashed", color = "grey80") +
     geom_vline(xintercept = c(-323, -31), linetype = "dashed", color = "grey80") +
     geom_vline(xintercept = c(-31, 500), linetype = "dashed", color = "grey80") +
-    geom_text(aes(x = -640, y = 100, size = 7), label = "Archaic Period", color = "grey80", angle = 90, vjust = 0.5, hjust = 0) +
-    geom_text(aes(x = -401.5, y = 100, size = 7), label = "Classical Period ", color = "grey80", angle = 90, vjust = 0.5, hjust = 0) +
-    geom_text(aes(x = -177, y = 100, size = 7), label = "Hellenistic Period", color = "grey80", angle = 90, vjust = 0.5, hjust = 0) +
-    geom_text(aes(x = 234.5, y = 100, size = 7), label = "Roman Greece", color = "grey80", angle = 90, vjust = 0.5, hjust = 0)
+    geom_text(aes(x = -640, y = 100, size = 7), label = "Archaic Period", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5) +
+    geom_text(aes(x = -401.5, y = 100, size = 7), label = "Classical Period ", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5) +
+    geom_text(aes(x = -177, y = 100, size = 7), label = "Hellenistic Period", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5) +
+    geom_text(aes(x = 234.5, y = 100, size = 7), label = "Roman Greece", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5)
   return(myplot)
 }
 
@@ -87,4 +87,4 @@ df_indi <- read.csv(file = "../results/df_individuals_score.csv", sep = ",", hea
 
 
 plot_trend <- plot_trends(df_decade, df_indi, region_name, min_date, max_date, span)
-ggsave("greek.png", plot = plot_trend, dpi = 300, width = 10, height = 8)
+ggsave("results/greek_enriched.png", plot = plot_trend, dpi = 300, width = 10, height = 8)
