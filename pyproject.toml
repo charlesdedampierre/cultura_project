@@ -17,6 +17,10 @@ plotly = "^5.18.0"
 pio = "^0.0.3"
 geopandas = "^0.14.1"
 seaborn = "^0.13.0"
+matplotlib-venn = "^0.11.9"
+scikit-learn = "^1.3.2"
+ipyleaflet = "^0.18.0"
+selenium = "^4.16.0"
 
 
 [tool.poetry.group.dev.dependencies]
