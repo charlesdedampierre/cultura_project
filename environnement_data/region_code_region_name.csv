@@ -1,0 +1,54 @@
+region_code,region_name
+re_british_islands,British Islands
+re_northwestern_europe,Northwestern Europe
+re_united_kingdom,United Kingdom
+re_western_europe,Western Europe
+re_eastern_europe,Eastern Europe
+re_slav_world,Slav world
+re_north_italy,Northern Italy
+re_italy,Italy
+re_southwestern_europe,Southwestern Europe
+re_german_world,German world
+re_germany,Germany
+re_south_france,Southern France
+re_france,France
+re_balkans,Balkans
+re_belgium,Belgium
+re_low_countries,Low countries
+re_central_europe,Central Europe
+re_austria,Austria
+re_denmark,Denmark
+re_nordic_countries,Nordic countries
+re_netherlands,Netherlands
+re_ottoman_world,Ottoman world
+re_greek_world,Greek World
+re_mediterreanean,mediterranean World
+re_spain,Spain
+re_north_france,Northern France
+re_switzerland,Switzerland
+re_south_italy,Southern Italy
+re_muslim_world,Muslim world
+re_persian_world,Persian world
+re_greece,Greece
+re_finland,Finland
+re_norway,Norway
+re_japan,Japan
+re_arabic_world,Arabic world
+re_sweden,Sweden
+re_south_china,Southern China
+re_yangtze,Yangtze
+re_chinese_world,Chinese world
+re_south_japan,Southern Japan
+re_iceland,Iceland
+re_south_east_asia,South East Asia
+re_north_india,Northern India
+re_indian_world,Indian world
+re_ireland,Ireland
+re_north_japan,Northern Japan
+re_korea,Korea
+re_north_china,Northern China
+re_arabian_peninsula,Arabian peninsula
+re_latin,Latin World
+re_ottoman_turkey,Ottoman Turkey
+re_portugal,Portugal
+re_south_india,Southern India

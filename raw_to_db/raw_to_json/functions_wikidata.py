@@ -1,21 +1,11 @@
 import pandas as pd
-from data_model import (
-    ExternalID,
-    Individual,
-    Occupation,
-    RawBirthcity,
-    RawIndividual,
-    RawNationality,
-    RawDeathcity,
-)
-from functions_wikidata_load import (
-    load_birthcity_country,
-    load_individual_id_occupation_id,
-    load_individual_info,
-    load_nationality_location,
-    load_occupation_information,
-    load_deathcity,
-)
+from data_model import (ExternalID, Individual, Occupation, RawBirthcity,
+                        RawDeathcity, RawIndividual, RawNationality)
+from functions_wikidata_load import (load_birthcity_country, load_deathcity,
+                                     load_individual_id_occupation_id,
+                                     load_individual_info,
+                                     load_nationality_location,
+                                     load_occupation_information)
 from sys_utils import save_model
 from tqdm import tqdm
 

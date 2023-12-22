@@ -1,4 +1,5 @@
 from multiprocessing import Pool
+
 import pandas as pd
 from tqdm import tqdm
 from wikidata_extract import WikidataApi
@@ -62,8 +63,8 @@ def chunks(lst, n):
 # INDICATIVE CODE BELOW, DOES NOT WORK AT IT IS
 
 if __name__ == "__main__":
-    import sys
     import sqlite3
+    import sys
 
     sys.path.append("../../../")
     from functions_env import DB_PATH

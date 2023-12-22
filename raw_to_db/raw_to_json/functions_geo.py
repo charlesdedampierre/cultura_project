@@ -1,6 +1,6 @@
+import geopandas as gpd
 from data_model_region import Country
 from shapely.geometry import Point
-import geopandas as gpd
 
 
 def point_to_coordonate(point):

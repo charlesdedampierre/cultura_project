@@ -1,15 +1,14 @@
 import typing as t
 
+import geopandas as gpd
 import pandas as pd
 from bunka_logger import logger
 from data_model import Individual, RawIndividual
+from data_model_region import Country
 from functions_geo import get_country_model
 from sys_utils import load_model
 from tqdm import tqdm
 from utils import round_nearest
-
-from data_model_region import Country
-import geopandas as gpd
 
 tqdm.pandas()
 

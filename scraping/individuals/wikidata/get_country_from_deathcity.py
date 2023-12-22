@@ -1,10 +1,9 @@
 from multiprocessing import Pool
 
+import numpy as np
 import pandas as pd
 from tqdm import tqdm
 from wikidata_extract import WikidataApi
-
-import numpy as np
 
 
 def split_wiki(str):
