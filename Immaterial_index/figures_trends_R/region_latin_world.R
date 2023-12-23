@@ -31,7 +31,7 @@ plot_trends <- function(df_decade, df_indi, region_name, min_time, max_time, spa
     color <- "#00bfc4"
     color <- "#f8766d"
 
-    text_position <- 4.5
+    text_position <- 3
 
     coeff_y_axis <- max(df_indi$score) / max(df_decade$score)
     myplot <- ggplot(df_decade, aes(x = decade, y = score, color = region_name)) +
@@ -57,32 +57,33 @@ plot_trends <- function(df_decade, df_indi, region_name, min_time, max_time, spa
         theme(
             axis.title.y = element_text(size = 16) # Adjust the size for the y-axis label as needed
         ) +
-        geom_vline(xintercept = c(-800, -476), linetype = "dashed", color = "grey80") +
-        geom_vline(xintercept = c(-476, -206), linetype = "dashed", color = "grey80") +
-        geom_vline(xintercept = c(-206, 220), linetype = "dashed", color = "grey80") +
-        geom_vline(xintercept = c(220, 581), linetype = "dashed", color = "grey80") + # Six Dynasties
-        geom_vline(xintercept = c(581, 960), linetype = "dashed", color = "grey80") + # Tang dynasty
-        geom_vline(xintercept = c(960, 1368), linetype = "dashed", color = "grey80") + # Song dynasty
-        geom_vline(xintercept = c(1368, 1644), linetype = "dashed", color = "grey80") + # Ming dynasty
-        geom_vline(xintercept = c(1644, 1800), linetype = "dashed", color = "grey80") + # Qing dynasty
-        geom_text(aes(x = -638, y = text_position, size = 7), label = "Spring and Autumn period", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5) +
-        geom_text(aes(x = -341, y = text_position, size = 7), label = "Warring States period", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5) +
-        geom_text(aes(x = 7, y = text_position, size = 7), label = "Han dynasty", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5) +
-        geom_text(aes(x = 400, y = text_position, size = 7), label = "Six Dynasties", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5) +
-        geom_text(aes(x = 770, y = text_position, size = 7), label = "Tang dynasty", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5) +
-        geom_text(aes(x = 1164, y = text_position, size = 7), label = "Song dynasty", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5) +
-        geom_text(aes(x = 1506, y = text_position, size = 7), label = "Ming dynasty", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5) +
-        geom_text(aes(x = 1722, y = text_position, size = 7), label = "Qing dynasty", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5)
+        geom_vline(xintercept = c(-300, -27), linetype = "dashed", color = "grey80") +
+        geom_vline(xintercept = c(-27, 68), linetype = "dashed", color = "grey80") +
+        # geom_vline(xintercept = c(-43, 18), linetype = "dashed", color = "grey80") +
+        geom_vline(xintercept = c(68, 96), linetype = "dashed", color = "grey80") +
+        geom_vline(xintercept = c(96, 192), linetype = "dashed", color = "grey80") +
+        geom_vline(xintercept = c(192, 235), linetype = "dashed", color = "grey80") +
+        geom_vline(xintercept = c(235, 284), linetype = "dashed", color = "grey80") +
+        geom_vline(xintercept = c(305, 363), linetype = "dashed", color = "grey80") +
+        geom_text(aes(x = -163.5, y = text_position, size = 7), label = "Republican era", color = "grey80", angle = 90, vjust = 0.5, hjust = 0) +
+        geom_text(aes(x = 20.5, y = text_position, size = 7), label = "Julio-Claudian dynasty ", color = "grey80", angle = 90, vjust = 0.5, hjust = 0) +
+        # geom_text(aes(x = -12.5, y = 35, size = 7), label = "Augustin era", color = "grey80", angle = 90, vjust = 0.5, hjust = 0) +
+        geom_text(aes(x = 82.5, y = text_position, size = 7), label = "Flavian dynasty", color = "grey80", angle = 90, vjust = 0.5, hjust = 0) +
+        geom_text(aes(x = 144, y = text_position, size = 7), label = "Nerva–Antonine dynasty", color = "grey80", angle = 90, vjust = 0.5, hjust = 0) +
+        geom_text(aes(x = 213.5, y = text_position, size = 7), label = "Severan dynasty", color = "grey80", angle = 90, vjust = 0.5, hjust = 0) +
+        geom_text(aes(x = 259.5, y = text_position, size = 7), label = "Military Anarchy", color = "grey80", angle = 90, vjust = 0.5, hjust = 0) +
+        geom_text(aes(x = 334, y = text_position, size = 7), label = "Constantinian dynasty", color = "grey80", angle = 90, vjust = 0.5, hjust = 0)
 
     return(myplot)
 }
 
-region_name <- "Chinese world"
+
+region_name <- "Latin World"
 name <- region_name
 log <- "True"
 span <- 0.3
-min_date <- -800
-max_date <- 1800
+min_date <- -300
+max_date <- 500
 df_decade <- read.csv(file = "../results/df_region_score.csv", sep = ",", header = TRUE)
 
 # Group by decades and sum the scores
@@ -91,14 +92,11 @@ df_decade <- df_decade %>%
     group_by(region_name, decade) %>%
     summarise(score = sum(score))
 
-
 df_indi <- read.csv(file = "../results/df_individuals_score.csv", sep = ",", header = TRUE)
 
 # df_indi$score <- log(df_indi$score + 1)
 df_decade$score <- log(df_decade$score)
 
-# text size is at 8
-plot_trend <- plot_trends(df_decade, df_indi, region_name, min_date, max_date, span, log, name, time_size = 8)
-ggsave("results/china.png", plot = plot_trend, dpi = 300, width = 10, height = 8)
 
-# ggsave("test.png", plot = plot_trend, dpi = 300, width = 10, height = 8)
+plot_trend <- plot_trends(df_decade, df_indi, region_name, min_date, max_date, span, log, name)
+ggsave("results/latin_world.png", plot = plot_trend, dpi = 300, width = 10, height = 8)

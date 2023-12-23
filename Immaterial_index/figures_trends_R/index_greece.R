@@ -57,6 +57,7 @@ plot_trends <- function(df_decade, df_indi, region_name, min_time, max_time, spa
     # Third century\n (Military Anarchy): 235-284
     # constantitian : 305-363
 
+
     geom_vline(xintercept = c(-800, -480), linetype = "dashed", color = "grey80") +
     geom_vline(xintercept = c(-480, -323), linetype = "dashed", color = "grey80") +
     geom_vline(xintercept = c(-323, -31), linetype = "dashed", color = "grey80") +
