@@ -1,7 +1,5 @@
 # Private 
 
-
-
 raw_data_from_api
 notebooks_working
 src
@@ -12,7 +10,7 @@ raw_data
 
 *.db
 
-
+*.pickle
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
