@@ -19,27 +19,8 @@ if not os.path.exists(DATA_PATH):
 
 if __name__ == "__main__":
     # Individuals Regions
-    df_ind_regions = pd.read_sql_query("SELECT * FROM individuals_regions", conn)
 
-    # Years
-    df_ind = pd.read_sql_query("SELECT * FROM individuals_main_information", conn)
-    df_ind_year = df_ind[["individual_wikidata_id", "birthyear"]].drop_duplicates()
-    df_ind_year = df_ind_year.dropna()
-
-    df_ind_year["productive_year"] = df_ind_year["birthyear"] + 35
-    df_ind_year["decade"] = df_ind_year["productive_year"].apply(
-        lambda x: round(x / 10) * 10
-    )
-    df_ind_year = df_ind_year[df_ind_year["decade"] <= 1880]
-
-    # NEWLY ADDED TO BE SURE WE ONLY KEEP INDIVIDUALS WITH A REFERENCE IN AN ONLINE CATALOG
-    df_individuals = pd.read_sql_query("SELECT * FROM individuals_kept", conn)
-    individuals_list = list(set(df_individuals["individual_wikidata_id"]))
-    df = df_ind_year[df_ind_year["individual_wikidata_id"].isin(individuals_list)]
-
-    df = pd.merge(df, df_ind_regions, on="individual_wikidata_id")
-    df = df.drop_duplicates()
-
+    df = pd.read_csv("../immaterial_index/results/df_individuals_score.csv")
     print(len(set(df.individual_wikidata_id)))
 
     # Load works of individuals
@@ -54,4 +35,5 @@ if __name__ == "__main__":
     )
     df_final = pd.merge(df, df_count_work, on="individual_wikidata_id", how="left")
     df_final = df_final.fillna(0)  # When there is no works we add 0
+
     df_final.to_csv(DATA_PATH + "/df_indi_works.csv")
