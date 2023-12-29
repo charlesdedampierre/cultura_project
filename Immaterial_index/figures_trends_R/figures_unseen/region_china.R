@@ -111,7 +111,7 @@ log <- "True"
 span <- 0.3
 min_date <- -800
 max_date <- 1800
-min_individuals_per_century <- 10
+min_individuals_per_century <- 0
 
 
 df_score <- read.csv(file = "../../results/df_region_score.csv", sep = ",", header = TRUE)
@@ -123,7 +123,6 @@ df_score <- df_score[(df_score$decade >= min_date) & (df_score$decade <= max_dat
 # Create a new column for the century
 df_score <- df_score %>%
     mutate(century = ceiling(decade / 100) * 100)
-
 
 # Group by century and summarize the data
 result <- df_score %>%
