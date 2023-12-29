@@ -14,7 +14,6 @@ df_decade <- df_decade %>%
     group_by(region_name, decade) %>%
     summarise(score = sum(score))
 
-
 df_indi <- read.csv(file = "../results/df_individuals_score.csv", sep = ",", header = TRUE)
 
 # df_indi$score <- log(df_indi$score + 1)
