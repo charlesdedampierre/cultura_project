@@ -143,7 +143,7 @@ df_score <- df_score %>%
     filter(century %in% result$century)
 
 df_indi <- read.csv(file = "../../results/df_individuals_score.csv", sep = ",", header = TRUE)
-df_unseen <- read.csv(file = "../../../unseen_species_model/results/estimations.csv", sep = ",", header = TRUE)
+df_unseen <- read.csv(file = "../../../unseen_species_model/results/estimations_charles.csv", sep = ",", header = TRUE)
 # Rename columns
 df_unseen <- df_unseen %>%
     rename(score = N_est, region_name = region, lower = lower, upper = upper)
