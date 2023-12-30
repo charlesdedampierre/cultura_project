@@ -36,6 +36,7 @@ plot_trends <- function(df_decade, df_indi, region_name, min_time, max_time, spa
     color <- "#00bfc4"
     color <- "#f8766d"
 
+
     min_value_left_axis <- min(df_decade$score, na.rm = TRUE)
     min_value_right_axis <- min(df_indi$score, na.rm = TRUE)
 
@@ -74,17 +75,27 @@ plot_trends <- function(df_decade, df_indi, region_name, min_time, max_time, spa
         theme(axis.text.y = element_text(size = 15)) +
         theme(
             axis.title.y = element_text(size = 16) # Adjust the size for the y-axis label as needed
-        )
+        ) +
+        geom_vline(xintercept = c(-800, -200), linetype = "dashed", color = "grey80") +
+        geom_vline(xintercept = c(-200, 650), linetype = "dashed", color = "grey80") +
+        geom_vline(xintercept = c(650, 1200), linetype = "dashed", color = "grey80") +
+        geom_vline(xintercept = c(1200, 1526), linetype = "dashed", color = "grey80") +
+        geom_vline(xintercept = c(1526, 1800), linetype = "dashed", color = "grey80") +
+        geom_text(aes(x = -509, y = text_position, size = 7), label = "Iron Age", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5) +
+        geom_text(aes(x = 225, y = text_position, size = 7), label = "Classical period", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5) +
+        geom_text(aes(x = 925, y = text_position, size = 7), label = "Early medieval period", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5) +
+        geom_text(aes(x = 1363, y = text_position, size = 7), label = "Late medieval period", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5) +
+        geom_text(aes(x = 1663, y = text_position, size = 7), label = "Early modern period", color = "grey80", angle = 90, vjust = 0.5, hjust = 0.5)
     return(myplot)
 }
 
-region_name <- "Persian world"
+region_name <- "Indian world"
 name <- region_name
 log <- "True"
-span <- 0.4
-min_date <- -600
+span <- 0.1
+min_date <- -800
 max_date <- 1800
-min_individuals_per_century <- 10
+min_individuals_per_century <- 0
 
 
 df_score <- read.csv(file = "../../results/df_region_score.csv", sep = ",", header = TRUE)
@@ -140,7 +151,7 @@ df_unseen$lower <- log10(df_unseen$lower)
 df_unseen$upper <- log10(df_unseen$upper)
 
 plot_trend_unseen <- plot_trends(df_unseen, df_indi, region_name, min_date, max_date, span = 0.1, name = name, capita = "True", time_size = 8, text_position = 2)
-ggsave("results_unseen/persian.png", plot = plot_trend_unseen, dpi = 300, width = 10, height = 8)
+ggsave("results_unseen/india.png", plot = plot_trend_unseen, dpi = 300, width = 10, height = 8)
 
 df_unseen <- read.csv(file = "../../../unseen_species_model/results/estimations.csv", sep = ",", header = TRUE)
 # Rename columns
@@ -166,17 +177,17 @@ df_unseen$score <- log10(df_unseen$score)
 df_unseen$lower <- log10(df_unseen$lower)
 df_unseen$upper <- log10(df_unseen$upper)
 
-# # Check if the minimum lower value is less than zero
-# min_lower <- min(df_unseen$lower, na.rm = TRUE)
-# if (min_lower < 0) {
-#     # Add the absolute value of the minimum lower value to all lower values
-#     df_unseen$lower <- df_unseen$lower + abs(min_lower)
-#     # Since we are adjusting the lower values, we need to apply the same adjustment to the upper values and score
-#     df_unseen$upper <- df_unseen$upper + abs(min_lower)
-#     df_unseen$score <- df_unseen$score + abs(min_lower)
-# }
+# Check if the minimum lower value is less than zero
+min_lower <- min(df_unseen$lower, na.rm = TRUE)
+if (min_lower < 0) {
+    # Add the absolute value of the minimum lower value to all lower values
+    df_unseen$lower <- df_unseen$lower + abs(min_lower)
+    # Since we are adjusting the lower values, we need to apply the same adjustment to the upper values and score
+    df_unseen$upper <- df_unseen$upper + abs(min_lower)
+    df_unseen$score <- df_unseen$score + abs(min_lower)
+}
 
 # cmd + option + /
 
-plot_trend_unseen <- plot_trends(df_unseen, df_indi, region_name, min_date, max_date, span = 0.2, name, capita = "True", time_size = 15, text_position = 1.2)
-ggsave("results_unseen/per_capita/persian.png", plot = plot_trend_unseen, dpi = 300, width = 10, height = 8)
+plot_trend_unseen <- plot_trends(df_unseen, df_indi, region_name, min_date, max_date, span = span, name, capita = "True", time_size = 8, text_position = 0)
+ggsave("results_unseen/per_capita/india.png", plot = plot_trend_unseen, dpi = 300, width = 10, height = 8)

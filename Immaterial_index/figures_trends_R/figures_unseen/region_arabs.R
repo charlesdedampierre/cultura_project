@@ -36,6 +36,7 @@ plot_trends <- function(df_decade, df_indi, region_name, min_time, max_time, spa
     color <- "#00bfc4"
     color <- "#f8766d"
 
+
     min_value_left_axis <- min(df_decade$score, na.rm = TRUE)
     min_value_right_axis <- min(df_indi$score, na.rm = TRUE)
 
@@ -78,11 +79,11 @@ plot_trends <- function(df_decade, df_indi, region_name, min_time, max_time, spa
     return(myplot)
 }
 
-region_name <- "Persian world"
+region_name <- "Arabic world"
 name <- region_name
 log <- "True"
-span <- 0.4
-min_date <- -600
+span <- 0.2
+min_date <- 600
 max_date <- 1800
 min_individuals_per_century <- 10
 
@@ -140,7 +141,7 @@ df_unseen$lower <- log10(df_unseen$lower)
 df_unseen$upper <- log10(df_unseen$upper)
 
 plot_trend_unseen <- plot_trends(df_unseen, df_indi, region_name, min_date, max_date, span = 0.1, name = name, capita = "True", time_size = 8, text_position = 2)
-ggsave("results_unseen/persian.png", plot = plot_trend_unseen, dpi = 300, width = 10, height = 8)
+ggsave("results_unseen/arabic.png", plot = plot_trend_unseen, dpi = 300, width = 10, height = 8)
 
 df_unseen <- read.csv(file = "../../../unseen_species_model/results/estimations.csv", sep = ",", header = TRUE)
 # Rename columns
@@ -178,5 +179,5 @@ df_unseen$upper <- log10(df_unseen$upper)
 
 # cmd + option + /
 
-plot_trend_unseen <- plot_trends(df_unseen, df_indi, region_name, min_date, max_date, span = 0.2, name, capita = "True", time_size = 15, text_position = 1.2)
-ggsave("results_unseen/per_capita/persian.png", plot = plot_trend_unseen, dpi = 300, width = 10, height = 8)
+plot_trend_unseen <- plot_trends(df_unseen, df_indi, region_name, min_date, max_date, span = span, name, capita = "True", time_size = 15, text_position = 1.1)
+ggsave("results_unseen/per_capita/arabic.png", plot = plot_trend_unseen, dpi = 300, width = 10, height = 8)

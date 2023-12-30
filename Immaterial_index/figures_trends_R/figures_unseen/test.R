@@ -36,16 +36,17 @@ plot_trends <- function(df_decade, df_indi, region_name, min_time, max_time, spa
     color <- "#00bfc4"
     color <- "#f8766d"
 
-    min_value_left_axis <- min(df_decade$score, na.rm = TRUE)
-    min_value_right_axis <- min(df_indi$score, na.rm = TRUE)
 
-    coeff_y_axis <- max(df_indi$score) / max(df_decade$lower)
+    # min_value_left_axis <- min(df_decade$score, na.rm = TRUE)
+    # min_value_right_axis <- min(df_indi$score, na.rm = TRUE)
+
+    # coeff_y_axis <- max(df_indi$score) / max(df_decade$lower)
 
     myplot <- ggplot(df_decade, aes(x = decade, y = score, color = region_name)) +
         # geom_ribbon(data = df_decade, aes(x = decade, ymin = lower, ymax = upper), fill = "grey80", color = "lightblue") +
 
         geom_ribbon(data = df_decade, aes(x = decade, ymin = predict(loess(lower ~ decade, span = span)), ymax = predict(loess(upper ~ decade, span = span))), fill = "grey80", color = "lightblue") +
-        geom_smooth(method = "loess", span = span, se = FALSE, , linewidth = 1.5, colour = "darkblue") +
+        geom_smooth(datamethod = "loess", span = span, se = FALSE, , linewidth = 1.5, colour = "darkblue") +
 
         # geom_ribbon(data = df_decade, aes(x = decade, ymin = lower, ymax = upper), fill = "grey80", color = "lightblue") +
         # geom_line(aes(x = decade, y = score), size = 1, color = "darkblue") + # Add the line for "score"
@@ -55,18 +56,21 @@ plot_trends <- function(df_decade, df_indi, region_name, min_time, max_time, spa
         theme(plot.title = element_text(hjust = 0.5)) +
         ggtitle(name) +
         xlab("") +
-        scale_y_continuous(
-            name = y_axis,
-            limits = c(min_value_left_axis, NA), # Set the minimum for the left y-axis
-            sec.axis = sec_axis(~ . * coeff_y_axis + (min_value_right_axis - min_value_left_axis * coeff_y_axis),
-                name = y_axis_2
-            )
-        ) + # Adjust the right y-axis +
+
+        # scale_y_continuous(
+        #     name = y_axis,
+        #     limits = c(min_value_left_axis, NA), # Set the minimum for the left y-axis
+        #     sec.axis = sec_axis(~ . * coeff_y_axis + (min_value_right_axis - min_value_left_axis * coeff_y_axis),
+        #         name = y_axis_2
+        #     )
+        # ) + # Adjust the right y-axis +
         guides(color = guide_legend("region_name")) +
         scale_color_hue(direction = 1, h.start = 180) +
         theme(legend.position = "none") +
-        geom_point(data = df_indi, aes(x = decade, y = score / coeff_y_axis), alpha = 0.2, size = 0.5, colour = color) +
-        geom_text_repel(data = head(df_indi[order(-df_indi$score), ], 30), aes(x = decade, y = score / coeff_y_axis, label = individual_name), size = 3, alpha = 5, max.overlaps = 50, color = color) +
+        geom_point(data = df_indi, aes(x = decade, y = score), alpha = 0.2, size = 0.5, colour = color) +
+        geom_text_repel(data = head(df_indi[order(-df_indi$score), ], 30), aes(x = decade, y = score, label = individual_name), size = 3, alpha = 5, max.overlaps = 50, color = color) +
+        # geom_point(data = df_indi, aes(x = decade, y = score / coeff_y_axis), alpha = 0.2, size = 0.5, colour = color) +
+        # geom_text_repel(data = head(df_indi[order(-df_indi$score), ], 30), aes(x = decade, y = score / coeff_y_axis, label = individual_name), size = 3, alpha = 5, max.overlaps = 50, color = color) +
         theme_classic() +
         theme(plot.title = element_text(hjust = 0.5)) +
         theme(legend.position = "none") +
@@ -78,13 +82,13 @@ plot_trends <- function(df_decade, df_indi, region_name, min_time, max_time, spa
     return(myplot)
 }
 
-region_name <- "Persian world"
+region_name <- "Italy"
 name <- region_name
 log <- "True"
-span <- 0.4
-min_date <- -600
+span <- 0.2
+min_date <- 500
 max_date <- 1800
-min_individuals_per_century <- 10
+min_individuals_per_century <- 0
 
 
 df_score <- read.csv(file = "../../results/df_region_score.csv", sep = ",", header = TRUE)
@@ -139,8 +143,8 @@ df_unseen$score <- log10(df_unseen$score)
 df_unseen$lower <- log10(df_unseen$lower)
 df_unseen$upper <- log10(df_unseen$upper)
 
-plot_trend_unseen <- plot_trends(df_unseen, df_indi, region_name, min_date, max_date, span = 0.1, name = name, capita = "True", time_size = 8, text_position = 2)
-ggsave("results_unseen/persian.png", plot = plot_trend_unseen, dpi = 300, width = 10, height = 8)
+plot_trend_unseen <- plot_trends(df_unseen, df_indi, region_name, min_date, max_date, span = span, name = name, capita = "True", time_size = 8, text_position = 2)
+ggsave("results_unseen/italy.png", plot = plot_trend_unseen, dpi = 300, width = 10, height = 8)
 
 df_unseen <- read.csv(file = "../../../unseen_species_model/results/estimations.csv", sep = ",", header = TRUE)
 # Rename columns
@@ -166,17 +170,17 @@ df_unseen$score <- log10(df_unseen$score)
 df_unseen$lower <- log10(df_unseen$lower)
 df_unseen$upper <- log10(df_unseen$upper)
 
-# # Check if the minimum lower value is less than zero
-# min_lower <- min(df_unseen$lower, na.rm = TRUE)
-# if (min_lower < 0) {
-#     # Add the absolute value of the minimum lower value to all lower values
-#     df_unseen$lower <- df_unseen$lower + abs(min_lower)
-#     # Since we are adjusting the lower values, we need to apply the same adjustment to the upper values and score
-#     df_unseen$upper <- df_unseen$upper + abs(min_lower)
-#     df_unseen$score <- df_unseen$score + abs(min_lower)
-# }
+# Check if the minimum lower value is less than zero
+min_lower <- min(df_unseen$lower, na.rm = TRUE)
+if (min_lower < 0) {
+    # Add the absolute value of the minimum lower value to all lower values
+    df_unseen$lower <- df_unseen$lower + abs(min_lower)
+    # Since we are adjusting the lower values, we need to apply the same adjustment to the upper values and score
+    df_unseen$upper <- df_unseen$upper + abs(min_lower)
+    df_unseen$score <- df_unseen$score + abs(min_lower)
+}
 
 # cmd + option + /
 
-plot_trend_unseen <- plot_trends(df_unseen, df_indi, region_name, min_date, max_date, span = 0.2, name, capita = "True", time_size = 15, text_position = 1.2)
-ggsave("results_unseen/per_capita/persian.png", plot = plot_trend_unseen, dpi = 300, width = 10, height = 8)
+plot_trend_unseen <- plot_trends(df_unseen, df_indi, region_name, min_date, max_date, span = span, name, capita = "True", time_size = 15, text_position = 2.15)
+ggsave("results_unseen/per_capita/italy.png", plot = plot_trend_unseen, dpi = 300, width = 10, height = 8)
