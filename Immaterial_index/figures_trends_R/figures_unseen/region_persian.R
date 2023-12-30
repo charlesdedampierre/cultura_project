@@ -81,7 +81,7 @@ plot_trends <- function(df_decade, df_indi, region_name, min_time, max_time, spa
 region_name <- "Persian world"
 name <- region_name
 log <- "True"
-span <- 0.3
+span <- 0.4
 min_date <- -600
 max_date <- 1800
 min_individuals_per_century <- 10

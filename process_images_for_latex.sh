@@ -1,13 +1,11 @@
 #!/bin/bash
 
-# Directory containing the PNG files
-input_directory="immaterial_index/figures_trends_R/results/"
+input_directory="immaterial_index/figures_trends_R/figures_unseen/results_unseen/per_capita/"
 
 # Directory to store the resized PDF files
-output_directory="immaterial_index/figures_trends_R/results_latex/"
+output_directory="immaterial_index/figures_trends_R/figures_unseen/results_unseen/per_capita_latex/"
 
 mkdir -p "$output_directory"
-
 
 # Loop through all PNG files in the input directory
 for file in "$input_directory"*.png; do
