@@ -25,6 +25,7 @@ networkx = "^3.2.1"
 sparqlwrapper = "^2.0.0"
 pydantic = "^2.5.3"
 jax = "^0.4.23"
+folium = "^0.15.1"
 
 
 [tool.poetry.group.dev.dependencies]

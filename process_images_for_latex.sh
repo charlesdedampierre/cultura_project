@@ -1,9 +1,13 @@
 #!/bin/bash
 
-input_directory="immaterial_index/figures_trends_R/figures_unseen/results_unseen/per_capita/"
+#input_directory="immaterial_index/figures_trends_R/figures_unseen/results_unseen/per_capita/"
+#input_directory="figures_notebooks/map_figures_manual/"
+input_directory="immaterial_index/figures_trends_R/results/"
 
 # Directory to store the resized PDF files
-output_directory="immaterial_index/figures_trends_R/figures_unseen/results_unseen/per_capita_latex/"
+#output_directory="immaterial_index/figures_trends_R/figures_unseen/results_unseen/per_capita_latex/"
+#output_directory="figures_notebooks/map_figures_manual_latex/"
+output_directory="immaterial_index/figures_trends_R/results_latex/"
 
 mkdir -p "$output_directory"
 

@@ -37,16 +37,16 @@ plot_trends <- function(df_decade, df_indi, region_name, min_time, max_time, spa
     color <- "#f8766d"
 
 
-    min_value_left_axis <- min(df_decade$score, na.rm = TRUE)
-    min_value_right_axis <- min(df_indi$score, na.rm = TRUE)
+    # min_value_left_axis <- min(df_decade$score, na.rm = TRUE)
+    # min_value_right_axis <- min(df_indi$score, na.rm = TRUE)
 
-    coeff_y_axis <- max(df_indi$score) / max(df_decade$lower)
+    # coeff_y_axis <- max(df_indi$score) / max(df_decade$lower)
 
     myplot <- ggplot(df_decade, aes(x = decade, y = score, color = region_name)) +
-        # geom_ribbon(data = df_decade, aes(x = decade, ymin = lower, ymax = upper), fill = "grey80", color = "lightblue") +
+        geom_ribbon(data = df_decade, aes(x = decade, ymin = lower, ymax = upper), fill = "grey80", color = "lightblue") +
 
-        geom_ribbon(data = df_decade, aes(x = decade, ymin = predict(loess(lower ~ decade, span = span)), ymax = predict(loess(upper ~ decade, span = span))), fill = "grey80", color = "lightblue") +
-        geom_smooth(method = "loess", span = span, se = FALSE, , linewidth = 1.5, colour = "darkblue") +
+        # geom_ribbon(data = df_decade, aes(x = decade, ymin = predict(loess(lower ~ decade, span = span)), ymax = predict(loess(upper ~ decade, span = span))), fill = "grey80", color = "lightblue") +
+        # geom_smooth(method = "loess", span = span, se = FALSE, , linewidth = 1.5, colour = "darkblue") +
 
         # geom_ribbon(data = df_decade, aes(x = decade, ymin = lower, ymax = upper), fill = "grey80", color = "lightblue") +
         # geom_line(aes(x = decade, y = score), size = 1, color = "darkblue") + # Add the line for "score"
@@ -56,18 +56,18 @@ plot_trends <- function(df_decade, df_indi, region_name, min_time, max_time, spa
         theme(plot.title = element_text(hjust = 0.5)) +
         ggtitle(name) +
         xlab("") +
-        scale_y_continuous(
-            name = y_axis,
-            limits = c(min_value_left_axis, NA), # Set the minimum for the left y-axis
-            sec.axis = sec_axis(~ . * coeff_y_axis + (min_value_right_axis - min_value_left_axis * coeff_y_axis),
-                name = y_axis_2
-            )
-        ) + # Adjust the right y-axis +
+        # scale_y_continuous(
+        #     name = y_axis,
+        #     limits = c(min_value_left_axis, NA), # Set the minimum for the left y-axis
+        #     sec.axis = sec_axis(~ . * coeff_y_axis + (min_value_right_axis - min_value_left_axis * coeff_y_axis),
+        #         name = y_axis_2
+        #     )
+        # ) + # Adjust the right y-axis +
         guides(color = guide_legend("region_name")) +
         scale_color_hue(direction = 1, h.start = 180) +
         theme(legend.position = "none") +
-        geom_point(data = df_indi, aes(x = decade, y = score / coeff_y_axis), alpha = 0.2, size = 0.5, colour = color) +
-        geom_text_repel(data = head(df_indi[order(-df_indi$score), ], 30), aes(x = decade, y = score / coeff_y_axis, label = individual_name), size = 3, alpha = 5, max.overlaps = 50, color = color) +
+        # geom_point(data = df_indi, aes(x = decade, y = score / coeff_y_axis), alpha = 0.2, size = 0.5, colour = color) +
+        # geom_text_repel(data = head(df_indi[order(-df_indi$score), ], 30), aes(x = decade, y = score / coeff_y_axis, label = individual_name), size = 3, alpha = 5, max.overlaps = 50, color = color) +
         theme_classic() +
         theme(plot.title = element_text(hjust = 0.5)) +
         theme(legend.position = "none") +
