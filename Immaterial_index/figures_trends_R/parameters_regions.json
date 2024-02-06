@@ -1,0 +1,393 @@
+{
+    "Chinese world": {
+        "Region Parameters": {
+            "figure_name": "Chinese world",
+            "min_date": -800,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [
+                [
+                    -800,
+                    -476
+                ],
+                [
+                    -476,
+                    -206
+                ],
+                [
+                    -206,
+                    220
+                ],
+                [
+                    220,
+                    581
+                ],
+                [
+                    581,
+                    960
+                ],
+                [
+                    960,
+                    1368
+                ],
+                [
+                    1368,
+                    1644
+                ],
+                [
+                    1644,
+                    1800
+                ]
+            ],
+            "labels": [
+                "Spring and Autumn period",
+                "Warring States period",
+                "Han dynasty",
+                "Six Dynasties",
+                "Tang dynasty",
+                "Song dynasty",
+                "Ming dynasty",
+                "Qing dynasty"
+            ]
+        }
+    },
+    "Japan": {
+        "Region Parameters": {
+            "figure_name": "Japan",
+            "min_date": 500,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [
+                [
+                    538,
+                    710
+                ],
+                [
+                    710,
+                    794
+                ],
+                [
+                    794,
+                    1185
+                ],
+                [
+                    1185,
+                    1333
+                ],
+                [
+                    1333,
+                    1600
+                ],
+                [
+                    1600,
+                    1800
+                ]
+            ],
+            "labels": [
+                "Asuka period",
+                "Nara period",
+                "Heian period",
+                "Kamakura period",
+                "Muromachi period",
+                "Edo period"
+            ]
+        }
+    },
+    "Spain": {
+        "Region Parameters": {
+            "figure_name": "Spain",
+            "min_date": 500,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "Low countries": {
+        "Region Parameters": {
+            "figure_name": "Low countries",
+            "min_date": 1300,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "United Kingdom": {
+        "Region Parameters": {
+            "figure_name": "United Kingdom",
+            "min_date": 500,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "France": {
+        "Region Parameters": {
+            "figure_name": "France",
+            "min_date": 500,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "Italy": {
+        "Region Parameters": {
+            "figure_name": "Italy",
+            "min_date": 500,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "Portugal": {
+        "Region Parameters": {
+            "figure_name": "Portugal",
+            "min_date": 1400,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "German world": {
+        "Region Parameters": {
+            "figure_name": "German world",
+            "min_date": 500,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "Korea": {
+        "Region Parameters": {
+            "figure_name": "Korea",
+            "min_date": 500,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "Balkans": {
+        "Region Parameters": {
+            "figure_name": "Balkans",
+            "min_date": 500,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "Nordic countries": {
+        "Region Parameters": {
+            "figure_name": "Nordic countries",
+            "min_date": 500,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "Indian world": {
+        "Region Parameters": {
+            "figure_name": "Indian world",
+            "min_date": -800,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [
+                [
+                    -800,
+                    -200
+                ],
+                [
+                    -200,
+                    650
+                ],
+                [
+                    650,
+                    1200
+                ],
+                [
+                    1200,
+                    1526
+                ],
+                [
+                    1526,
+                    1800
+                ]
+            ],
+            "labels": [
+                "Iron Age",
+                "Classical period",
+                "Early medieval period",
+                "Late medieval period",
+                "Early modern period"
+            ]
+        }
+    },
+    "Latin World": {
+        "Region Parameters": {
+            "figure_name": "Latin world",
+            "min_date": -300,
+            "max_date": 500
+        },
+        "Optional Region Information": {
+            "x_intercepts": [
+                [
+                    -300,
+                    -27
+                ],
+                [
+                    -27,
+                    68
+                ],
+                [
+                    68,
+                    96
+                ],
+                [
+                    96,
+                    192
+                ],
+                [
+                    192,
+                    235
+                ],
+                [
+                    235,
+                    284
+                ],
+                [
+                    305,
+                    363
+                ]
+            ],
+            "labels": [
+                "Republican era",
+                "Julio-Claudian dynasty",
+                "Flavian dynasty",
+                "Nerva–Antonine dynasty",
+                "Severan dynasty",
+                "Military Anarchy",
+                "Constantinian dynasty"
+            ]
+        }
+    },
+    "Greek World": {
+        "Region Parameters": {
+            "figure_name": "Greek World",
+            "min_date": -800,
+            "max_date": 500
+        },
+        "Optional Region Information": {
+            "x_intercepts": [
+                [
+                    -800,
+                    -480
+                ],
+                [
+                    -480,
+                    -323
+                ],
+                [
+                    -323,
+                    -31
+                ],
+                [
+                    -31,
+                    500
+                ]
+            ],
+            "labels": [
+                "Archaic Period",
+                "Classical Period",
+                "Hellenistic Period",
+                "Roman Greece"
+            ]
+        }
+    },
+    "Persian world": {
+        "Region Parameters": {
+            "figure_name": "Persian world",
+            "min_date": -800,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "Western Europe": {
+        "Region Parameters": {
+            "figure_name": "Western Europe",
+            "min_date": -800,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "Eastern Europe": {
+        "Region Parameters": {
+            "figure_name": "Eastern world",
+            "min_date": 500,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "Arabic world": {
+        "Region Parameters": {
+            "figure_name": "Arabic world",
+            "min_date": 500,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "Muslim world": {
+        "Region Parameters": {
+            "figure_name": "Muslim world",
+            "min_date": 500,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "mediterranean World": {
+        "Region Parameters": {
+            "figure_name": "mediterranean World",
+            "min_date": -800,
+            "max_date": 500
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    }
+}

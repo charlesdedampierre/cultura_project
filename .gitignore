@@ -7,6 +7,7 @@ not_used
 raw_data
 
 !unseen_species_model/data
+cultura_space/data
 
 *.db
 

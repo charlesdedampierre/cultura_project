@@ -5,12 +5,17 @@ from data_model import Individual, RawIndividual
 from data_model_region import Region
 from dotenv import load_dotenv
 from functions_cultural_score import get_cultural_index
-from functions_enrich_wikidata import (get_country_code, get_impact_years,
-                                       raw_to_individuals)
+from functions_enrich_wikidata import (
+    get_country_code,
+    get_impact_years,
+    raw_to_individuals,
+)
 from functions_manual_regions import pipeline_manual_cleaning_region_global
 from functions_regions import get_individuals_regions, get_regions
-from functions_wikidata import (get_external_identifiers,
-                                get_individual_main_wikidata_information)
+from functions_wikidata import (
+    get_external_identifiers,
+    get_individual_main_wikidata_information,
+)
 from functions_wikipedia import get_wikipedia_information
 from sys_utils import save_model
 
@@ -26,9 +31,9 @@ class Enricher:
 
     def enrich(self) -> t.List[RawIndividual]:
         logger.info("Insert Wikidata Information")
-        raw_individuals: t.List[
-            RawIndividual
-        ] = get_individual_main_wikidata_information()
+        raw_individuals: t.List[RawIndividual] = (
+            get_individual_main_wikidata_information()
+        )
         raw_individuals: t.List[RawIndividual] = self._filter_by_date(
             raw_individuals, birthyear_max=1850
         )
