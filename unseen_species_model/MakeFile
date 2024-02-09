@@ -1,0 +1,14 @@
+
+create_tmux:
+	tmux new -s unseen_model -d 'python regression_charles.py'
+
+reattach_tmux:
+	tmux attach-session -t unseen_model
+
+kill_session:
+	tmux kill-session -t unseen_model
+
+monitor_session:
+	tmux ls
+
+# to leave: Press Ctrl + b (release both keys), then press ddb
