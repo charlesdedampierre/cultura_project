@@ -9,7 +9,7 @@ library(jsonlite)
 
 # plot_unseen_index <- function() {}
 
-plot_cultural_index <- function(df_decade, df_indi, region_name, min_time, max_time, capita = FALSE, name, time_size = 15, x_intercepts, labels) {
+plot_cultural_index <- function(df_decade, df_indi, region_name, min_time, max_time, graph_type = "global", name, time_size = 15, x_intercepts, labels) {
     df_indi <- df_indi[which(df_indi$region_name == region_name), ]
     df_indi <- df_indi[(df_indi$decade >= min_time) & (df_indi$decade <= max_time), ]
 
@@ -25,11 +25,19 @@ plot_cultural_index <- function(df_decade, df_indi, region_name, min_time, max_t
     df_decade$score <- log10(df_decade$score)
     df_decade$score <- (df_decade$score - min(df_decade$score)) / (max(df_decade$score) - min(df_decade$score))
 
+    # Check the value of graph_type and assign labels accordingly
+    if (graph_type == "capita") {
+        y_axis <- "Log Corrected Index per capita"
+    } else if (graph_type == "global") {
+        y_axis <- "Log Corrected Index"
+    } else if (graph_type == "complexity") {
+        y_axis <- "Log Complexity Index"
+    } else {
+        # Handle unexpected or missing values of graph_type
+        cat("Unknown graph_type:", graph_type)
+    }
 
-    y_axis <- ifelse(capita,
-        "Log Immaterial Index (number of individuals) per capita",
-        "Immaterial Index (number of individuals)"
-    )
+
 
     y_axis_2 <- "Individual Immaterial Index (number of references in catalogs)"
 
@@ -73,7 +81,7 @@ plot_cultural_index <- function(df_decade, df_indi, region_name, min_time, max_t
 
 
     coeff_y_axis <- max(df_indi$score) / max(df_decade$score)
-    myplot <- ggplot(df_decade, aes(x = decade, y = score, color = region_name)) +
+    myplot <- ggplot(df_decade, aes(x = decade, y = score)) +
         # geom_line(alpha = 0.3, linewidth = 0.5, colour = "darkblue") +
         # geom_bar(stat = "identity", color = "transparent", alpha = 0.2, fill = "blue") +
         geom_smooth(method = "loess", span = span, level = 0.95, linewidth = 1.5, colour = "darkblue") +
@@ -129,8 +137,8 @@ plot_unseen_index <- function(df_decade, df_indi, region_name, min_time, max_tim
 
 
     y_axis <- ifelse(capita,
-        "Log Corrected Index per capita",
-        "Log Corrected Index"
+        "Log Immaterial Index (number of individuals) per capita",
+        "Immaterial Index (number of individuals)"
     )
 
     y_axis_2 <- "Individual Immaterial Index (number of references in catalogs)"
@@ -218,6 +226,35 @@ plot_unseen_index <- function(df_decade, df_indi, region_name, min_time, max_tim
 }
 
 
+
+# # Cultural Index Data
+df_decade <- read.csv(file = "../results/df_region_score.csv", sep = ",", header = TRUE)
+df_indi <- read.csv(file = "../results/df_individuals_score.csv", sep = ",", header = TRUE)
+df_population <- read.csv("../../environnement_data/population_region_name.csv")
+df_unseen <- read.csv(file = "../../unseen_species_model/results/estimations_charles_big_regions.csv", sep = ",", header = TRUE)
+df_score_complexity <- read.csv(file = "../results/df_region_score_complexity.csv", sep = ",", header = TRUE)
+
+# Transformation
+df_population <- df_population %>%
+    rename(decade = year)
+
+# Merge df_decade_poulation with df_population on the "region_name" column
+df_decade_poulation <- inner_join(df_decade, df_population, by = c("region_name", "decade"))
+df_decade_poulation <- df_decade_poulation %>%
+    mutate(score = score / population)
+
+df_unseen <- df_unseen %>%
+    rename(score = N_est, region_name = region, lower = lower, upper = upper)
+
+# Unseen Species Model per capita
+# Merge df_decade_poulation with df_population on the "region_name" column
+df_unseen_capita <- inner_join(df_unseen, df_population, by = c("region_name", "decade"))
+df_unseen_capita$score <- df_unseen_capita$score / df_unseen_capita$population
+df_unseen_capita$lower <- df_unseen_capita$lower / df_unseen_capita$population
+df_unseen_capita$upper <- df_unseen_capita$upper / df_unseen_capita$population
+
+
+
 span <- 0.2
 top_n_cps <- 30
 
@@ -225,7 +262,7 @@ top_n_cps <- 30
 parsed_data <- fromJSON("parameters_regions.json")
 
 regions_names <- names(parsed_data)
-regions_names <- c("Muslim world")
+# regions_names <- c("Muslim world")
 
 # Loop through region names and display them
 for (region_name in regions_names) {
@@ -234,11 +271,19 @@ for (region_name in regions_names) {
 
     region_parameters <- parsed_data[[region_name]]
     name <- region_parameters$`Region Parameters`$figure_name
-    min_date <- region_parameters$`Region Parameters`$min_date
+    min_date_original <- region_parameters$`Region Parameters`$min_date
     max_date <- region_parameters$`Region Parameters`$max_date
     labels <- region_parameters$`Optional Region Information`$labels
     x_intercepts <- NULL
 
+    # set the min date as the min date of the score region
+    min_date <- min(df_decade$decade[df_decade$region_name == region_name])
+
+    if (min_date < min_date_original) {
+        min_date <- min_date_original
+    }
+
+    # Try get the periods names
     tryCatch(
         {
             x_intercepts_origin <- region_parameters$`Optional Region Information`$x_intercepts
@@ -251,14 +296,11 @@ for (region_name in regions_names) {
         }
     )
 
-    # # Cultural Index Data
-    df_decade <- read.csv(file = "../results/df_region_score.csv", sep = ",", header = TRUE)
-    df_indi <- read.csv(file = "../results/df_individuals_score.csv", sep = ",", header = TRUE)
 
-
+    # Cultural Index
     tryCatch(
         {
-            plot_trend <- plot_cultural_index(df_decade, df_indi, region_name, min_date, max_date, FALSE, name, 8, x_intercepts, labels)
+            plot_trend <- plot_cultural_index(df_decade, df_indi, region_name, min_date, max_date, graph_type = "global", name, 8, x_intercepts, labels)
             ggsave(file.path("results", paste0(region_name, ".png")), plot = plot_trend, dpi = 300, width = 10, height = 8)
         },
         error = function(e) {
@@ -267,20 +309,11 @@ for (region_name in regions_names) {
         }
     )
 
-    # # Cultural Index per capita
-
-    df_population <- read.csv("../../environnement_data/population_region_name.csv")
-    df_population <- df_population %>%
-        rename(decade = year)
-
-    # Merge df_decade_poulation with df_population on the "region_name" column
-    df_decade_poulation <- inner_join(df_decade, df_population, by = c("region_name", "decade"))
-    df_decade_poulation <- df_decade_poulation %>%
-        mutate(score = score / population)
+    # Cultural Index per capita
 
     tryCatch(
         {
-            plot_trend_population <- plot_cultural_index(df_decade_poulation, df_indi, region_name, min_date, max_date, capita = TRUE, name, time_size = 8, x_intercepts = x_intercepts, labels = labels)
+            plot_trend_population <- plot_cultural_index(df_decade_poulation, df_indi, region_name, min_date, max_date, graph_type = "capita", name, time_size = 8, x_intercepts = x_intercepts, labels = labels)
             ggsave(paste0("results_capita/", region_name, ".png"), plot = plot_trend_population, dpi = 300, width = 10, height = 8)
         },
         error = function(e) {
@@ -289,16 +322,7 @@ for (region_name in regions_names) {
         }
     )
 
-
     # Unseen Species Model
-    df_unseen <- read.csv(file = "../../unseen_species_model/results/estimations_charles_big_regions.csv", sep = ",", header = TRUE)
-    # Rename columns
-    df_unseen <- df_unseen %>%
-        rename(score = N_est, region_name = region, lower = lower, upper = upper)
-
-    plot_trend_unseen <- plot_unseen_index(df_unseen, df_indi, region_name, min_date, max_date, name = name, capita = FALSE, time_size = 8, x_intercepts = x_intercepts, labels = labels)
-
-
     tryCatch(
         {
             plot_trend_unseen <- plot_unseen_index(df_unseen, df_indi, region_name, min_date, max_date, name = name, capita = FALSE, time_size = 8, x_intercepts = x_intercepts, labels = labels)
@@ -309,13 +333,7 @@ for (region_name in regions_names) {
             cat("cant's save Unseen index for: ", region_name)
         }
     )
-    # Unseen Species Model per capita
-    # Merge df_decade_poulation with df_population on the "region_name" column
-    df_unseen_capita <- inner_join(df_unseen, df_population, by = c("region_name", "decade"))
-    df_unseen_capita$score <- df_unseen_capita$score / df_unseen_capita$population
-    df_unseen_capita$lower <- df_unseen_capita$lower / df_unseen_capita$population
-    df_unseen_capita$upper <- df_unseen_capita$upper / df_unseen_capita$population
-
+    # Unsee per capita
     tryCatch(
         {
             plot_trend_unseen <- plot_unseen_index(df_unseen_capita, df_indi, region_name, min_date, max_date, name = name, capita = TRUE, time_size = 8, x_intercepts = x_intercepts, labels = labels)
@@ -324,6 +342,18 @@ for (region_name in regions_names) {
         error = function(e) {
             # Handle the error here
             cat("cant's save Unseen index per capita for: ", region_name)
+        }
+    )
+
+    # Complexity
+    tryCatch(
+        {
+            plot_trend <- plot_cultural_index(df_score_complexity, df_indi, region_name, min_date, max_date, graph_type = "complexity", name, 8, x_intercepts, labels)
+            ggsave(file.path("results_complexity", paste0(region_name, ".png")), plot = plot_trend, dpi = 300, width = 10, height = 8)
+        },
+        error = function(e) {
+            # Handle the error here
+            cat("cant's save complexity index for: ", region_name, "\n")
         }
     )
 }
