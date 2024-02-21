@@ -43,6 +43,8 @@ poetry shell # activate the environment
 
 ## Citation
 
+For the citation of the Database Only, please add this line:
+
 ```BibTeX
 @misc{dedampierre2023,
   author = {de Dampierre, Charles},
