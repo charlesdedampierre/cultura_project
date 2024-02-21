@@ -40,3 +40,14 @@ poetry shell # activate the environment
 ```
 
 <img src="images/log.png" width="50%">
+
+## Citation
+
+```BibTeX
+@misc{dedampierre2023,
+  author = {de Dampierre, Charles},
+  title = {Cultura Database},
+  year = {2023},
+  howpublished = {DOI:10.17605/OSF.IO/2EUXR}
+}
+```

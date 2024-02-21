@@ -32,6 +32,7 @@ re_balkans,Balkans,Montenegro,MNE,me,-800.0,1850.0,,,,,0
 re_balkans,Balkans,Serbia,SRB,rs,-800.0,1850.0,,,,,0
 re_balkans,Balkans,Bosnia and Herz.,BIH,ba,-800.0,1850.0,,,,,0
 re_balkans,Balkans,Croatia,HRV,hr,-800.0,1850.0,,,,,0
+re_balkans,Balkans,Moldova,MDA,,-800.0,1850.0,,,,,0
 re_belgium,Belgium,Belgium,BEL,be,-800.0,1850.0,,,,,0
 re_british_islands,British Islands,Ireland,IRL,ie,500.0,1850.0,,,,,0
 re_british_islands,British Islands,United Kingdom,GBR,gb,500.0,1850.0,,,,,0
@@ -66,6 +67,8 @@ re_eastern_europe,Eastern Europe,Lithuania,LTU,lt,-800.0,1850.0,,,,,0
 re_eastern_europe,Eastern Europe,Czechia,CZE,cz,-800.0,1850.0,,,,,0
 re_eastern_europe,Eastern Europe,Poland,POL,pl,-800.0,1850.0,,,,,0
 re_eastern_europe,Eastern Europe,Hungary,HUN,hu,-800.0,1850.0,,,,,0
+re_eastern_europe,Eastern Europe,North Macedonia,MKD,,-800.0,1850.0,,,,,0
+re_eastern_europe,Eastern Europe,Moldova,MDA,,-800.0,1850.0,,,,,0
 re_finland,Finland,Finland,FIN,fi,-800.0,1850.0,,,,,0
 re_france,France,France,FRA,fr,-800.0,1850.0,,,,,0
 re_german_world,German world,Germany,DEU,de,500.0,1850.0,,,,,0
@@ -294,3 +297,87 @@ re_western_europe,Western Europe,Portugal,PRT,pt,-800.0,1850.0,,,,,0
 re_western_europe,Western Europe,Italy,ITA,it,-800.0,1850.0,,,,,0
 re_yangtze,Yangtze,Taiwan,TWN,tw,-800.0,1850.0,25,33,117,122,1
 re_yangtze,Yangtze,China,CHN,cn,-800.0,1850.0,25,33,117,122,1
+re_oceania,Oceania,Fiji,FJI,,-800.0,1850.0,,,,,0
+re_oceania,Oceania,Papua New Guinea,PNG,,-800.0,1850.0,,,,,0
+re_oceania,Oceania,Vanuatu,VUT,,-800.0,1850.0,,,,,0
+re_oceania,Oceania,New Caledonia,NCL,,-800.0,1850.0,,,,,0
+re_oceania,Oceania,Solomon Is.,SLB,,-800.0,1850.0,,,,,0
+re_oceania,Oceania,New Zealand,NZL,,-800.0,1850.0,,,,,0
+re_oceania,Oceania,Australia,AUS,,-800.0,1850.0,,,,,0
+re_africa,Africa,Tanzania,TZA,,-800.0,1850.0,,,,,0
+re_africa,Africa,W. Sahara,ESH,,-800.0,1850.0,,,,,0
+re_africa,Africa,Dem. Rep. Congo,COD,,-800.0,1850.0,,,,,0
+re_africa,Africa,Somalia,SOM,,-800.0,1850.0,,,,,0
+re_africa,Africa,Kenya,KEN,,-800.0,1850.0,,,,,0
+re_africa,Africa,Sudan,SDN,,-800.0,1850.0,,,,,0
+re_africa,Africa,Chad,TCD,,-800.0,1850.0,,,,,0
+re_africa,Africa,South Africa,ZAF,,-800.0,1850.0,,,,,0
+re_africa,Africa,Lesotho,LSO,,-800.0,1850.0,,,,,0
+re_africa,Africa,Zimbabwe,ZWE,,-800.0,1850.0,,,,,0
+re_africa,Africa,Botswana,BWA,,-800.0,1850.0,,,,,0
+re_africa,Africa,Namibia,NAM,,-800.0,1850.0,,,,,0
+re_africa,Africa,Senegal,SEN,,-800.0,1850.0,,,,,0
+re_africa,Africa,Mali,MLI,,-800.0,1850.0,,,,,0
+re_africa,Africa,Mauritania,MRT,,-800.0,1850.0,,,,,0
+re_africa,Africa,Benin,BEN,,-800.0,1850.0,,,,,0
+re_africa,Africa,Niger,NER,,-800.0,1850.0,,,,,0
+re_africa,Africa,Nigeria,NGA,,-800.0,1850.0,,,,,0
+re_africa,Africa,Cameroon,CMR,,-800.0,1850.0,,,,,0
+re_africa,Africa,Togo,TGO,,-800.0,1850.0,,,,,0
+re_africa,Africa,Ghana,GHA,,-800.0,1850.0,,,,,0
+re_africa,Africa,Côte d'Ivoire,CIV,,-800.0,1850.0,,,,,0
+re_africa,Africa,Guinea,GIN,,-800.0,1850.0,,,,,0
+re_africa,Africa,Guinea-Bissau,GNB,,-800.0,1850.0,,,,,0
+re_africa,Africa,Liberia,LBR,,-800.0,1850.0,,,,,0
+re_africa,Africa,Sierra Leone,SLE,,-800.0,1850.0,,,,,0
+re_africa,Africa,Burkina Faso,BFA,,-800.0,1850.0,,,,,0
+re_africa,Africa,Central African Rep.,CAF,,-800.0,1850.0,,,,,0
+re_africa,Africa,Congo,COG,,-800.0,1850.0,,,,,0
+re_africa,Africa,Gabon,GAB,,-800.0,1850.0,,,,,0
+re_africa,Africa,Eq. Guinea,GNQ,,-800.0,1850.0,,,,,0
+re_africa,Africa,Zambia,ZMB,,-800.0,1850.0,,,,,0
+re_africa,Africa,Malawi,MWI,,-800.0,1850.0,,,,,0
+re_africa,Africa,Mozambique,MOZ,,-800.0,1850.0,,,,,0
+re_africa,Africa,eSwatini,SWZ,,-800.0,1850.0,,,,,0
+re_africa,Africa,Angola,AGO,,-800.0,1850.0,,,,,0
+re_africa,Africa,Burundi,BDI,,-800.0,1850.0,,,,,0
+re_africa,Africa,Madagascar,MDG,,-800.0,1850.0,,,,,0
+re_africa,Africa,Gambia,GMB,,-800.0,1850.0,,,,,0
+re_africa,Africa,Eritrea,ERI,,-800.0,1850.0,,,,,0
+re_africa,Africa,Ethiopia,ETH,,-800.0,1850.0,,,,,0
+re_africa,Africa,Djibouti,DJI,,-800.0,1850.0,,,,,0
+re_africa,Africa,Somaliland,SOL,,-800.0,1850.0,,,,,0
+re_africa,Africa,Uganda,UGA,,-800.0,1850.0,,,,,0
+re_africa,Africa,Rwanda,RWA,,-800.0,1850.0,,,,,0
+re_africa,Africa,S. Sudan,SSD,,-800.0,1850.0,,,,,0
+re_south_america,South America,Argentina,ARG,,-800.0,1850.0,,,,,0
+re_south_america,South America,Chile,CHL,,-800.0,1850.0,,,,,0
+re_south_america,South America,Falkland Is.,FLK,,-800.0,1850.0,,,,,0
+re_south_america,South America,Uruguay,URY,,-800.0,1850.0,,,,,0
+re_south_america,South America,Brazil,BRA,,-800.0,1850.0,,,,,0
+re_south_america,South America,Bolivia,BOL,,-800.0,1850.0,,,,,0
+re_south_america,South America,Peru,PER,,-800.0,1850.0,,,,,0
+re_south_america,South America,Colombia,COL,,-800.0,1850.0,,,,,0
+re_south_america,South America,Venezuela,VEN,,-800.0,1850.0,,,,,0
+re_south_america,South America,Guyana,GUY,,-800.0,1850.0,,,,,0
+re_south_america,South America,Suriname,SUR,,-800.0,1850.0,,,,,0
+re_south_america,South America,Ecuador,ECU,,-800.0,1850.0,,,,,0
+re_south_america,South America,Paraguay,PRY,,-800.0,1850.0,,,,,0
+re_north_america,North America,Canada,CAN,,-800.0,1850.0,,,,,0
+re_north_america,North America,United States of America,USA,,-800.0,1850.0,,,,,0
+re_north_america,North America,Haiti,HTI,,-800.0,1850.0,,,,,0
+re_central_america,Central America,Dominican Rep.,DOM,,-800.0,1850.0,,,,,0
+re_central_america,Central America,Bahamas,BHS,,-800.0,1850.0,,,,,0
+re_north_america,North America,Greenland,GRL,,-800.0,1850.0,,,,,0
+re_central_america,Central America,Mexico,MEX,,-800.0,1850.0,,,,,0
+re_central_america,Central America,Panama,PAN,,-800.0,1850.0,,,,,0
+re_central_america,Central America,Costa Rica,CRI,,-800.0,1850.0,,,,,0
+re_central_america,Central America,Nicaragua,NIC,,-800.0,1850.0,,,,,0
+re_central_america,Central America,Honduras,HND,,-800.0,1850.0,,,,,0
+re_central_america,Central America,El Salvador,SLV,,-800.0,1850.0,,,,,0
+re_central_america,Central America,Guatemala,GTM,,-800.0,1850.0,,,,,0
+re_central_america,Central America,Belize,BLZ,,-800.0,1850.0,,,,,0
+re_central_america,Central America,Puerto Rico,PRI,,-800.0,1850.0,,,,,0
+re_central_america,Central America,Jamaica,JAM,,-800.0,1850.0,,,,,0
+re_central_america,Central America,Cuba,CUB,,-800.0,1850.0,,,,,0
+re_central_america,Central America,Trinidad and Tobago,TTO,,-800.0,1850.0,,,,,0

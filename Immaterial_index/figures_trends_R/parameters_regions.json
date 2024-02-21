@@ -389,5 +389,60 @@
             "x_intercepts": [],
             "labels": []
         }
+    },
+    "Oceania": {
+        "Region Parameters": {
+            "figure_name": "Oceania",
+            "min_date": -800,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "Africa": {
+        "Region Parameters": {
+            "figure_name": "Africa",
+            "min_date": -800,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "Central America": {
+        "Region Parameters": {
+            "figure_name": "Central America",
+            "min_date": -800,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "South America": {
+        "Region Parameters": {
+            "figure_name": "South America",
+            "min_date": -800,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
+    },
+    "North America": {
+        "Region Parameters": {
+            "figure_name": "North America",
+            "min_date": -800,
+            "max_date": 1800
+        },
+        "Optional Region Information": {
+            "x_intercepts": [],
+            "labels": []
+        }
     }
 }

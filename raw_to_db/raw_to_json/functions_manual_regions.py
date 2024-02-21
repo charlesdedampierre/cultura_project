@@ -71,7 +71,7 @@ def pipeline_manual_cleaning_region_global(
     df_wiki = df_wiki.explode("region_code")
 
     # Get new data
-    df_wiki_new_region = manual_cleaning_of_individuals(DATA_ENV_PATH)
+    df_wiki_new_region = _manual_cleaning_of_individuals(DATA_ENV_PATH)
 
     df_wiki_not_change = df_wiki[
         ~df_wiki["wikidata_id"].isin(list(set(df_wiki_new_region.wikidata_id)))
@@ -99,9 +99,9 @@ def pipeline_manual_cleaning_region_global(
     ].apply(lambda x: x.split(","))
 
     merged_df = pd.merge(merged_df, manual_cleaning, on="wikidata_id", how="outer")
-    merged_df.loc[
-        merged_df["region_code_corrected"].notnull(), "region_code"
-    ] = merged_df["region_code_corrected"]
+    merged_df.loc[merged_df["region_code_corrected"].notnull(), "region_code"] = (
+        merged_df["region_code_corrected"]
+    )
     merged_df = merged_df.drop("region_code_corrected", axis=1)
 
     # Fix the format of [None]
@@ -133,7 +133,7 @@ def pipeline_manual_cleaning_region_global(
     return individuals
 
 
-def manual_cleaning_of_individuals(env_path=DATA_ENV_PATH):
+def _manual_cleaning_of_individuals(env_path=DATA_ENV_PATH):
     excel_file = pd.ExcelFile(
         env_path + "/manual_individuals_check/Golden Age - Individuals Check.xlsx"
     )
