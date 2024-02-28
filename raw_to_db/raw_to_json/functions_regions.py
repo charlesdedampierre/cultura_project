@@ -237,10 +237,8 @@ def get_individuals_regions(
 
     final_space["min_latitude"] = final_space["min_latitude"].fillna(-90)
     final_space["max_latitude"] = final_space["max_latitude"].fillna(90)
-
     final_space["min_longitude"] = final_space["min_longitude"].fillna(-180)
     final_space["max_longitude"] = final_space["max_longitude"].fillna(180)
-
     final_space["latitude"] = final_space["latitude"].astype(float)
     final_space["longitude"] = final_space["longitude"].astype(float)
 
