@@ -1,6 +1,6 @@
 
 create_tmux:
-	tmux new -s unseen_model -d 'python run_gender_covariate.py'
+	tmux new -s unseen_model -d 'python run_category_covariate.py'
 
 reattach_tmux:
 	tmux attach-session -t unseen_model
