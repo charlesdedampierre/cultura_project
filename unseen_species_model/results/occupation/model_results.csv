@@ -1,0 +1,38 @@
+,mean,sd,hdi_3%,hdi_97%,mcse_mean,mcse_sd,ess_bulk,ess_tail,r_hat,model,time
+Intercept,-3.433,2.006,-7.309,0.162,0.06,0.044,1134.0,1391.0,1.0,occupation-model,2024-03-05 12:23:51
+"bs(decade, knots=iknots, intercept=True)[0]",0.169,1.94,-3.179,4.046,0.055,0.039,1230.0,1684.0,1.0,occupation-model,2024-03-05 12:23:51
+"bs(decade, knots=iknots, intercept=True)[1]",0.427,2.101,-3.484,4.323,0.058,0.041,1322.0,1940.0,1.0,occupation-model,2024-03-05 12:23:51
+"bs(decade, knots=iknots, intercept=True)[2]",-2.037,2.234,-6.209,2.264,0.059,0.042,1413.0,2120.0,1.0,occupation-model,2024-03-05 12:23:51
+"bs(decade, knots=iknots, intercept=True)[3]",2.489,2.135,-1.471,6.527,0.056,0.04,1435.0,1951.0,1.0,occupation-model,2024-03-05 12:23:51
+"bs(decade, knots=iknots, intercept=True)[4]",-2.085,2.272,-6.16,2.447,0.06,0.043,1416.0,2218.0,1.0,occupation-model,2024-03-05 12:23:51
+"bs(decade, knots=iknots, intercept=True)[5]",1.232,2.663,-3.822,6.069,0.061,0.043,1933.0,2609.0,1.0,occupation-model,2024-03-05 12:23:51
+"bs(decade, knots=iknots, intercept=True)[6]",0.553,1.923,-2.976,4.106,0.057,0.04,1153.0,1550.0,1.0,occupation-model,2024-03-05 12:23:51
+occupation[Music],-1.865,1.303,-4.429,0.33,0.029,0.022,2065.0,2262.0,1.0,occupation-model,2024-03-05 12:23:51
+occupation[Science],1.084,1.439,-1.673,3.688,0.031,0.022,2244.0,1884.0,1.0,occupation-model,2024-03-05 12:23:51
+occupation[Scientist],0.818,0.651,-0.411,2.01,0.018,0.013,1432.0,1539.0,1.0,occupation-model,2024-03-05 12:23:51
+occupation[Sculpture],1.091,0.747,-0.316,2.49,0.019,0.014,1594.0,1869.0,1.0,occupation-model,2024-03-05 12:23:51
+occupation[Theater],1.203,0.839,-0.312,2.808,0.02,0.015,1743.0,2305.0,1.0,occupation-model,2024-03-05 12:23:51
+occupation[Work of art],1.121,0.629,0.027,2.357,0.017,0.013,1398.0,1423.0,1.0,occupation-model,2024-03-05 12:23:51
+occupation[Written work],0.151,0.68,-1.087,1.43,0.019,0.013,1375.0,1431.0,1.0,occupation-model,2024-03-05 12:23:51
+1|region_name_sigma,0.585,0.433,0.001,1.34,0.013,0.009,972.0,1857.0,1.0,occupation-model,2024-03-05 12:23:51
+1|region_name[Eastern Europe],-0.138,0.376,-0.952,0.517,0.008,0.007,2130.0,2248.0,1.0,occupation-model,2024-03-05 12:23:51
+1|region_name[France],0.15,0.354,-0.531,0.834,0.008,0.006,1874.0,1929.0,1.0,occupation-model,2024-03-05 12:23:51
+1|region_name[Italy],-0.653,0.562,-1.713,0.165,0.015,0.01,1531.0,2555.0,1.0,occupation-model,2024-03-05 12:23:51
+1|region_name[Low countries],0.32,0.422,-0.388,1.192,0.009,0.007,2057.0,2798.0,1.0,occupation-model,2024-03-05 12:23:51
+1|region_name[Nordic countries],0.069,0.414,-0.682,0.924,0.009,0.006,2457.0,2353.0,1.0,occupation-model,2024-03-05 12:23:51
+1|region_name[United Kingdom],0.125,0.373,-0.589,0.838,0.008,0.006,2028.0,2277.0,1.0,occupation-model,2024-03-05 12:23:51
+Intercept,-2.617,1.912,-6.091,1.122,0.061,0.043,987.0,1268.0,1.0,base-model,2024-03-05 12:23:51
+"bs(decade, knots=iknots, intercept=True)[0]",0.086,1.947,-3.602,3.79,0.061,0.043,1026.0,1478.0,1.0,base-model,2024-03-05 12:23:51
+"bs(decade, knots=iknots, intercept=True)[1]",0.426,2.06,-3.25,4.556,0.06,0.043,1161.0,1811.0,1.0,base-model,2024-03-05 12:23:51
+"bs(decade, knots=iknots, intercept=True)[2]",-2.329,2.295,-6.72,1.853,0.066,0.046,1226.0,1747.0,1.0,base-model,2024-03-05 12:23:51
+"bs(decade, knots=iknots, intercept=True)[3]",2.544,2.071,-1.29,6.505,0.06,0.042,1200.0,1760.0,1.0,base-model,2024-03-05 12:23:51
+"bs(decade, knots=iknots, intercept=True)[4]",-2.396,2.349,-7.028,1.771,0.067,0.047,1244.0,1838.0,1.0,base-model,2024-03-05 12:23:51
+"bs(decade, knots=iknots, intercept=True)[5]",1.203,2.561,-3.698,5.879,0.064,0.045,1591.0,1944.0,1.0,base-model,2024-03-05 12:23:51
+"bs(decade, knots=iknots, intercept=True)[6]",0.348,1.933,-3.187,4.09,0.062,0.044,980.0,1319.0,1.0,base-model,2024-03-05 12:23:51
+1|region_name_sigma,0.614,0.403,0.014,1.294,0.012,0.009,992.0,1470.0,1.0,base-model,2024-03-05 12:23:51
+1|region_name[Eastern Europe],-0.211,0.377,-0.933,0.521,0.009,0.007,1729.0,2040.0,1.0,base-model,2024-03-05 12:23:51
+1|region_name[France],0.194,0.344,-0.432,0.893,0.009,0.006,1650.0,1982.0,1.0,base-model,2024-03-05 12:23:51
+1|region_name[Italy],-0.656,0.528,-1.657,0.184,0.013,0.009,1515.0,2239.0,1.0,base-model,2024-03-05 12:23:51
+1|region_name[Low countries],0.433,0.428,-0.251,1.282,0.01,0.007,1856.0,2292.0,1.0,base-model,2024-03-05 12:23:51
+1|region_name[Nordic countries],0.02,0.416,-0.837,0.801,0.009,0.007,2118.0,1917.0,1.0,base-model,2024-03-05 12:23:51
+1|region_name[United Kingdom],0.097,0.365,-0.579,0.796,0.009,0.006,1881.0,2068.0,1.0,base-model,2024-03-05 12:23:51
