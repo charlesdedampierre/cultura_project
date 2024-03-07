@@ -4,6 +4,9 @@ import arviz as az
 import numpy as np
 import matplotlib.pyplot as plt
 
+
+
+
 df = pd.read_csv("data/df_indi_works_category.csv", index_col=0)
 
 regions = pd.read_csv('data/ENS - Cultural Index - Countries Databases - region_level.csv')
