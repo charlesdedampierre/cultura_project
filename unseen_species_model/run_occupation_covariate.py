@@ -5,6 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 df = pd.read_csv("data/df_indi_works_occupations.csv", index_col=0)
+print(df.occupation.value_counts())
 
 regions = pd.read_csv('data/ENS - Cultural Index - Countries Databases - region_level.csv')
 regions['region_name'][regions['region_name']=='Slav world'] = 'East Slavic'
@@ -32,7 +33,7 @@ knots = np.linspace(df["century"].min(), df["century"].max(), num_knots)
 iknots = knots[1:-1]
 
 sample = df_m.copy()
-sample = sample.sample(1000, random_state=42)
+#sample = sample.sample(1000, random_state=42)
 
 models = {}
 
