@@ -17,9 +17,8 @@ regions = set(regions['region_name'])
 df = df[df['region_name'].isin(regions)]
 
 df["century"] = df["decade"].round(-2)
-df = df[~((df["region_name"] == "Italy") & (df["decade"] < 500))]
+df = df[~((df["region_name"] == "Italy") & (df["decade"] < 500))] # Fix issue with Italy and Rome that overlaps
 #df = df[df['decade']>=1800]
-
 
 df['count'] = df['count_works']
 df_m = df.copy()
@@ -35,10 +34,11 @@ knots = np.linspace(df["century"].min(), df["century"].max(), num_knots)
 iknots = knots[1:-1]
 
 sample = df_m.copy()
-#sample = sample.sample(1000, random_state=42)
+#sample = sample.sample(2000, random_state=42)
 
 models = {}
 
+# OCCUPATION MODEL
 priors = {
     "Intercept": bmb.Prior("Normal", mu=0, sigma=5),
     "common": bmb.Prior("Normal", mu=0, sigma=5),
@@ -57,6 +57,8 @@ occupation_model_fitted = occupation_model.fit(
 
 models['occupation-model'] = occupation_model_fitted
 az.waic(models['occupation-model'])
+
+# GET THE ALPHA FOR EVERY OCCUPATION
 
 forest_plot = az.plot_forest(
     data=occupation_model_fitted, 
@@ -82,7 +84,7 @@ priors_base_model = {
     "1|region_name": bmb.Prior("Normal", mu=0, sigma=bmb.Prior("HalfNormal", sigma=5))
 }
 
-sample_base = sample.drop('occupation', axis=1).drop_duplicates()
+sample_base = sample.drop('occupation', axis=1)
 
 base_model = bmb.Model(
     'y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)', 
@@ -100,26 +102,21 @@ models['base-model'] = base_model_fitted
 az.waic(models['base-model'])
 
 
-# Comparison
+# Comparison plot
 waic_compare = az.compare(models, ic='LOO')
-az.plot_compare(waic_compare, insample_dev=True)
-
 waic_compare.to_csv('results/occupation/model_comparison.csv')
-
 compare_plot = az.plot_compare(waic_compare, insample_dev=True)
 fig = compare_plot.get_figure()
 fig.set_size_inches(8, 4)  # Adjust size as needed
 fig.tight_layout()
-
 fig.savefig('results/occupation/compare_plot.png')
 
-
+# Save models CSV
 list_summaries = []
 for key, item in models.items():
     res = az.summary(item)
     res['model'] = key
     list_summaries.append(res)
-
 
 from datetime import datetime
 df_summaries = pd.concat([x for x in list_summaries])
@@ -216,7 +213,7 @@ def get_unseen_numbers(df, model, model_fitted, region = 'Chinese world'):
     table = pd.concat(table)
     return table
 
-
+# GET THE RESULTS FOR THE CLASSICAL UNSEEN MODEL
 final_table = []
 for region in tqdm(sample_base.region_name.unique()):
     table = get_unseen_numbers(sample_base, base_model, base_model_fitted, region = region)
@@ -224,11 +221,12 @@ for region in tqdm(sample_base.region_name.unique()):
 
 df_final_table = pd.concat([x for x in final_table])
 df_final_table['model_type'] = 'base_model'
-
 df_count = sample_base.groupby(['region_name', 'decade'])['individual_wikidata_id'].count().rename('count_cps').reset_index()
 df_final_table = pd.merge(df_final_table, df_count, on = ['region_name', 'decade'])
 df_final_table.to_csv('results/occupation/unseen_data.csv')
 
+
+# GET THE RESULTS FOR THE CLASSICAL UNSEEN MODEL FOR OCCUPATION
 
 final_table = []
 for region in sample.region_name.unique():
