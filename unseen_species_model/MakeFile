@@ -1,6 +1,6 @@
 
 create_tmux:
-	tmux new -s unseen_model -d 'python run_gender_covariate.py'
+	tmux new -s unseen_model -d 'python run_occupation_covariate.py'
 
 reattach_tmux:
 	tmux attach-session -t unseen_model
@@ -11,4 +11,4 @@ kill_session:
 monitor_session:
 	tmux ls
 
-# to leave: Press Ctrl + b (release both keys), then press ddb
+# to leave: Press Ctrl + b (release both keys), then press d
