@@ -41,19 +41,64 @@ sample = df_m.copy()
 # sample = sample.sample(2000, random_state=42)
 
 models = {}
+sample_base = sample.drop("occupation", axis=1)
+
+base_model = bmb.Model(
+    "y ~ 1",  # variance spline and variance intercept model
+    sample,
+    family="bernoulli",
+    priors={
+        "Intercept": bmb.Prior("Normal", mu=0, sigma=2.5),
+    },
+)
+
+variance_model = bmb.Model(
+    "y ~ 1 + (bs(decade, knots=iknots, intercept=True)|region_name)",  # variance spline and variance intercept model
+    sample,
+    family="bernoulli",
+    priors={
+        "Intercept": bmb.Prior("Normal", mu=0, sigma=2.5),
+        "bs(decade, knots = iknots, intercept = True)|region_name": bmb.Prior(
+            "Normal",
+            mu=0,
+            sigma=bmb.Prior("HalfNormal", sigma=2.5),  # can't be negative
+        ),
+    },
+)
 
 # OCCUPATION MODEL
-priors = {
-    "Intercept": bmb.Prior("Normal", mu=0, sigma=5),
-    "common": bmb.Prior("Normal", mu=0, sigma=5),
-    "1|region_name": bmb.Prior("Normal", mu=0, sigma=bmb.Prior("HalfNormal", sigma=5)),
-}
-
 occupation_model = bmb.Model(
-    "y ~ bs(decade, knots=iknots, intercept=True) + occupation + (1|region_name)",
+    "y ~ (bs(decade, knots=iknots, intercept=True)|region_name) + occupation",
     sample[["decade", "region_name", "occupation", "y"]],
     family="bernoulli",
-    priors=priors,
+    priors={
+        "Intercept": bmb.Prior("Normal", mu=0, sigma=5),
+        "common": bmb.Prior("Normal", mu=0, sigma=5),
+        "bs(decade, knots = iknots, intercept = True)|region_name": bmb.Prior(
+            "Normal",
+            mu=0,
+            sigma=bmb.Prior("HalfNormal", sigma=2.5),  # can't be negative
+        ),
+    },
+)
+
+# OCCUPATION MODEL
+occupation_model_variance = bmb.Model(
+    "y ~ (bs(decade, knots=iknots, intercept=True)|region_name)) + (1|occupation)",
+    sample[["decade", "region_name", "occupation", "y"]],
+    family="bernoulli",
+    priors={
+        "Intercept": bmb.Prior("Normal", mu=0, sigma=5),
+        "common": bmb.Prior("Normal", mu=0, sigma=5),
+        "1|occupation": bmb.Prior(
+            "Normal", mu=0, sigma=bmb.Prior("HalfNormal", sigma=5)
+        ),
+        "bs(decade, knots = iknots, intercept = True)|region_name": bmb.Prior(
+            "Normal",
+            mu=0,
+            sigma=bmb.Prior("HalfNormal", sigma=2.5),  # can't be negative
+        ),
+    },
 )
 
 occupation_model_fitted = occupation_model.fit(
@@ -65,6 +110,20 @@ occupation_model_fitted = occupation_model.fit(
 
 models["occupation-model"] = occupation_model_fitted
 az.waic(models["occupation-model"])
+
+# base_model = bmb.Model(
+#     "y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",
+#     sample_base[["decade", "region_name", "y"]],
+#     family="bernoulli",
+#     priors=priors_base_model,
+# )
+
+# base_model_fitted = base_model.fit(
+#     draws=1000,
+#     chains=4,
+#     inference_method="nuts_numpyro",
+#     idata_kwargs={"log_likelihood": True},
+# )  # important to run faster and sample more efficiently
 
 # GET THE ALPHA FOR EVERY OCCUPATION
 
@@ -83,30 +142,6 @@ fig.set_size_inches(8, 4)  # Adjust size as needed
 fig.tight_layout()
 
 fig.savefig("results/occupation/forest_plot.png")
-
-
-# SECOND MODEL
-priors_base_model = {
-    "Intercept": bmb.Prior("Normal", mu=0, sigma=5),
-    "common": bmb.Prior("Normal", mu=0, sigma=5),
-    "1|region_name": bmb.Prior("Normal", mu=0, sigma=bmb.Prior("HalfNormal", sigma=5)),
-}
-
-sample_base = sample.drop("occupation", axis=1)
-
-base_model = bmb.Model(
-    "y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",
-    sample_base[["decade", "region_name", "y"]],
-    family="bernoulli",
-    priors=priors_base_model,
-)
-
-base_model_fitted = base_model.fit(
-    draws=1000,
-    chains=4,
-    inference_method="nuts_numpyro",
-    idata_kwargs={"log_likelihood": True},
-)  # important to run faster and sample more efficiently
 
 
 models["base-model"] = base_model_fitted
