@@ -21,20 +21,19 @@ regions = set(regions["region_name"])
 df = df[df["region_name"].isin(regions)]
 
 df["century"] = df["decade"].round(-2)
-df = df[~((df["region_name"] == "Italy") & (df["decade"] < 500))]
+
 df = df[~((df["region_name"] == "Italy") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "Portugal") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "Spain") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "Arabic world") & (df["decade"] < 500))]
-df = df[~((df["region_name"] == "Balkans") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "France") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "United Kingdom") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "Low countries") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "East Slavic") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "Central Europe") & (df["decade"] < 500))]
-df = df[~((df["region_name"] == "Eastern Europe") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "German world") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "Latin world") & (df["decade"] > 500))]
+
 
 # Avoid overlapping with Antiquity
 
@@ -43,8 +42,6 @@ df_m = df.copy()
 df_m = df_m[df_m["count"].isin({0, 1, 2})]  # Not more ?
 df_m["y"] = df_m["count"].map({0: 0, 1: 0, 2: 1})
 
-# # about 6% of women compared to men
-# df_m = df_m[df_m["decade"] < 1870]
 
 # knots
 num_knots = 10
@@ -56,8 +53,10 @@ sample = sample.sample(5000, random_state=42)
 
 models = {}
 
+# MODEL 1
+model_equation = "y ~ 1"
 base_model = bmb.Model(
-    "y ~ 1",  # variance spline and variance intercept model
+    model_equation,  # variance spline and variance intercept model
     sample,
     family="bernoulli",
     priors={
@@ -70,15 +69,17 @@ base_model_fitted = base_model.fit(
     chains=4,
     inference_method="nuts_numpyro",
     idata_kwargs={"log_likelihood": True},
-)  # important to run faster and sample more efficiently
+)
 
-models["y ~ 1"] = base_model_fitted
+models[model_equation] = base_model_fitted
 
-az.waic(models["y ~ 1"])
+az.waic(models[model_equation])
 
 
+# MODEL 2
+model_equation = "y ~ 1 + (bs(decade, knots=iknots, intercept=True)|region_name)"
 variance_model = bmb.Model(
-    "y ~ 1 + (bs(decade, knots=iknots, intercept=True)|region_name)",  # variance spline and variance intercept model
+    model_equation,  # variance spline and variance intercept model
     sample,
     family="bernoulli",
     priors={
@@ -96,18 +97,20 @@ variance_model_fitted = variance_model.fit(
     chains=4,
     inference_method="nuts_numpyro",
     idata_kwargs={"log_likelihood": True},
-)  # important to run faster and sample more efficiently
-
-models["y ~ 1 + (bs(decade, knots=iknots, intercept=True)|region_name)"] = (
-    variance_model_fitted
 )
 
-az.waic(models["y ~ 1 + (bs(decade, knots=iknots, intercept=True)|region_name)"])
 
+models[model_equation] = variance_model_fitted
 
+az.waic(models[model_equation])
+
+# MODEL 3
+model_equation = (
+    "y ~ (bs(decade, knots=iknots, intercept=True)|region_name) + occupation"
+)
 # OCCUPATION MODEL
 occupation_model = bmb.Model(
-    "y ~ (bs(decade, knots=iknots, intercept=True)|region_name) + occupation",
+    model_equation,
     sample[["decade", "region_name", "occupation", "y"]],
     family="bernoulli",
     priors={
@@ -126,20 +129,19 @@ occupation_model_fitted = occupation_model.fit(
     chains=4,
     inference_method="nuts_numpyro",
     idata_kwargs={"log_likelihood": True},
-)  # important to run faster and sample more efficiently
-
-models["y ~ (bs(decade, knots=iknots, intercept=True)|region_name) + occupation"] = (
-    occupation_model_fitted
 )
 
-az.waic(
-    models["y ~ (bs(decade, knots=iknots, intercept=True)|region_name) + occupation"]
+models[model_equation] = occupation_model_fitted
+
+az.waic(models[model_equation])
+
+# MODEL 4
+model_equation = (
+    "y ~ (bs(decade, knots=iknots, intercept=True)|region_name)) + (1|occupation)"
 )
-
-
 # OCCUPATION MODEL
 occupation_model_variance = bmb.Model(
-    "y ~ (bs(decade, knots=iknots, intercept=True)|region_name)) + (1|occupation)",
+    model_equation,
     sample[["decade", "region_name", "occupation", "y"]],
     family="bernoulli",
     priors={
@@ -161,20 +163,13 @@ occupation_model_variance_fitted = occupation_model_variance.fit(
     chains=4,
     inference_method="nuts_numpyro",
     idata_kwargs={"log_likelihood": True},
-)  # important to run faster and sample more efficiently
-
-models[
-    "y ~ (bs(decade, knots=iknots, intercept=True)|region_name)) + (1|occupation)"
-] = occupation_model_variance_fitted
-az.waic(
-    models[
-        "y ~ (bs(decade, knots=iknots, intercept=True)|region_name)) + (1|occupation)"
-    ]
 )
+
+models[model_equation] = occupation_model_variance_fitted
+az.waic(models[model_equation])
 
 
 # GET THE ALPHA FOR EVERY OCCUPATION
-
 forest_plot = az.plot_forest(
     data=occupation_model_variance_fitted,
     figsize=(6, 4),
@@ -192,7 +187,7 @@ fig.tight_layout()
 fig.savefig("results/occupation/forest_plot_variance.png")
 
 
-# Comparison plot
+# COMPARE PLOT
 waic_compare = az.compare(models, ic="LOO")
 waic_compare.to_csv("results/occupation/model_comparison.csv")
 compare_plot = az.plot_compare(waic_compare, insample_dev=True)
