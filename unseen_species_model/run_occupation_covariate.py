@@ -21,20 +21,19 @@ regions = set(regions["region_name"])
 df = df[df["region_name"].isin(regions)]
 
 df["century"] = df["decade"].round(-2)
-df = df[~((df["region_name"] == "Italy") & (df["decade"] < 500))]
+
 df = df[~((df["region_name"] == "Italy") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "Portugal") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "Spain") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "Arabic world") & (df["decade"] < 500))]
-df = df[~((df["region_name"] == "Balkans") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "France") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "United Kingdom") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "Low countries") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "East Slavic") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "Central Europe") & (df["decade"] < 500))]
-df = df[~((df["region_name"] == "Eastern Europe") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "German world") & (df["decade"] < 500))]
 df = df[~((df["region_name"] == "Latin world") & (df["decade"] > 500))]
+
 
 # Avoid overlapping with Antiquity
 
@@ -43,6 +42,10 @@ df_m = df.copy()
 df_m = df_m[df_m["count"].isin({0, 1, 2})]  # Not more ?
 df_m["y"] = df_m["count"].map({0: 0, 1: 0, 2: 1})
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dd1ebcd32dd685c4e36f482ae50dd2127160accf
 # knots
 num_knots = 10
 knots = np.linspace(df["century"].min(), df["century"].max(), num_knots)
@@ -74,7 +77,7 @@ base_model_fitted = base_model.fit(
     chains=4,
     inference_method="nuts_numpyro",
     idata_kwargs={"log_likelihood": True},
-)  # important to run faster and sample more efficiently
+)
 
 models[equation] = base_model_fitted
 az.waic(models[equation])
@@ -140,6 +143,9 @@ models[equation] = (
 az.waic(
     models[equation]
 )
+
+models[model_equation] = occupation_model_variance_fitted
+az.waic(models[model_equation])
 
 
 
