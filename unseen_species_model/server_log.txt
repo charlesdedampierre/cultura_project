@@ -1,0 +1,720 @@
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:   4%| | 84/2000 [00:41<30:02,  1.06it/s, 1023 steps of size 5.31e-03. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  30%|▎| 610/2000 [02:10<02:51,  8.09it/s, 127 steps of size 3.37e-02. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  31%|▎| 614/2000 [02:11<05:33,  4.16it/s, 511 steps of size 8.09e-03. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  31%|▎| 616/2000 [02:12<08:17,  2.78it/s, 511 steps of size 1.32e-02. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  31%|▎| 621/2000 [02:13<04:41,  4.90it/s, 127 steps of size 1.47e-02. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  31%|▎| 625/2000 [02:13<03:58,  5.76it/s, 127 steps of size 9.40e-03. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  32%|▎| 630/2000 [02:15<04:52,  4.68it/s, 127 steps of size 3.91e-02. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  32%|▎| 639/2000 [02:16<02:03, 11.01it/s, 63 steps of size 3.90e-02. acc
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  32%|▎| 646/2000 [02:17<02:24,  9.39it/s, 63 steps of size 7.81e-02. acc
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  33%|▎| 661/2000 [02:18<01:27, 15.26it/s, 63 steps of size 5.34e-02. acc
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  34%|▎| 673/2000 [02:19<01:41, 13.08it/s, 63 steps of size 4.26e-02. acc
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  34%|▎| 685/2000 [02:20<01:46, 12.39it/s, 63 steps of size 5.92e-02. acc
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  35%|▎| 698/2000 [02:21<01:46, 12.27it/s, 127 steps of size 3.48e-02. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  36%|▎| 710/2000 [02:21<01:26, 14.88it/s, 63 steps of size 3.35e-02. acc
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  36%|▎| 714/2000 [02:23<03:53,  5.51it/s, 511 steps of size 8.46e-03. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  36%|▎| 716/2000 [02:24<06:09,  3.47it/s, 511 steps of size 8.86e-03. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  36%|▎| 718/2000 [02:25<07:56,  2.69it/s, 511 steps of size 7.08e-03. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  36%|▎| 720/2000 [02:26<09:06,  2.34it/s, 511 steps of size 1.01e-02. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  36%|▎| 724/2000 [02:27<06:44,  3.15it/s, 255 steps of size 2.42e-02. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  36%|▎| 727/2000 [02:28<07:17,  2.91it/s, 511 steps of size 1.10e-02. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  36%|▎| 730/2000 [02:29<06:40,  3.17it/s, 255 steps of size 2.21e-02. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  37%|▎| 733/2000 [02:29<05:40,  3.72it/s, 255 steps of size 1.02e-02. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  37%|▎| 735/2000 [02:30<08:04,  2.61it/s, 511 steps of size 9.55e-03. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  37%|▎| 739/2000 [02:32<06:30,  3.23it/s, 151 steps of size 2.23e-02. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  37%|▎| 747/2000 [02:33<02:17,  9.10it/s, 63 steps of size 5.95e-02. acc
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  38%|▍| 759/2000 [02:34<01:53, 10.95it/s, 127 steps of size 3.88e-02. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  38%|▍| 764/2000 [02:35<03:21,  6.14it/s, 255 steps of size 9.69e-03. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  38%|▍| 767/2000 [02:36<05:43,  3.59it/s, 255 steps of size 1.62e-02. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  38%|▍| 770/2000 [02:37<06:16,  3.26it/s, 255 steps of size 1.68e-02. ac
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:01.780681
+Sampling...
+sample: 100%|█| 2000/2000 [00:05<00:00, 337.13it/s, 1 steps of size 1.01e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 419.16it/s, 3 steps of size 1.06e+00. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 410.93it/s, 3 steps of size 9.04e-01. ac
+sample: 100%|█| 2000/2000 [00:04<00:00, 412.83it/s, 3 steps of size 1.23e+00. ac
+Sampling time = 0:00:22.921269
+Transforming variables...
+Transformation time = 0:00:00.116625
+Computing Log Likelihood...
+Log Likelihood time = 0:00:00.285438
+Modeling the probability that y==1
+Compiling...
+/home/charles/.venv/lib/python3.10/site-packages/pymc/sampling/jax.py:687: UserW
+arning: There are not enough devices to run parallel chains: expected 4 but got
+1. Chains will be drawn sequentially. If you are running MCMC in CPU, consider u
+sing `numpyro.set_host_device_count(4)` at the beginning of your program. You ca
+n double-check how many devices are available in your system using `jax.local_de
+vice_count()`.
+  pmap_numpyro = MCMC(
+Compilation time = 0:00:03.049767
+Sampling...
+warmup:  39%|▍| 774/2000 [02:38<05:20,  3.83it/s, 255 steps of size 2.21e-02. ac

@@ -15,6 +15,10 @@ regions = regions[regions["level"] == 2]
 regions = set(regions["region_name"])
 df = df[df["region_name"].isin(regions)]
 
+df = df[
+    ~((df["region_name"] == "Italy") & (df["decade"] < 500))
+] 
+
 df["century"] = df["decade"].round(-2)
 df = df[df["gender"].isin(["male", "female"])]
 

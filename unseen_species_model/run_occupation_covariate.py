@@ -43,21 +43,25 @@ df_m = df.copy()
 df_m = df_m[df_m["count"].isin({0, 1, 2})]  # Not more ?
 df_m["y"] = df_m["count"].map({0: 0, 1: 0, 2: 1})
 
-# # about 6% of women compared to men
-# df_m = df_m[df_m["decade"] < 1870]
-
 # knots
 num_knots = 10
 knots = np.linspace(df["century"].min(), df["century"].max(), num_knots)
 iknots = knots[1:-1]
 
 sample = df_m.copy()
-sample = sample.sample(5000, random_state=42)
+#sample = sample.sample(2000, random_state=42)
+
+
+# DIFFERENT EQUATIONS
 
 models = {}
 
+
+#MODEL 1
+equation = "y ~ 1"
+
 base_model = bmb.Model(
-    "y ~ 1",  # variance spline and variance intercept model
+    equation,  # variance spline and variance intercept model
     sample,
     family="bernoulli",
     priors={
@@ -72,113 +76,232 @@ base_model_fitted = base_model.fit(
     idata_kwargs={"log_likelihood": True},
 )  # important to run faster and sample more efficiently
 
-models["y ~ 1"] = base_model_fitted
+models[equation] = base_model_fitted
+az.waic(models[equation])
 
-az.waic(models["y ~ 1"])
+
+#MODEL 2
+equation = 'y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)'
+priors = {
+    "Intercept": bmb.Prior("Normal", mu=0, sigma=5),
+    "common": bmb.Prior("Normal", mu=0, sigma=5),
+    "1|region_name": bmb.Prior("Normal", mu=0, sigma=bmb.Prior("HalfNormal", sigma=5))
+}
+
+base_model = bmb.Model(
+    equation, 
+    sample[['decade','region_name', 'y']], 
+    family='bernoulli', 
+    priors=priors)
 
 
-variance_model = bmb.Model(
-    "y ~ 1 + (bs(decade, knots=iknots, intercept=True)|region_name)",  # variance spline and variance intercept model
-    sample,
-    family="bernoulli",
-    priors={
-        "Intercept": bmb.Prior("Normal", mu=0, sigma=2.5),
-        "bs(decade, knots = iknots, intercept = True)|region_name": bmb.Prior(
-            "Normal",
-            mu=0,
-            sigma=bmb.Prior("HalfNormal", sigma=2.5),  # can't be negative
-        ),
-    },
-)
-
-variance_model_fitted = variance_model.fit(
+base_model_fitted = base_model.fit(
     draws=1000,
     chains=4,
     inference_method="nuts_numpyro",
     idata_kwargs={"log_likelihood": True},
 )  # important to run faster and sample more efficiently
 
-models["y ~ 1 + (bs(decade, knots=iknots, intercept=True)|region_name)"] = (
-    variance_model_fitted
-)
-
-az.waic(models["y ~ 1 + (bs(decade, knots=iknots, intercept=True)|region_name)"])
-
-
-# OCCUPATION MODEL
-occupation_model = bmb.Model(
-    "y ~ (bs(decade, knots=iknots, intercept=True)|region_name) + occupation",
-    sample[["decade", "region_name", "occupation", "y"]],
-    family="bernoulli",
-    priors={
-        "Intercept": bmb.Prior("Normal", mu=0, sigma=5),
-        "common": bmb.Prior("Normal", mu=0, sigma=5),
-        "bs(decade, knots = iknots, intercept = True)|region_name": bmb.Prior(
-            "Normal",
-            mu=0,
-            sigma=bmb.Prior("HalfNormal", sigma=2.5),  # can't be negative
-        ),
-    },
-)
-
-occupation_model_fitted = occupation_model.fit(
-    draws=1000,
-    chains=4,
-    inference_method="nuts_numpyro",
-    idata_kwargs={"log_likelihood": True},
-)  # important to run faster and sample more efficiently
-
-models["y ~ (bs(decade, knots=iknots, intercept=True)|region_name) + occupation"] = (
-    occupation_model_fitted
+models[equation] = (
+    base_model_fitted
 )
 
 az.waic(
-    models["y ~ (bs(decade, knots=iknots, intercept=True)|region_name) + occupation"]
+    models[equation]
 )
 
+#MODEL 3
+equation = 'y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)'
+# SECOND MODEL
+priors = {
+    "Intercept": bmb.Prior("Normal", mu=0, sigma=5),
+    "common": bmb.Prior("Normal", mu=0, sigma=5),
+    "1|region_name": bmb.Prior("Normal", mu=0, sigma=bmb.Prior("HalfNormal", sigma=5))
+}
 
-# OCCUPATION MODEL
-occupation_model_variance = bmb.Model(
-    "y ~ (bs(decade, knots=iknots, intercept=True)|region_name)) + (1|occupation)",
-    sample[["decade", "region_name", "occupation", "y"]],
-    family="bernoulli",
-    priors={
-        "Intercept": bmb.Prior("Normal", mu=0, sigma=5),
-        "common": bmb.Prior("Normal", mu=0, sigma=5),
-        "1|occupation": bmb.Prior(
-            "Normal", mu=0, sigma=bmb.Prior("HalfNormal", sigma=5)
-        ),
-        "bs(decade, knots = iknots, intercept = True)|region_name": bmb.Prior(
-            "Normal",
-            mu=0,
-            sigma=bmb.Prior("HalfNormal", sigma=2.5),  # can't be negative
-        ),
-    },
-)
+base_model = bmb.Model(
+    equation, 
+    sample, 
+    family='bernoulli', 
+    priors=priors)
 
-occupation_model_variance_fitted = occupation_model_variance.fit(
+
+base_model_fitted = base_model.fit(
     draws=1000,
     chains=4,
     inference_method="nuts_numpyro",
     idata_kwargs={"log_likelihood": True},
 )  # important to run faster and sample more efficiently
 
-models[
-    "y ~ (bs(decade, knots=iknots, intercept=True)|region_name)) + (1|occupation)"
-] = occupation_model_variance_fitted
+models[equation] = (
+    base_model_fitted
+)
+
 az.waic(
-    models[
-        "y ~ (bs(decade, knots=iknots, intercept=True)|region_name)) + (1|occupation)"
-    ]
+    models[equation]
 )
 
 
-# GET THE ALPHA FOR EVERY OCCUPATION
+
+# equation = "y ~ 1 + (bs(decade, knots=iknots, intercept=True)|region_name)"
+# variance_model = bmb.Model(
+#    equation,  # variance spline and variance intercept model
+#     sample,
+#     family="bernoulli",
+#     priors={
+#         "Intercept": bmb.Prior("Normal", mu=0, sigma=2.5),
+#         "bs(decade, knots = iknots, intercept = True)|region_name": bmb.Prior(
+#             "Normal",
+#             mu=0,
+#             sigma=bmb.Prior("HalfNormal", sigma=2.5),  # can't be negative
+#         ),
+#     },
+# )
+
+# variance_model_fitted = variance_model.fit(
+#     draws=1000,
+#     chains=4,
+#     inference_method="nuts_numpyro",
+#     idata_kwargs={"log_likelihood": True},
+# )  # important to run faster and sample more efficiently
+
+# models[equation] = (
+#     variance_model_fitted
+# )
+
+# az.waic(models[equation])
+
+#equation =   "y ~ (bs(decade, knots=iknots, intercept=True)|region_name) + occupation"
+#equation = "y ~ 1 + (bs(decade, knots=iknots, intercept=True)|region_name)"
+
+
+# #equation =  "y ~ (bs(decade, knots=iknots, intercept=True) + (1|region) + occupation"
+# # OCCUPATION MODEL
+# occupation_model = bmb.Model(
+#    equation,
+#     sample[["decade", "region_name", "occupation", "y"]],
+#     family="bernoulli",
+#     priors={
+#         "Intercept": bmb.Prior("Normal", mu=0, sigma=5),
+#         "common": bmb.Prior("Normal", mu=0, sigma=5),
+#         "bs(decade, knots = iknots, intercept = True)|region_name": bmb.Prior(
+#             "Normal",
+#             mu=0,
+#             sigma=bmb.Prior("HalfNormal", sigma=2.5),  # can't be negative
+#         ),
+#     },
+# )
+
+
+
+
+#equation =  "y ~ (bs(decade, knots=iknots, intercept=True) + (1|region)"
+#equation =   "y ~ (bs(decade, knots=iknots, intercept=True)|region_name) + occupation"
+#equation =  "y ~ (bs(decade, knots=iknots, intercept=True)|region_name)) + (1|occupation)"
+# OCCUPATION MODEL
+# occupation_model_variance = bmb.Model(
+#     equation,
+#     sample[["decade", "region_name", "occupation", "y"]],
+#     family="bernoulli",
+#     priors={
+#         "Intercept": bmb.Prior("Normal", mu=0, sigma=5),
+#         "common": bmb.Prior("Normal", mu=0, sigma=5),
+#         "1|occupation": bmb.Prior(
+#             "Normal", mu=0, sigma=bmb.Prior("HalfNormal", sigma=5)
+#         ),
+#         "bs(decade, knots = iknots, intercept = True)|region_name": bmb.Prior(
+#             "Normal",
+#             mu=0,
+#             sigma=bmb.Prior("HalfNormal", sigma=2.5),  # can't be negative
+#         ),
+#     },
+# )
+
+# occupation_model_variance_fitted = occupation_model_variance.fit(
+#     draws=1000,
+#     chains=4,
+#     inference_method="nuts_numpyro",
+#     idata_kwargs={"log_likelihood": True},
+# )  # important to run faster and sample more efficiently
+
+
+# equation = 'y ~ bs(decade, knots=iknots, intercept=True) + occupation + (1|region_name)'
+# priors = {
+#     "Intercept": bmb.Prior("Normal", mu=0, sigma=5),
+#     "common": bmb.Prior("Normal", mu=0, sigma=5),
+#     "1|region_name": bmb.Prior("Normal", mu=0, sigma=bmb.Prior("HalfNormal", sigma=5))}
+
+# category_model = bmb.Model(
+#     'y ~ bs(decade, knots=iknots, intercept=True) + category + (1|region_name)', 
+#     sample[['decade','region_name', 'category', 'y']], 
+#     family='bernoulli', 
+#     priors=priors)
+
+# category_model_fitted = category_model.fit(
+#     draws=1000, chains=4, inference_method='nuts_numpyro',idata_kwargs={"log_likelihood": True}
+
+# ) 
+
+# models[
+#    equation
+# ] = category_model_fitted
+# az.waic(
+#     models[
+#        equation
+#     ]
+# )
+
+# # GET THE ALPHA FOR EVERY OCCUPATION
+
+# forest_plot = az.plot_forest(
+#     data=occupation_model_variance_fitted,
+#     figsize=(6, 4),
+#     var_names=["1|occupation"],
+#     r_hat=True,
+#     combined=True,
+#     textsize=8,
+#     ess=True,
+# )
+
+# fig = forest_plot[0].get_figure()
+# fig.set_size_inches(8, 4)  # Adjust size as needed
+# fig.tight_layout()
+
+# fig.savefig("results/occupation/forest_plot_variance.png")
+
+print("Save model comparison")
+
+
+# Comparison Dataset
+waic_compare = az.compare(models, ic="waic")
+# Comparison Plot
+compare_plot = az.plot_compare(waic_compare, insample_dev=True)
+fig = compare_plot.get_figure()
+fig.set_size_inches(20, 4)  # Adjust size as needed
+fig.tight_layout()
+
+
+fig.savefig("results/occupation/compare_plot_waic.png")
+
+
+# Comparison Dataset
+
+# waic_compare.to_csv("results/occupation/model_comparison.csv")
+
+# Comparison Plot
+waic_compare = az.compare(models, ic="LOO")
+compare_plot = az.plot_compare(waic_compare, insample_dev=True)
+fig = compare_plot.get_figure()
+fig.set_size_inches(20, 4)  # Adjust size as needed
+fig.tight_layout()
+fig.savefig("results/occupation/compare_plot.png")
+
+
 
 forest_plot = az.plot_forest(
-    data=occupation_model_variance_fitted,
+    data=base_model_fitted,
     figsize=(6, 4),
-    var_names=["1|occupation"],
+    var_names=["occupation"],
     r_hat=True,
     combined=True,
     textsize=8,
@@ -188,18 +311,8 @@ forest_plot = az.plot_forest(
 fig = forest_plot[0].get_figure()
 fig.set_size_inches(8, 4)  # Adjust size as needed
 fig.tight_layout()
+fig.savefig("results/occupation/forest_plot.png")
 
-fig.savefig("results/occupation/forest_plot_variance.png")
-
-
-# Comparison plot
-waic_compare = az.compare(models, ic="LOO")
-waic_compare.to_csv("results/occupation/model_comparison.csv")
-compare_plot = az.plot_compare(waic_compare, insample_dev=True)
-fig = compare_plot.get_figure()
-fig.set_size_inches(8, 4)  # Adjust size as needed
-fig.tight_layout()
-fig.savefig("results/occupation/compare_plot.png")
 
 # Save models CSV
 list_summaries = []

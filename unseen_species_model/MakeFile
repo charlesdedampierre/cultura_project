@@ -11,4 +11,8 @@ kill_session:
 monitor_session:
 	tmux ls
 
+save_logs:
+tmux capture-pane -t unseen_model -p > server_log.txt
+
+
 # to leave: Press Ctrl + b (release both keys), then press d
