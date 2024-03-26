@@ -378,13 +378,17 @@ plot_complexity <- function(df_decade, df_indi, region_name, min_time, max_time,
 }
 
 
-
-
 # # Cultural Index Data
 df_decade <- read.csv(file = "../results/df_region_score.csv", sep = ",", header = TRUE)
 df_indi <- read.csv(file = "../results/df_individuals_score.csv", sep = ",", header = TRUE)
-df_population <- read.csv("../../environnement_data/population_region_name.csv")
-df_unseen <- read.csv(file = "../../unseen_species_model/results/estimations_charles_big_regions.csv", sep = ",", header = TRUE)
+
+# df_population <- read.csv("../../environnement_data/population_region_name.csv")
+# df_unseen <- read.csv(file = "../../unseen_species_model/results/estimations_charles_big_regions.csv", sep = ",", header = TRUE)
+
+df_population <- read.csv("../../unseen_species_model/data/china_population_clean.csv")
+df_unseen <- read.csv(file = "../../unseen_species_model/data/china_unseen.csv", sep = ",", header = TRUE)
+
+
 df_score_complexity <- read.csv(file = "../results/df_region_score_complexity.csv", sep = ",", header = TRUE)
 df_score_occupation <- read.csv(file = "../results/df_region_score_occupations.csv", sep = ",", header = TRUE)
 
@@ -408,14 +412,14 @@ df_unseen_capita$lower <- df_unseen_capita$lower / df_unseen_capita$population
 df_unseen_capita$upper <- df_unseen_capita$upper / df_unseen_capita$population
 
 
-span <- 0.2
+span <- 0.4
 top_n_cps <- 30
 
 # Load the JSON file into an R object
 parsed_data <- fromJSON("parameters_regions.json")
 
 regions_names <- names(parsed_data)
-# regions_names <- c("Chinese world")
+regions_names <- c("Chinese world")
 
 # Loop through region names and display them
 for (region_name in regions_names) {
