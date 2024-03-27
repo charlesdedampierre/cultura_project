@@ -77,3 +77,4 @@ class Individual(BaseModel):
     wikipedia_pages: t.List[WikipediaPage] = None
     regions: t.List[str] = None
     identifiers: t.List[ExternalID] = None
+    country_data_origin: t.Optional[str] = None  # birthcity #deathcity #nationality

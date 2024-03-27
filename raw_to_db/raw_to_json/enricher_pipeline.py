@@ -61,11 +61,11 @@ class Enricher:
         logger.info("Save Checkpoint 3")
         save_model(individuals, name=CHECKPOINT_PATH + "/checkpoint_3.jsonl")
 
-        logger.info("Compute Cultural Index of Individuals")
-        individuals: t.List[Individual] = get_cultural_index(individuals)
+        # logger.info("Compute Cultural Index of Individuals")
+        # individuals: t.List[Individual] = get_cultural_index(individuals)
 
-        logger.info("Save Checkpoint 4")
-        save_model(individuals, name=CHECKPOINT_PATH + "checkpoint_4.jsonl")
+        # logger.info("Save Checkpoint 4")
+        # save_model(individuals, name=CHECKPOINT_PATH + "checkpoint_4.jsonl")
 
         logger.info("Get Region Model form .csv")
         regions: t.List[Region] = get_regions()
@@ -76,7 +76,7 @@ class Enricher:
         logger.info("Get Region of Individuals")
         individuals: t.List[Individual] = get_individuals_regions(individuals, regions)
 
-        logger.info("Save Final Indiviudal Model with regions")
+        logger.info("Save Final Individual Model with regions")
         save_model(individuals, name=CHECKPOINT_PATH + "/checkpoint_5.jsonl")
 
         logger.info("Correct regions manually")
