@@ -157,7 +157,7 @@ def get_country_code(individuals: t.List[Individual]) -> t.List[Individual]:
     final = pd.concat(
         [df_final_deathcities, df_final_nationality, df_final_birthcities]
     )
-    order = ["deathcity", "birthcity", "nationality"]
+    order = ["deathcity", "birthcity", "nationality"]  # order to chose from
 
     sorting_key = lambda x: order.index(x) if x in order else float("inf")
 
