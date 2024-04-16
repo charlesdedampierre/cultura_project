@@ -43,6 +43,7 @@ re_central_europe,Central Europe,Lithuania,LTU,lt,500.0,1900,,,,,0
 re_central_europe,Central Europe,Czechia,CZE,cz,500.0,1900,,,,,0
 re_central_europe,Central Europe,Poland,POL,pl,500.0,1900,,,,,0
 re_central_europe,Central Europe,Hungary,HUN,hu,500.0,1900,,,,,0
+re_chinese_world,Chinese world,Mongolia,MNG,,-800.0,1900.0,,,,,0
 re_chinese_world,Chinese world,Taiwan,TWN,tw,-800.0,1900.0,,,,,0
 re_chinese_world,Chinese world,China,CHN,cn,-800.0,1900.0,,,,,0
 re_denmark,Denmark,Denmark,DNK,dk,-800.0,1900.0,,,,,0
@@ -249,6 +250,7 @@ re_persian_world,Persian world,Afghanistan,AFG,af,-800.0,1900.0,,,,,0
 re_persian_world,Persian world,Kyrgyzstan,KGZ,kg,-800.0,1900.0,,,,,0
 re_persian_world,Persian world,Uzbekistan,UZB,uz,-800.0,1900.0,,,,,0
 re_persian_world,Persian world,Turkmenistan,TKM,tm,-800.0,1900.0,,,,,0
+re_persian_world,Persian world,Tajikistan,TJK,,-800.0,1900.0,,,,,0
 re_persian_world,Persian world,Azerbaijan,AZE,az,-800.0,1900.0,,,,,0
 re_portugal,Portugal,Portugal,PRT,pt,-800.0,1900.0,,,,,0
 re_east_slavic,East Slavic,Belarus,BLR,by,500.0,1900,,,,,0

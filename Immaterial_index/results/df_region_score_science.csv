@@ -9,7 +9,7 @@
 7,Africa,1840,5
 8,Africa,1850,10
 9,Africa,1860,17
-10,Africa,1870,5
+10,Africa,1870,7
 11,Arabian peninsula,620,1
 12,Arabian peninsula,630,1
 13,Arabian peninsula,640,1
@@ -134,7 +134,7 @@
 132,Arabic world,1840,9
 133,Arabic world,1850,9
 134,Arabic world,1860,12
-135,Arabic world,1870,6
+135,Arabic world,1870,12
 136,Austria,740,1
 137,Austria,1360,1
 138,Austria,1420,1
@@ -175,8 +175,8 @@
 173,Austria,1840,102
 174,Austria,1850,86
 175,Austria,1860,118
-176,Austria,1870,59
-177,Balkans,-500,3
+176,Austria,1870,124
+177,Balkans,-500,2
 178,Balkans,-460,3
 179,Balkans,-450,1
 180,Balkans,-420,1
@@ -219,7 +219,7 @@
 217,Balkans,1840,13
 218,Balkans,1850,12
 219,Balkans,1860,33
-220,Balkans,1870,11
+220,Balkans,1870,23
 221,Belgium,1280,1
 222,Belgium,1380,1
 223,Belgium,1470,1
@@ -252,10 +252,10 @@
 250,Belgium,1810,3
 251,Belgium,1820,11
 252,Belgium,1830,21
-253,Belgium,1840,42
+253,Belgium,1840,41
 254,Belgium,1850,31
 255,Belgium,1860,44
-256,Belgium,1870,25
+256,Belgium,1870,40
 257,British Islands,830,1
 258,British Islands,1040,1
 259,British Islands,1110,1
@@ -303,7 +303,7 @@
 301,British Islands,1760,73
 302,British Islands,1770,84
 303,British Islands,1780,124
-304,British Islands,1790,102
+304,British Islands,1790,103
 305,British Islands,1800,144
 306,British Islands,1810,152
 307,British Islands,1820,203
@@ -311,7 +311,7 @@
 309,British Islands,1840,351
 310,British Islands,1850,337
 311,British Islands,1860,366
-312,British Islands,1870,177
+312,British Islands,1870,309
 313,Central America,1520,1
 314,Central America,1530,1
 315,Central America,1540,1
@@ -336,7 +336,7 @@
 334,Central America,1840,9
 335,Central America,1850,10
 336,Central America,1860,13
-337,Central America,1870,7
+337,Central America,1870,11
 338,Central Europe,1260,1
 339,Central Europe,1300,1
 340,Central Europe,1400,3
@@ -377,15 +377,15 @@
 375,Central Europe,1760,26
 376,Central Europe,1770,35
 377,Central Europe,1780,58
-378,Central Europe,1790,54
+378,Central Europe,1790,55
 379,Central Europe,1800,67
 380,Central Europe,1810,60
 381,Central Europe,1820,108
-382,Central Europe,1830,106
+382,Central Europe,1830,104
 383,Central Europe,1840,150
-384,Central Europe,1850,171
-385,Central Europe,1860,214
-386,Central Europe,1870,115
+384,Central Europe,1850,170
+385,Central Europe,1860,212
+386,Central Europe,1870,216
 387,Chinese world,-460,1
 388,Chinese world,-400,2
 389,Chinese world,-220,1
@@ -468,7 +468,7 @@
 466,Chinese world,1840,6
 467,Chinese world,1850,4
 468,Chinese world,1860,2
-469,Chinese world,1870,3
+469,Chinese world,1870,4
 470,Denmark,1200,1
 471,Denmark,1340,1
 472,Denmark,1420,1
@@ -497,13 +497,13 @@
 495,Denmark,1780,18
 496,Denmark,1790,17
 497,Denmark,1800,20
-498,Denmark,1810,10
+498,Denmark,1810,11
 499,Denmark,1820,19
 500,Denmark,1830,22
 501,Denmark,1840,21
 502,Denmark,1850,38
 503,Denmark,1860,40
-504,Denmark,1870,23
+504,Denmark,1870,43
 505,East Slavic,1140,1
 506,East Slavic,1400,1
 507,East Slavic,1530,1
@@ -534,12 +534,12 @@
 532,East Slavic,1800,39
 533,East Slavic,1810,39
 534,East Slavic,1820,73
-535,East Slavic,1830,77
+535,East Slavic,1830,79
 536,East Slavic,1840,102
-537,East Slavic,1850,113
-538,East Slavic,1860,151
-539,East Slavic,1870,100
-540,Eastern Europe,-500,3
+537,East Slavic,1850,114
+538,East Slavic,1860,153
+539,East Slavic,1870,183
+540,Eastern Europe,-500,2
 541,Eastern Europe,-460,3
 542,Eastern Europe,-450,1
 543,Eastern Europe,-420,1
@@ -602,7 +602,7 @@
 600,Eastern Europe,1760,46
 601,Eastern Europe,1770,70
 602,Eastern Europe,1780,113
-603,Eastern Europe,1790,97
+603,Eastern Europe,1790,98
 604,Eastern Europe,1800,114
 605,Eastern Europe,1810,112
 606,Eastern Europe,1820,200
@@ -610,7 +610,7 @@
 608,Eastern Europe,1840,286
 609,Eastern Europe,1850,321
 610,Eastern Europe,1860,425
-611,Eastern Europe,1870,241
+611,Eastern Europe,1870,444
 612,Finland,1440,1
 613,Finland,1600,1
 614,Finland,1640,3
@@ -632,7 +632,7 @@
 630,Finland,1840,15
 631,Finland,1850,9
 632,Finland,1860,13
-633,Finland,1870,11
+633,Finland,1870,20
 634,France,480,1
 635,France,980,1
 636,France,1180,2
@@ -683,15 +683,15 @@
 681,France,1760,121
 682,France,1770,97
 683,France,1780,188
-684,France,1790,165
+684,France,1790,164
 685,France,1800,164
 686,France,1810,211
 687,France,1820,225
 688,France,1830,283
-689,France,1840,420
+689,France,1840,419
 690,France,1850,368
 691,France,1860,456
-692,France,1870,183
+692,France,1870,328
 693,German world,740,2
 694,German world,820,1
 695,German world,840,1
@@ -743,15 +743,15 @@
 741,German world,1760,127
 742,German world,1770,131
 743,German world,1780,187
-744,German world,1790,164
+744,German world,1790,163
 745,German world,1800,250
 746,German world,1810,214
 747,German world,1820,276
 748,German world,1830,320
-749,German world,1840,556
+749,German world,1840,557
 750,German world,1850,460
 751,German world,1860,620
-752,German world,1870,324
+752,German world,1870,653
 753,Germany,820,1
 754,Germany,840,1
 755,Germany,1050,1
@@ -801,7 +801,7 @@
 799,Germany,1760,86
 800,Germany,1770,100
 801,Germany,1780,145
-802,Germany,1790,128
+802,Germany,1790,126
 803,Germany,1800,196
 804,Germany,1810,172
 805,Germany,1820,216
@@ -809,7 +809,7 @@
 807,Germany,1840,405
 808,Germany,1850,339
 809,Germany,1860,445
-810,Germany,1870,232
+810,Germany,1870,477
 811,Greece,-560,4
 812,Greece,-500,2
 813,Greece,-460,2
@@ -837,7 +837,7 @@
 835,Greece,1840,7
 836,Greece,1850,9
 837,Greece,1860,16
-838,Greece,1870,1
+838,Greece,1870,4
 839,Greek World,-590,1
 840,Greek World,-570,1
 841,Greek World,-560,5
@@ -922,7 +922,7 @@
 920,Greek World,1840,9
 921,Greek World,1850,11
 922,Greek World,1860,17
-923,Greek World,1870,1
+923,Greek World,1870,5
 924,Iceland,1580,1
 925,Iceland,1740,1
 926,Iceland,1750,1
@@ -962,7 +962,7 @@
 960,Indian world,1840,1
 961,Indian world,1850,1
 962,Indian world,1860,4
-963,Indian world,1870,1
+963,Indian world,1870,2
 964,Ireland,830,1
 965,Ireland,1580,1
 966,Ireland,1620,1
@@ -986,7 +986,7 @@
 984,Ireland,1840,20
 985,Ireland,1850,19
 986,Ireland,1860,26
-987,Ireland,1870,3
+987,Ireland,1870,8
 988,Italy,-550,1
 989,Italy,-490,1
 990,Italy,-260,1
@@ -1077,7 +1077,7 @@
 1075,Italy,1840,160
 1076,Italy,1850,164
 1077,Italy,1860,176
-1078,Italy,1870,80
+1078,Italy,1870,163
 1079,Japan,700,1
 1080,Japan,960,1
 1081,Japan,1610,1
@@ -1103,7 +1103,7 @@
 1101,Japan,1840,5
 1102,Japan,1850,4
 1103,Japan,1860,6
-1104,Japan,1870,10
+1104,Japan,1870,17
 1105,Korea,640,1
 1106,Korea,1440,1
 1107,Korea,1450,1
@@ -1176,7 +1176,7 @@
 1174,Low countries,1840,75
 1175,Low countries,1850,62
 1176,Low countries,1860,71
-1177,Low countries,1870,45
+1177,Low countries,1870,73
 1178,Muslim world,-360,1
 1179,Muslim world,-300,2
 1180,Muslim world,-280,1
@@ -1300,7 +1300,7 @@
 1298,Muslim world,1840,7
 1299,Muslim world,1850,10
 1300,Muslim world,1860,16
-1301,Muslim world,1870,6
+1301,Muslim world,1870,12
 1302,Netherlands,1000,1
 1303,Netherlands,1460,1
 1304,Netherlands,1520,1
@@ -1334,10 +1334,10 @@
 1332,Netherlands,1810,15
 1333,Netherlands,1820,12
 1334,Netherlands,1830,22
-1335,Netherlands,1840,33
+1335,Netherlands,1840,34
 1336,Netherlands,1850,30
 1337,Netherlands,1860,27
-1338,Netherlands,1870,20
+1338,Netherlands,1870,32
 1339,Nordic countries,1200,1
 1340,Nordic countries,1340,1
 1341,Nordic countries,1420,1
@@ -1376,7 +1376,7 @@
 1374,Nordic countries,1840,89
 1375,Nordic countries,1850,101
 1376,Nordic countries,1860,132
-1377,Nordic countries,1870,82
+1377,Nordic countries,1870,162
 1378,North America,1600,1
 1379,North America,1610,1
 1380,North America,1640,2
@@ -1401,7 +1401,7 @@
 1399,North America,1840,155
 1400,North America,1850,162
 1401,North America,1860,253
-1402,North America,1870,147
+1402,North America,1870,293
 1403,Northern China,-460,1
 1404,Northern China,-110,1
 1405,Northern China,-40,2
@@ -1440,7 +1440,7 @@
 1438,Northern China,1780,1
 1439,Northern China,1850,1
 1440,Northern China,1860,2
-1441,Northern China,1870,1
+1441,Northern China,1870,2
 1442,Northern France,980,1
 1443,Northern France,1180,1
 1444,Northern France,1210,1
@@ -1494,7 +1494,7 @@
 1492,Northern France,1840,266
 1493,Northern France,1850,256
 1494,Northern France,1860,310
-1495,Northern France,1870,110
+1495,Northern France,1870,210
 1496,Northern India,-400,1
 1497,Northern India,-340,1
 1498,Northern India,-160,1
@@ -1512,1039 +1512,1042 @@
 1510,Northern India,1840,1
 1511,Northern India,1850,1
 1512,Northern India,1860,1
-1513,Northern Italy,-100,1
-1514,Northern Italy,-30,1
-1515,Northern Italy,60,1
-1516,Northern Italy,440,1
-1517,Northern Italy,970,1
-1518,Northern Italy,1040,1
-1519,Northern Italy,1140,1
-1520,Northern Italy,1210,1
-1521,Northern Italy,1240,4
-1522,Northern Italy,1260,2
-1523,Northern Italy,1270,1
-1524,Northern Italy,1280,2
-1525,Northern Italy,1290,1
-1526,Northern Italy,1300,3
-1527,Northern Italy,1310,1
-1528,Northern Italy,1320,2
-1529,Northern Italy,1330,2
-1530,Northern Italy,1340,3
-1531,Northern Italy,1360,2
-1532,Northern Italy,1380,4
-1533,Northern Italy,1390,2
-1534,Northern Italy,1400,2
-1535,Northern Italy,1410,1
-1536,Northern Italy,1420,6
-1537,Northern Italy,1430,4
-1538,Northern Italy,1440,6
-1539,Northern Italy,1450,2
-1540,Northern Italy,1460,5
-1541,Northern Italy,1470,3
-1542,Northern Italy,1480,10
-1543,Northern Italy,1490,3
-1544,Northern Italy,1500,10
-1545,Northern Italy,1510,12
-1546,Northern Italy,1520,10
-1547,Northern Italy,1530,5
-1548,Northern Italy,1540,30
-1549,Northern Italy,1550,15
-1550,Northern Italy,1560,22
-1551,Northern Italy,1570,8
-1552,Northern Italy,1580,19
-1553,Northern Italy,1590,14
-1554,Northern Italy,1600,20
-1555,Northern Italy,1610,17
-1556,Northern Italy,1620,20
-1557,Northern Italy,1630,12
-1558,Northern Italy,1640,30
-1559,Northern Italy,1650,10
-1560,Northern Italy,1660,16
-1561,Northern Italy,1670,13
-1562,Northern Italy,1680,15
-1563,Northern Italy,1690,12
-1564,Northern Italy,1700,16
-1565,Northern Italy,1710,21
-1566,Northern Italy,1720,25
-1567,Northern Italy,1730,16
-1568,Northern Italy,1740,42
-1569,Northern Italy,1750,43
-1570,Northern Italy,1760,57
-1571,Northern Italy,1770,50
-1572,Northern Italy,1780,65
-1573,Northern Italy,1790,51
-1574,Northern Italy,1800,80
-1575,Northern Italy,1810,73
-1576,Northern Italy,1820,78
-1577,Northern Italy,1830,74
-1578,Northern Italy,1840,113
-1579,Northern Italy,1850,103
-1580,Northern Italy,1860,136
-1581,Northern Italy,1870,66
-1582,Northern Japan,1680,1
-1583,Northern Japan,1690,1
-1584,Northern Japan,1700,2
-1585,Northern Japan,1720,1
-1586,Northern Japan,1730,1
-1587,Northern Japan,1740,2
-1588,Northern Japan,1760,1
-1589,Northern Japan,1770,2
-1590,Northern Japan,1780,3
-1591,Northern Japan,1790,2
-1592,Northern Japan,1800,2
-1593,Northern Japan,1810,2
-1594,Northern Japan,1820,2
-1595,Northern Japan,1830,2
-1596,Northern Japan,1850,3
-1597,Northern Japan,1870,2
-1598,Northwestern Europe,40,1
-1599,Northwestern Europe,480,1
-1600,Northwestern Europe,740,2
-1601,Northwestern Europe,820,1
-1602,Northwestern Europe,830,1
-1603,Northwestern Europe,840,1
-1604,Northwestern Europe,980,1
-1605,Northwestern Europe,1000,1
-1606,Northwestern Europe,1040,1
-1607,Northwestern Europe,1050,1
-1608,Northwestern Europe,1080,1
-1609,Northwestern Europe,1110,1
-1610,Northwestern Europe,1120,1
-1611,Northwestern Europe,1130,1
-1612,Northwestern Europe,1140,1
-1613,Northwestern Europe,1160,1
-1614,Northwestern Europe,1170,1
-1615,Northwestern Europe,1180,4
-1616,Northwestern Europe,1200,2
-1617,Northwestern Europe,1210,3
-1618,Northwestern Europe,1220,1
-1619,Northwestern Europe,1230,2
-1620,Northwestern Europe,1240,2
-1621,Northwestern Europe,1260,1
-1622,Northwestern Europe,1270,1
-1623,Northwestern Europe,1280,4
-1624,Northwestern Europe,1300,3
-1625,Northwestern Europe,1320,5
-1626,Northwestern Europe,1330,3
-1627,Northwestern Europe,1340,6
-1628,Northwestern Europe,1350,3
-1629,Northwestern Europe,1360,4
-1630,Northwestern Europe,1380,3
-1631,Northwestern Europe,1400,3
-1632,Northwestern Europe,1420,3
-1633,Northwestern Europe,1430,2
-1634,Northwestern Europe,1440,8
-1635,Northwestern Europe,1460,6
-1636,Northwestern Europe,1470,2
-1637,Northwestern Europe,1480,14
-1638,Northwestern Europe,1490,4
-1639,Northwestern Europe,1500,22
-1640,Northwestern Europe,1510,9
-1641,Northwestern Europe,1520,27
-1642,Northwestern Europe,1530,22
-1643,Northwestern Europe,1540,57
-1644,Northwestern Europe,1550,38
-1645,Northwestern Europe,1560,70
-1646,Northwestern Europe,1570,47
-1647,Northwestern Europe,1580,91
-1648,Northwestern Europe,1590,46
-1649,Northwestern Europe,1600,93
-1650,Northwestern Europe,1610,75
-1651,Northwestern Europe,1620,109
-1652,Northwestern Europe,1630,78
-1653,Northwestern Europe,1640,128
-1654,Northwestern Europe,1650,94
-1655,Northwestern Europe,1660,157
-1656,Northwestern Europe,1670,110
-1657,Northwestern Europe,1680,171
-1658,Northwestern Europe,1690,135
-1659,Northwestern Europe,1700,146
-1660,Northwestern Europe,1710,129
-1661,Northwestern Europe,1720,147
-1662,Northwestern Europe,1730,154
-1663,Northwestern Europe,1740,283
-1664,Northwestern Europe,1750,258
-1665,Northwestern Europe,1760,409
-1666,Northwestern Europe,1770,370
-1667,Northwestern Europe,1780,577
-1668,Northwestern Europe,1790,494
-1669,Northwestern Europe,1800,629
-1670,Northwestern Europe,1810,631
-1671,Northwestern Europe,1820,796
-1672,Northwestern Europe,1830,928
-1673,Northwestern Europe,1840,1490
-1674,Northwestern Europe,1850,1324
-1675,Northwestern Europe,1860,1644
-1676,Northwestern Europe,1870,811
-1677,Norway,1720,2
-1678,Norway,1730,1
-1679,Norway,1750,3
-1680,Norway,1760,2
-1681,Norway,1770,5
-1682,Norway,1780,1
-1683,Norway,1790,1
-1684,Norway,1800,3
-1685,Norway,1810,3
-1686,Norway,1820,2
-1687,Norway,1830,8
-1688,Norway,1840,10
-1689,Norway,1850,12
-1690,Norway,1860,11
-1691,Norway,1870,9
-1692,Oceania,1800,3
-1693,Oceania,1810,4
-1694,Oceania,1820,8
-1695,Oceania,1830,11
-1696,Oceania,1840,16
-1697,Oceania,1850,25
-1698,Oceania,1860,41
-1699,Oceania,1870,26
-1700,Ottoman Turkey,1370,1
-1701,Ottoman Turkey,1380,1
-1702,Ottoman Turkey,1420,1
-1703,Ottoman Turkey,1460,1
-1704,Ottoman Turkey,1490,1
-1705,Ottoman Turkey,1540,1
-1706,Ottoman Turkey,1610,1
-1707,Ottoman Turkey,1720,1
-1708,Ottoman Turkey,1740,1
-1709,Ottoman Turkey,1750,1
-1710,Ottoman Turkey,1760,1
-1711,Ottoman Turkey,1810,1
-1712,Ottoman Turkey,1830,1
-1713,Ottoman Turkey,1850,2
-1714,Ottoman Turkey,1870,1
-1715,Ottoman world,1380,1
-1716,Ottoman world,1400,1
-1717,Ottoman world,1420,1
-1718,Ottoman world,1460,1
-1719,Ottoman world,1490,1
-1720,Ottoman world,1520,1
-1721,Ottoman world,1530,2
-1722,Ottoman world,1540,1
-1723,Ottoman world,1580,2
-1724,Ottoman world,1590,3
-1725,Ottoman world,1600,3
-1726,Ottoman world,1610,1
-1727,Ottoman world,1630,1
-1728,Ottoman world,1640,1
-1729,Ottoman world,1660,1
-1730,Ottoman world,1670,3
-1731,Ottoman world,1680,1
-1732,Ottoman world,1700,4
-1733,Ottoman world,1710,1
-1734,Ottoman world,1720,3
-1735,Ottoman world,1730,3
-1736,Ottoman world,1740,3
-1737,Ottoman world,1750,3
-1738,Ottoman world,1760,3
-1739,Ottoman world,1770,5
-1740,Ottoman world,1780,7
-1741,Ottoman world,1790,8
-1742,Ottoman world,1800,10
-1743,Ottoman world,1810,6
-1744,Ottoman world,1820,19
-1745,Ottoman world,1830,13
-1746,Ottoman world,1840,28
-1747,Ottoman world,1850,38
-1748,Ottoman world,1860,49
-1749,Ottoman world,1870,23
-1750,Persian world,770,1
-1751,Persian world,780,2
-1752,Persian world,800,1
-1753,Persian world,820,1
-1754,Persian world,840,2
-1755,Persian world,860,2
-1756,Persian world,880,2
-1757,Persian world,900,3
-1758,Persian world,930,1
-1759,Persian world,940,4
-1760,Persian world,970,1
-1761,Persian world,980,3
-1762,Persian world,990,2
-1763,Persian world,1000,3
-1764,Persian world,1010,1
-1765,Persian world,1020,2
-1766,Persian world,1030,1
-1767,Persian world,1040,2
-1768,Persian world,1050,1
-1769,Persian world,1060,2
-1770,Persian world,1080,3
-1771,Persian world,1090,2
-1772,Persian world,1100,1
-1773,Persian world,1110,1
-1774,Persian world,1130,1
-1775,Persian world,1140,1
-1776,Persian world,1160,2
-1777,Persian world,1180,1
-1778,Persian world,1210,1
-1779,Persian world,1240,7
-1780,Persian world,1260,1
-1781,Persian world,1270,1
-1782,Persian world,1280,2
-1783,Persian world,1300,2
-1784,Persian world,1320,2
-1785,Persian world,1340,1
-1786,Persian world,1360,1
-1787,Persian world,1380,2
-1788,Persian world,1400,1
-1789,Persian world,1420,1
-1790,Persian world,1430,1
-1791,Persian world,1440,1
-1792,Persian world,1490,1
-1793,Persian world,1500,1
-1794,Persian world,1540,2
-1795,Persian world,1570,2
-1796,Persian world,1580,1
-1797,Persian world,1620,1
-1798,Persian world,1740,2
-1799,Persian world,1750,1
-1800,Persian world,1800,1
-1801,Persian world,1810,1
-1802,Persian world,1820,2
-1803,Persian world,1830,2
-1804,Persian world,1850,3
-1805,Persian world,1860,5
-1806,Portugal,1480,1
-1807,Portugal,1490,1
-1808,Portugal,1500,1
-1809,Portugal,1520,1
-1810,Portugal,1530,1
-1811,Portugal,1540,10
-1812,Portugal,1550,1
-1813,Portugal,1560,2
-1814,Portugal,1580,3
-1815,Portugal,1590,1
-1816,Portugal,1600,1
-1817,Portugal,1620,1
-1818,Portugal,1640,1
-1819,Portugal,1680,2
-1820,Portugal,1720,2
-1821,Portugal,1740,1
-1822,Portugal,1750,1
-1823,Portugal,1760,3
-1824,Portugal,1770,4
-1825,Portugal,1780,5
-1826,Portugal,1790,4
-1827,Portugal,1800,3
-1828,Portugal,1810,5
-1829,Portugal,1820,6
-1830,Portugal,1840,10
-1831,Portugal,1850,3
-1832,Portugal,1860,11
-1833,Portugal,1870,6
-1834,South America,1500,1
-1835,South America,1520,1
-1836,South America,1560,1
-1837,South America,1580,1
-1838,South America,1600,2
-1839,South America,1610,1
-1840,South America,1620,2
-1841,South America,1640,2
-1842,South America,1650,1
-1843,South America,1660,1
-1844,South America,1690,1
-1845,South America,1700,1
-1846,South America,1710,4
-1847,South America,1720,1
-1848,South America,1730,2
-1849,South America,1740,3
-1850,South America,1770,2
-1851,South America,1780,8
-1852,South America,1790,14
-1853,South America,1800,11
-1854,South America,1810,11
-1855,South America,1820,13
-1856,South America,1830,22
-1857,South America,1840,29
-1858,South America,1850,19
-1859,South America,1860,34
-1860,South America,1870,19
-1861,South East Asia,1580,1
-1862,South East Asia,1600,1
-1863,South East Asia,1630,2
-1864,South East Asia,1650,1
-1865,South East Asia,1660,1
-1866,South East Asia,1670,1
-1867,South East Asia,1680,1
-1868,South East Asia,1690,1
-1869,South East Asia,1700,1
-1870,South East Asia,1750,1
-1871,South East Asia,1760,1
-1872,South East Asia,1770,2
-1873,South East Asia,1780,2
-1874,South East Asia,1790,1
-1875,South East Asia,1800,1
-1876,South East Asia,1810,1
-1877,South East Asia,1820,4
-1878,South East Asia,1830,6
-1879,South East Asia,1840,5
-1880,South East Asia,1850,2
-1881,South East Asia,1860,4
-1882,South East Asia,1870,4
-1883,Southern China,60,1
-1884,Southern China,110,1
-1885,Southern China,140,1
-1886,Southern China,230,1
-1887,Southern China,260,1
-1888,Southern China,460,1
-1889,Southern China,1060,2
-1890,Southern China,1070,1
-1891,Southern China,1080,2
-1892,Southern China,1140,1
-1893,Southern China,1160,1
-1894,Southern China,1170,1
-1895,Southern China,1200,1
-1896,Southern China,1240,1
-1897,Southern China,1270,1
-1898,Southern China,1280,1
-1899,Southern China,1300,1
-1900,Southern China,1310,1
-1901,Southern China,1350,1
-1902,Southern China,1360,1
-1903,Southern China,1540,2
-1904,Southern China,1570,1
-1905,Southern China,1580,1
-1906,Southern China,1600,1
-1907,Southern China,1610,1
-1908,Southern China,1620,1
-1909,Southern China,1630,1
-1910,Southern China,1640,1
-1911,Southern China,1650,1
-1912,Southern China,1660,2
-1913,Southern China,1670,1
-1914,Southern China,1690,1
-1915,Southern China,1720,1
-1916,Southern China,1760,1
-1917,Southern China,1800,3
-1918,Southern China,1810,1
-1919,Southern China,1820,1
-1920,Southern China,1840,2
-1921,Southern China,1850,3
-1922,Southern France,480,1
-1923,Southern France,1270,1
-1924,Southern France,1280,1
-1925,Southern France,1320,2
-1926,Southern France,1340,1
-1927,Southern France,1480,1
-1928,Southern France,1500,1
-1929,Southern France,1520,2
-1930,Southern France,1530,2
-1931,Southern France,1540,8
-1932,Southern France,1550,3
-1933,Southern France,1560,4
-1934,Southern France,1570,2
-1935,Southern France,1580,7
-1936,Southern France,1590,1
-1937,Southern France,1600,3
-1938,Southern France,1610,1
-1939,Southern France,1620,9
-1940,Southern France,1630,4
-1941,Southern France,1640,7
-1942,Southern France,1650,2
-1943,Southern France,1660,8
-1944,Southern France,1670,4
-1945,Southern France,1680,6
-1946,Southern France,1690,16
-1947,Southern France,1700,12
-1948,Southern France,1710,10
-1949,Southern France,1720,10
-1950,Southern France,1730,14
-1951,Southern France,1740,23
-1952,Southern France,1750,18
-1953,Southern France,1760,25
-1954,Southern France,1770,27
-1955,Southern France,1780,46
-1956,Southern France,1790,46
-1957,Southern France,1800,43
-1958,Southern France,1810,50
-1959,Southern France,1820,62
-1960,Southern France,1830,74
-1961,Southern France,1840,112
-1962,Southern France,1850,74
-1963,Southern France,1860,98
-1964,Southern France,1870,48
-1965,Southern India,1150,1
-1966,Southern India,1400,1
-1967,Southern India,1480,1
-1968,Southern India,1540,1
-1969,Southern India,1600,1
-1970,Southern India,1860,3
-1971,Southern India,1870,1
-1972,Southern Italy,-550,1
-1973,Southern Italy,-490,1
-1974,Southern Italy,-200,1
-1975,Southern Italy,-160,1
-1976,Southern Italy,-100,1
-1977,Southern Italy,-60,1
-1978,Southern Italy,-50,1
-1979,Southern Italy,-30,2
-1980,Southern Italy,50,1
-1981,Southern Italy,100,1
-1982,Southern Italy,130,1
-1983,Southern Italy,150,1
-1984,Southern Italy,240,2
-1985,Southern Italy,360,1
-1986,Southern Italy,400,1
-1987,Southern Italy,520,1
-1988,Southern Italy,950,1
-1989,Southern Italy,1100,1
-1990,Southern Italy,1140,2
-1991,Southern Italy,1150,1
-1992,Southern Italy,1250,1
-1993,Southern Italy,1320,2
-1994,Southern Italy,1480,2
-1995,Southern Italy,1490,1
-1996,Southern Italy,1500,3
-1997,Southern Italy,1510,2
-1998,Southern Italy,1520,1
-1999,Southern Italy,1530,2
-2000,Southern Italy,1540,6
-2001,Southern Italy,1550,1
-2002,Southern Italy,1560,4
-2003,Southern Italy,1570,6
-2004,Southern Italy,1580,8
-2005,Southern Italy,1590,3
-2006,Southern Italy,1600,9
-2007,Southern Italy,1610,6
-2008,Southern Italy,1620,9
-2009,Southern Italy,1630,1
-2010,Southern Italy,1640,9
-2011,Southern Italy,1650,8
-2012,Southern Italy,1660,3
-2013,Southern Italy,1670,8
-2014,Southern Italy,1680,4
-2015,Southern Italy,1690,6
-2016,Southern Italy,1700,4
-2017,Southern Italy,1710,1
-2018,Southern Italy,1720,8
-2019,Southern Italy,1730,6
-2020,Southern Italy,1740,9
-2021,Southern Italy,1750,6
-2022,Southern Italy,1760,16
-2023,Southern Italy,1770,15
-2024,Southern Italy,1780,25
-2025,Southern Italy,1790,18
-2026,Southern Italy,1800,28
-2027,Southern Italy,1810,22
-2028,Southern Italy,1820,28
-2029,Southern Italy,1830,21
-2030,Southern Italy,1840,37
-2031,Southern Italy,1850,52
-2032,Southern Italy,1860,29
-2033,Southern Italy,1870,13
-2034,Southern Japan,700,1
-2035,Southern Japan,960,1
-2036,Southern Japan,1610,1
-2037,Southern Japan,1640,1
-2038,Southern Japan,1660,2
-2039,Southern Japan,1670,1
-2040,Southern Japan,1700,1
-2041,Southern Japan,1720,1
-2042,Southern Japan,1730,1
-2043,Southern Japan,1760,2
-2044,Southern Japan,1800,2
-2045,Southern Japan,1810,1
-2046,Southern Japan,1820,3
-2047,Southern Japan,1830,1
-2048,Southern Japan,1840,3
-2049,Southern Japan,1860,1
-2050,Southern Japan,1870,3
-2051,Southwestern Europe,-550,1
-2052,Southwestern Europe,-490,1
-2053,Southwestern Europe,-260,1
-2054,Southwestern Europe,-200,1
-2055,Southwestern Europe,-160,1
-2056,Southwestern Europe,-100,2
-2057,Southwestern Europe,-60,1
-2058,Southwestern Europe,-50,1
-2059,Southwestern Europe,-30,2
-2060,Southwestern Europe,50,1
-2061,Southwestern Europe,60,1
-2062,Southwestern Europe,80,1
-2063,Southwestern Europe,100,2
-2064,Southwestern Europe,130,1
-2065,Southwestern Europe,150,1
-2066,Southwestern Europe,200,1
-2067,Southwestern Europe,240,2
-2068,Southwestern Europe,360,1
-2069,Southwestern Europe,400,1
-2070,Southwestern Europe,440,1
-2071,Southwestern Europe,510,1
-2072,Southwestern Europe,520,1
-2073,Southwestern Europe,820,1
-2074,Southwestern Europe,940,1
-2075,Southwestern Europe,950,1
-2076,Southwestern Europe,970,1
-2077,Southwestern Europe,1040,1
-2078,Southwestern Europe,1100,2
-2079,Southwestern Europe,1140,3
-2080,Southwestern Europe,1150,2
-2081,Southwestern Europe,1210,1
-2082,Southwestern Europe,1220,1
-2083,Southwestern Europe,1240,4
-2084,Southwestern Europe,1250,1
-2085,Southwestern Europe,1260,4
-2086,Southwestern Europe,1270,1
-2087,Southwestern Europe,1280,4
-2088,Southwestern Europe,1290,2
-2089,Southwestern Europe,1300,4
-2090,Southwestern Europe,1310,1
-2091,Southwestern Europe,1320,4
-2092,Southwestern Europe,1330,2
-2093,Southwestern Europe,1340,3
-2094,Southwestern Europe,1360,3
-2095,Southwestern Europe,1380,7
-2096,Southwestern Europe,1390,2
-2097,Southwestern Europe,1400,3
-2098,Southwestern Europe,1410,1
-2099,Southwestern Europe,1420,6
-2100,Southwestern Europe,1430,4
-2101,Southwestern Europe,1440,8
-2102,Southwestern Europe,1450,2
-2103,Southwestern Europe,1460,5
-2104,Southwestern Europe,1470,3
-2105,Southwestern Europe,1480,17
-2106,Southwestern Europe,1490,7
-2107,Southwestern Europe,1500,19
-2108,Southwestern Europe,1510,15
-2109,Southwestern Europe,1520,21
-2110,Southwestern Europe,1530,14
-2111,Southwestern Europe,1540,58
-2112,Southwestern Europe,1550,24
-2113,Southwestern Europe,1560,39
-2114,Southwestern Europe,1570,20
-2115,Southwestern Europe,1580,41
-2116,Southwestern Europe,1590,24
-2117,Southwestern Europe,1600,39
-2118,Southwestern Europe,1610,27
-2119,Southwestern Europe,1620,36
-2120,Southwestern Europe,1630,18
-2121,Southwestern Europe,1640,45
-2122,Southwestern Europe,1650,20
-2123,Southwestern Europe,1660,21
-2124,Southwestern Europe,1670,25
-2125,Southwestern Europe,1680,26
-2126,Southwestern Europe,1690,21
-2127,Southwestern Europe,1700,27
-2128,Southwestern Europe,1710,25
-2129,Southwestern Europe,1720,42
-2130,Southwestern Europe,1730,31
-2131,Southwestern Europe,1740,69
-2132,Southwestern Europe,1750,67
-2133,Southwestern Europe,1760,93
-2134,Southwestern Europe,1770,86
-2135,Southwestern Europe,1780,141
-2136,Southwestern Europe,1790,107
-2137,Southwestern Europe,1800,145
-2138,Southwestern Europe,1810,125
-2139,Southwestern Europe,1820,133
-2140,Southwestern Europe,1830,121
-2141,Southwestern Europe,1840,214
-2142,Southwestern Europe,1850,204
-2143,Southwestern Europe,1860,269
-2144,Southwestern Europe,1870,120
-2145,Spain,820,1
-2146,Spain,940,1
-2147,Spain,1100,1
-2148,Spain,1150,1
-2149,Spain,1220,1
-2150,Spain,1260,1
-2151,Spain,1280,2
-2152,Spain,1290,1
-2153,Spain,1300,1
-2154,Spain,1360,1
-2155,Spain,1380,2
-2156,Spain,1400,1
-2157,Spain,1440,1
-2158,Spain,1480,3
-2159,Spain,1490,1
-2160,Spain,1500,5
-2161,Spain,1510,1
-2162,Spain,1520,9
-2163,Spain,1530,6
-2164,Spain,1540,10
-2165,Spain,1550,8
-2166,Spain,1560,12
-2167,Spain,1570,6
-2168,Spain,1580,10
-2169,Spain,1590,6
-2170,Spain,1600,7
-2171,Spain,1610,4
-2172,Spain,1620,5
-2173,Spain,1630,5
-2174,Spain,1640,4
-2175,Spain,1650,1
-2176,Spain,1660,2
-2177,Spain,1670,4
-2178,Spain,1680,5
-2179,Spain,1690,3
-2180,Spain,1700,7
-2181,Spain,1710,2
-2182,Spain,1720,7
-2183,Spain,1730,8
-2184,Spain,1740,15
-2185,Spain,1750,15
-2186,Spain,1760,15
-2187,Spain,1770,17
-2188,Spain,1780,39
-2189,Spain,1790,30
-2190,Spain,1800,32
-2191,Spain,1810,25
-2192,Spain,1820,16
-2193,Spain,1830,23
-2194,Spain,1840,44
-2195,Spain,1850,37
-2196,Spain,1860,82
-2197,Spain,1870,34
-2198,Sweden,1480,1
-2199,Sweden,1590,1
-2200,Sweden,1600,2
-2201,Sweden,1610,5
-2202,Sweden,1620,4
-2203,Sweden,1630,3
-2204,Sweden,1640,2
-2205,Sweden,1650,4
-2206,Sweden,1660,10
-2207,Sweden,1670,8
-2208,Sweden,1680,10
-2209,Sweden,1690,5
-2210,Sweden,1700,12
-2211,Sweden,1710,7
-2212,Sweden,1720,8
-2213,Sweden,1730,11
-2214,Sweden,1740,21
-2215,Sweden,1750,22
-2216,Sweden,1760,34
-2217,Sweden,1770,32
-2218,Sweden,1780,33
-2219,Sweden,1790,26
-2220,Sweden,1800,19
-2221,Sweden,1810,19
-2222,Sweden,1820,43
-2223,Sweden,1830,29
-2224,Sweden,1840,44
-2225,Sweden,1850,43
-2226,Sweden,1860,66
-2227,Sweden,1870,39
-2228,Switzerland,740,1
-2229,Switzerland,1440,1
-2230,Switzerland,1520,2
-2231,Switzerland,1530,1
-2232,Switzerland,1540,2
-2233,Switzerland,1550,1
-2234,Switzerland,1560,3
-2235,Switzerland,1570,2
-2236,Switzerland,1580,3
-2237,Switzerland,1590,2
-2238,Switzerland,1600,4
-2239,Switzerland,1610,1
-2240,Switzerland,1620,3
-2241,Switzerland,1630,2
-2242,Switzerland,1640,5
-2243,Switzerland,1660,6
-2244,Switzerland,1670,2
-2245,Switzerland,1680,4
-2246,Switzerland,1690,5
-2247,Switzerland,1700,6
-2248,Switzerland,1710,4
-2249,Switzerland,1720,8
-2250,Switzerland,1730,8
-2251,Switzerland,1740,14
-2252,Switzerland,1750,10
-2253,Switzerland,1760,13
-2254,Switzerland,1770,15
-2255,Switzerland,1780,19
-2256,Switzerland,1790,10
-2257,Switzerland,1800,24
-2258,Switzerland,1810,19
-2259,Switzerland,1820,20
-2260,Switzerland,1830,30
-2261,Switzerland,1840,48
-2262,Switzerland,1850,35
-2263,Switzerland,1860,57
-2264,Switzerland,1870,33
-2265,United Kingdom,40,1
-2266,United Kingdom,1040,1
-2267,United Kingdom,1110,1
-2268,United Kingdom,1140,1
-2269,United Kingdom,1160,1
-2270,United Kingdom,1170,1
-2271,United Kingdom,1180,1
-2272,United Kingdom,1200,1
-2273,United Kingdom,1210,2
-2274,United Kingdom,1240,1
-2275,United Kingdom,1260,1
-2276,United Kingdom,1320,1
-2277,United Kingdom,1330,2
-2278,United Kingdom,1340,3
-2279,United Kingdom,1350,1
-2280,United Kingdom,1360,1
-2281,United Kingdom,1420,1
-2282,United Kingdom,1480,1
-2283,United Kingdom,1500,1
-2284,United Kingdom,1510,1
-2285,United Kingdom,1520,2
-2286,United Kingdom,1530,1
-2287,United Kingdom,1540,4
-2288,United Kingdom,1550,5
-2289,United Kingdom,1560,4
-2290,United Kingdom,1570,9
-2291,United Kingdom,1580,15
-2292,United Kingdom,1590,7
-2293,United Kingdom,1600,15
-2294,United Kingdom,1610,12
-2295,United Kingdom,1620,7
-2296,United Kingdom,1630,10
-2297,United Kingdom,1640,25
-2298,United Kingdom,1650,24
-2299,United Kingdom,1660,44
-2300,United Kingdom,1670,24
-2301,United Kingdom,1680,29
-2302,United Kingdom,1690,25
-2303,United Kingdom,1700,35
-2304,United Kingdom,1710,21
-2305,United Kingdom,1720,33
-2306,United Kingdom,1730,33
-2307,United Kingdom,1740,54
-2308,United Kingdom,1750,54
-2309,United Kingdom,1760,69
-2310,United Kingdom,1770,81
-2311,United Kingdom,1780,118
-2312,United Kingdom,1790,99
-2313,United Kingdom,1800,137
-2314,United Kingdom,1810,142
-2315,United Kingdom,1820,197
-2316,United Kingdom,1830,209
-2317,United Kingdom,1840,331
-2318,United Kingdom,1850,314
-2319,United Kingdom,1860,340
-2320,United Kingdom,1870,174
-2321,Western Europe,-550,1
-2322,Western Europe,-490,1
-2323,Western Europe,-260,1
-2324,Western Europe,-200,1
-2325,Western Europe,-160,1
-2326,Western Europe,-100,2
-2327,Western Europe,-60,1
-2328,Western Europe,-50,1
-2329,Western Europe,-30,2
-2330,Western Europe,40,1
-2331,Western Europe,50,1
-2332,Western Europe,60,1
-2333,Western Europe,80,1
-2334,Western Europe,100,2
-2335,Western Europe,130,1
-2336,Western Europe,150,1
-2337,Western Europe,200,1
-2338,Western Europe,240,2
-2339,Western Europe,360,1
-2340,Western Europe,400,1
-2341,Western Europe,440,1
-2342,Western Europe,480,1
-2343,Western Europe,510,1
-2344,Western Europe,520,1
-2345,Western Europe,740,2
-2346,Western Europe,820,2
-2347,Western Europe,830,1
-2348,Western Europe,840,1
-2349,Western Europe,940,1
-2350,Western Europe,950,1
-2351,Western Europe,970,1
-2352,Western Europe,980,1
-2353,Western Europe,1000,1
-2354,Western Europe,1040,2
-2355,Western Europe,1050,1
-2356,Western Europe,1080,1
-2357,Western Europe,1100,2
-2358,Western Europe,1110,1
-2359,Western Europe,1120,1
-2360,Western Europe,1130,1
-2361,Western Europe,1140,4
-2362,Western Europe,1150,2
-2363,Western Europe,1160,1
-2364,Western Europe,1170,1
-2365,Western Europe,1180,4
-2366,Western Europe,1200,2
-2367,Western Europe,1210,4
-2368,Western Europe,1220,2
-2369,Western Europe,1230,2
-2370,Western Europe,1240,6
-2371,Western Europe,1250,1
-2372,Western Europe,1260,5
-2373,Western Europe,1270,2
-2374,Western Europe,1280,8
-2375,Western Europe,1290,2
-2376,Western Europe,1300,7
-2377,Western Europe,1310,1
-2378,Western Europe,1320,9
-2379,Western Europe,1330,5
-2380,Western Europe,1340,9
-2381,Western Europe,1350,3
-2382,Western Europe,1360,7
-2383,Western Europe,1380,10
-2384,Western Europe,1390,2
-2385,Western Europe,1400,6
-2386,Western Europe,1410,1
-2387,Western Europe,1420,9
-2388,Western Europe,1430,6
-2389,Western Europe,1440,16
-2390,Western Europe,1450,2
-2391,Western Europe,1460,11
-2392,Western Europe,1470,5
-2393,Western Europe,1480,31
-2394,Western Europe,1490,11
-2395,Western Europe,1500,41
-2396,Western Europe,1510,24
-2397,Western Europe,1520,48
-2398,Western Europe,1530,36
-2399,Western Europe,1540,115
-2400,Western Europe,1550,62
-2401,Western Europe,1560,110
-2402,Western Europe,1570,68
-2403,Western Europe,1580,133
-2404,Western Europe,1590,70
-2405,Western Europe,1600,132
-2406,Western Europe,1610,102
-2407,Western Europe,1620,145
-2408,Western Europe,1630,97
-2409,Western Europe,1640,172
-2410,Western Europe,1650,114
-2411,Western Europe,1660,178
-2412,Western Europe,1670,136
-2413,Western Europe,1680,198
-2414,Western Europe,1690,157
-2415,Western Europe,1700,173
-2416,Western Europe,1710,154
-2417,Western Europe,1720,189
-2418,Western Europe,1730,186
-2419,Western Europe,1740,354
-2420,Western Europe,1750,325
-2421,Western Europe,1760,506
-2422,Western Europe,1770,457
-2423,Western Europe,1780,722
-2424,Western Europe,1790,603
-2425,Western Europe,1800,777
-2426,Western Europe,1810,759
-2427,Western Europe,1820,932
-2428,Western Europe,1830,1053
-2429,Western Europe,1840,1709
-2430,Western Europe,1850,1534
-2431,Western Europe,1860,1916
-2432,Western Europe,1870,932
-2433,Yangtze,60,1
-2434,Yangtze,260,1
-2435,Yangtze,460,1
-2436,Yangtze,1070,1
-2437,Yangtze,1140,1
-2438,Yangtze,1160,1
-2439,Yangtze,1170,1
-2440,Yangtze,1200,1
-2441,Yangtze,1270,1
-2442,Yangtze,1300,1
-2443,Yangtze,1350,1
-2444,Yangtze,1360,1
-2445,Yangtze,1540,1
-2446,Yangtze,1570,1
-2447,Yangtze,1580,1
-2448,Yangtze,1600,1
-2449,Yangtze,1610,1
-2450,Yangtze,1620,1
-2451,Yangtze,1640,1
-2452,Yangtze,1650,1
-2453,Yangtze,1660,1
-2454,Yangtze,1690,1
-2455,Yangtze,1720,1
-2456,Yangtze,1760,1
-2457,Yangtze,1800,3
-2458,Yangtze,1810,1
-2459,Yangtze,1820,1
-2460,Yangtze,1840,1
-2461,Yangtze,1850,2
-2462,mediterranean World,-590,1
-2463,mediterranean World,-570,1
-2464,mediterranean World,-560,1
-2465,mediterranean World,-550,2
-2466,mediterranean World,-500,3
-2467,mediterranean World,-490,1
-2468,mediterranean World,-460,6
-2469,mediterranean World,-450,1
-2470,mediterranean World,-420,1
-2471,mediterranean World,-410,1
-2472,mediterranean World,-400,2
-2473,mediterranean World,-390,1
-2474,mediterranean World,-380,1
-2475,mediterranean World,-370,1
-2476,mediterranean World,-360,1
-2477,mediterranean World,-350,1
-2478,mediterranean World,-340,2
-2479,mediterranean World,-330,1
-2480,mediterranean World,-320,2
-2481,mediterranean World,-300,3
-2482,mediterranean World,-290,1
-2483,mediterranean World,-280,2
-2484,mediterranean World,-270,3
-2485,mediterranean World,-260,1
-2486,mediterranean World,-250,1
-2487,mediterranean World,-240,3
-2488,mediterranean World,-230,1
-2489,mediterranean World,-220,1
-2490,mediterranean World,-200,2
-2491,mediterranean World,-170,1
-2492,mediterranean World,-160,1
-2493,mediterranean World,-150,1
-2494,mediterranean World,-120,3
-2495,mediterranean World,-110,1
-2496,mediterranean World,-100,5
-2497,mediterranean World,-60,1
-2498,mediterranean World,-50,1
-2499,mediterranean World,-30,2
-2500,mediterranean World,-20,1
-2501,mediterranean World,0,1
-2502,mediterranean World,40,2
-2503,mediterranean World,50,2
-2504,mediterranean World,60,1
-2505,mediterranean World,80,3
-2506,mediterranean World,100,5
-2507,mediterranean World,130,1
-2508,mediterranean World,140,3
-2509,mediterranean World,150,1
-2510,mediterranean World,160,1
-2511,mediterranean World,200,1
-2512,mediterranean World,240,4
-2513,mediterranean World,280,3
-2514,mediterranean World,320,1
-2515,mediterranean World,340,1
-2516,mediterranean World,360,1
-2517,mediterranean World,370,1
-2518,mediterranean World,400,2
-2519,mediterranean World,440,2
-2520,mediterranean World,450,1
-2521,mediterranean World,470,1
-2522,mediterranean World,480,2
-2523,mediterranean World,510,2
-2524,mediterranean World,520,1
-2525,mediterranean World,540,1
-2526,mediterranean World,610,1
-2527,mediterranean World,630,1
-2528,mediterranean World,690,1
-2529,mediterranean World,1160,1
-2530,mediterranean World,1230,1
-2531,mediterranean World,1280,1
-2532,mediterranean World,1380,2
-2533,mediterranean World,1400,1
-2534,mediterranean World,1420,1
-2535,mediterranean World,1600,2
-2536,mediterranean World,1700,1
-2537,mediterranean World,1730,1
-2538,mediterranean World,1750,1
-2539,mediterranean World,1770,1
-2540,mediterranean World,1790,2
-2541,mediterranean World,1800,5
-2542,mediterranean World,1810,2
-2543,mediterranean World,1820,3
-2544,mediterranean World,1830,2
-2545,mediterranean World,1840,7
-2546,mediterranean World,1850,9
-2547,mediterranean World,1860,16
-2548,mediterranean World,1870,1
+1513,Northern India,1870,1
+1514,Northern Italy,-100,1
+1515,Northern Italy,-30,1
+1516,Northern Italy,60,1
+1517,Northern Italy,440,1
+1518,Northern Italy,970,1
+1519,Northern Italy,1040,1
+1520,Northern Italy,1140,1
+1521,Northern Italy,1210,1
+1522,Northern Italy,1240,4
+1523,Northern Italy,1260,2
+1524,Northern Italy,1270,1
+1525,Northern Italy,1280,2
+1526,Northern Italy,1290,1
+1527,Northern Italy,1300,3
+1528,Northern Italy,1310,1
+1529,Northern Italy,1320,2
+1530,Northern Italy,1330,2
+1531,Northern Italy,1340,3
+1532,Northern Italy,1360,2
+1533,Northern Italy,1380,4
+1534,Northern Italy,1390,2
+1535,Northern Italy,1400,2
+1536,Northern Italy,1410,1
+1537,Northern Italy,1420,6
+1538,Northern Italy,1430,4
+1539,Northern Italy,1440,6
+1540,Northern Italy,1450,2
+1541,Northern Italy,1460,5
+1542,Northern Italy,1470,3
+1543,Northern Italy,1480,10
+1544,Northern Italy,1490,3
+1545,Northern Italy,1500,10
+1546,Northern Italy,1510,12
+1547,Northern Italy,1520,10
+1548,Northern Italy,1530,5
+1549,Northern Italy,1540,30
+1550,Northern Italy,1550,15
+1551,Northern Italy,1560,22
+1552,Northern Italy,1570,8
+1553,Northern Italy,1580,19
+1554,Northern Italy,1590,14
+1555,Northern Italy,1600,20
+1556,Northern Italy,1610,17
+1557,Northern Italy,1620,20
+1558,Northern Italy,1630,12
+1559,Northern Italy,1640,30
+1560,Northern Italy,1650,10
+1561,Northern Italy,1660,16
+1562,Northern Italy,1670,13
+1563,Northern Italy,1680,15
+1564,Northern Italy,1690,12
+1565,Northern Italy,1700,16
+1566,Northern Italy,1710,21
+1567,Northern Italy,1720,25
+1568,Northern Italy,1730,16
+1569,Northern Italy,1740,42
+1570,Northern Italy,1750,43
+1571,Northern Italy,1760,57
+1572,Northern Italy,1770,50
+1573,Northern Italy,1780,65
+1574,Northern Italy,1790,51
+1575,Northern Italy,1800,80
+1576,Northern Italy,1810,73
+1577,Northern Italy,1820,78
+1578,Northern Italy,1830,74
+1579,Northern Italy,1840,113
+1580,Northern Italy,1850,103
+1581,Northern Italy,1860,136
+1582,Northern Italy,1870,120
+1583,Northern Japan,1680,1
+1584,Northern Japan,1690,1
+1585,Northern Japan,1700,2
+1586,Northern Japan,1720,1
+1587,Northern Japan,1730,1
+1588,Northern Japan,1740,2
+1589,Northern Japan,1760,1
+1590,Northern Japan,1770,2
+1591,Northern Japan,1780,3
+1592,Northern Japan,1790,2
+1593,Northern Japan,1800,2
+1594,Northern Japan,1810,2
+1595,Northern Japan,1820,2
+1596,Northern Japan,1830,2
+1597,Northern Japan,1850,3
+1598,Northern Japan,1870,4
+1599,Northwestern Europe,40,1
+1600,Northwestern Europe,480,1
+1601,Northwestern Europe,740,2
+1602,Northwestern Europe,820,1
+1603,Northwestern Europe,830,1
+1604,Northwestern Europe,840,1
+1605,Northwestern Europe,980,1
+1606,Northwestern Europe,1000,1
+1607,Northwestern Europe,1040,1
+1608,Northwestern Europe,1050,1
+1609,Northwestern Europe,1080,1
+1610,Northwestern Europe,1110,1
+1611,Northwestern Europe,1120,1
+1612,Northwestern Europe,1130,1
+1613,Northwestern Europe,1140,1
+1614,Northwestern Europe,1160,1
+1615,Northwestern Europe,1170,1
+1616,Northwestern Europe,1180,4
+1617,Northwestern Europe,1200,2
+1618,Northwestern Europe,1210,3
+1619,Northwestern Europe,1220,1
+1620,Northwestern Europe,1230,2
+1621,Northwestern Europe,1240,2
+1622,Northwestern Europe,1260,1
+1623,Northwestern Europe,1270,1
+1624,Northwestern Europe,1280,4
+1625,Northwestern Europe,1300,3
+1626,Northwestern Europe,1320,5
+1627,Northwestern Europe,1330,3
+1628,Northwestern Europe,1340,6
+1629,Northwestern Europe,1350,3
+1630,Northwestern Europe,1360,4
+1631,Northwestern Europe,1380,3
+1632,Northwestern Europe,1400,3
+1633,Northwestern Europe,1420,3
+1634,Northwestern Europe,1430,2
+1635,Northwestern Europe,1440,8
+1636,Northwestern Europe,1460,6
+1637,Northwestern Europe,1470,2
+1638,Northwestern Europe,1480,14
+1639,Northwestern Europe,1490,4
+1640,Northwestern Europe,1500,22
+1641,Northwestern Europe,1510,9
+1642,Northwestern Europe,1520,27
+1643,Northwestern Europe,1530,22
+1644,Northwestern Europe,1540,57
+1645,Northwestern Europe,1550,38
+1646,Northwestern Europe,1560,70
+1647,Northwestern Europe,1570,47
+1648,Northwestern Europe,1580,91
+1649,Northwestern Europe,1590,46
+1650,Northwestern Europe,1600,93
+1651,Northwestern Europe,1610,75
+1652,Northwestern Europe,1620,109
+1653,Northwestern Europe,1630,78
+1654,Northwestern Europe,1640,128
+1655,Northwestern Europe,1650,94
+1656,Northwestern Europe,1660,157
+1657,Northwestern Europe,1670,110
+1658,Northwestern Europe,1680,171
+1659,Northwestern Europe,1690,135
+1660,Northwestern Europe,1700,146
+1661,Northwestern Europe,1710,129
+1662,Northwestern Europe,1720,147
+1663,Northwestern Europe,1730,154
+1664,Northwestern Europe,1740,283
+1665,Northwestern Europe,1750,258
+1666,Northwestern Europe,1760,409
+1667,Northwestern Europe,1770,370
+1668,Northwestern Europe,1780,577
+1669,Northwestern Europe,1790,493
+1670,Northwestern Europe,1800,629
+1671,Northwestern Europe,1810,631
+1672,Northwestern Europe,1820,796
+1673,Northwestern Europe,1830,928
+1674,Northwestern Europe,1840,1490
+1675,Northwestern Europe,1850,1324
+1676,Northwestern Europe,1860,1644
+1677,Northwestern Europe,1870,1529
+1678,Norway,1720,2
+1679,Norway,1730,1
+1680,Norway,1750,3
+1681,Norway,1760,2
+1682,Norway,1770,5
+1683,Norway,1780,1
+1684,Norway,1790,1
+1685,Norway,1800,3
+1686,Norway,1810,3
+1687,Norway,1820,2
+1688,Norway,1830,8
+1689,Norway,1840,10
+1690,Norway,1850,12
+1691,Norway,1860,11
+1692,Norway,1870,22
+1693,Oceania,1800,3
+1694,Oceania,1810,4
+1695,Oceania,1820,8
+1696,Oceania,1830,11
+1697,Oceania,1840,16
+1698,Oceania,1850,25
+1699,Oceania,1860,41
+1700,Oceania,1870,48
+1701,Ottoman Turkey,1370,1
+1702,Ottoman Turkey,1380,1
+1703,Ottoman Turkey,1420,1
+1704,Ottoman Turkey,1460,1
+1705,Ottoman Turkey,1490,1
+1706,Ottoman Turkey,1540,1
+1707,Ottoman Turkey,1610,1
+1708,Ottoman Turkey,1720,1
+1709,Ottoman Turkey,1740,1
+1710,Ottoman Turkey,1750,1
+1711,Ottoman Turkey,1760,1
+1712,Ottoman Turkey,1810,1
+1713,Ottoman Turkey,1830,1
+1714,Ottoman Turkey,1850,2
+1715,Ottoman Turkey,1870,3
+1716,Ottoman world,1380,1
+1717,Ottoman world,1400,1
+1718,Ottoman world,1420,1
+1719,Ottoman world,1460,1
+1720,Ottoman world,1490,1
+1721,Ottoman world,1520,1
+1722,Ottoman world,1530,2
+1723,Ottoman world,1540,1
+1724,Ottoman world,1580,2
+1725,Ottoman world,1590,3
+1726,Ottoman world,1600,3
+1727,Ottoman world,1610,1
+1728,Ottoman world,1630,1
+1729,Ottoman world,1640,1
+1730,Ottoman world,1660,1
+1731,Ottoman world,1670,3
+1732,Ottoman world,1680,1
+1733,Ottoman world,1700,4
+1734,Ottoman world,1710,1
+1735,Ottoman world,1720,3
+1736,Ottoman world,1730,3
+1737,Ottoman world,1740,3
+1738,Ottoman world,1750,3
+1739,Ottoman world,1760,3
+1740,Ottoman world,1770,5
+1741,Ottoman world,1780,7
+1742,Ottoman world,1790,8
+1743,Ottoman world,1800,10
+1744,Ottoman world,1810,6
+1745,Ottoman world,1820,19
+1746,Ottoman world,1830,13
+1747,Ottoman world,1840,28
+1748,Ottoman world,1850,38
+1749,Ottoman world,1860,49
+1750,Ottoman world,1870,44
+1751,Persian world,770,1
+1752,Persian world,780,2
+1753,Persian world,800,1
+1754,Persian world,820,1
+1755,Persian world,840,2
+1756,Persian world,860,2
+1757,Persian world,880,2
+1758,Persian world,900,3
+1759,Persian world,930,1
+1760,Persian world,940,4
+1761,Persian world,970,1
+1762,Persian world,980,4
+1763,Persian world,990,2
+1764,Persian world,1000,3
+1765,Persian world,1010,1
+1766,Persian world,1020,2
+1767,Persian world,1030,1
+1768,Persian world,1040,2
+1769,Persian world,1050,1
+1770,Persian world,1060,2
+1771,Persian world,1080,3
+1772,Persian world,1090,2
+1773,Persian world,1100,1
+1774,Persian world,1110,1
+1775,Persian world,1130,1
+1776,Persian world,1140,1
+1777,Persian world,1160,2
+1778,Persian world,1180,1
+1779,Persian world,1210,1
+1780,Persian world,1240,7
+1781,Persian world,1260,1
+1782,Persian world,1270,1
+1783,Persian world,1280,2
+1784,Persian world,1300,2
+1785,Persian world,1320,2
+1786,Persian world,1340,1
+1787,Persian world,1350,1
+1788,Persian world,1360,1
+1789,Persian world,1380,2
+1790,Persian world,1400,1
+1791,Persian world,1420,1
+1792,Persian world,1430,1
+1793,Persian world,1440,1
+1794,Persian world,1490,1
+1795,Persian world,1500,1
+1796,Persian world,1540,2
+1797,Persian world,1570,2
+1798,Persian world,1580,1
+1799,Persian world,1620,1
+1800,Persian world,1740,2
+1801,Persian world,1750,1
+1802,Persian world,1800,1
+1803,Persian world,1810,1
+1804,Persian world,1820,2
+1805,Persian world,1830,2
+1806,Persian world,1850,3
+1807,Persian world,1860,5
+1808,Persian world,1870,1
+1809,Portugal,1480,1
+1810,Portugal,1490,1
+1811,Portugal,1500,1
+1812,Portugal,1520,1
+1813,Portugal,1530,1
+1814,Portugal,1540,10
+1815,Portugal,1550,1
+1816,Portugal,1560,2
+1817,Portugal,1580,3
+1818,Portugal,1590,1
+1819,Portugal,1600,1
+1820,Portugal,1620,1
+1821,Portugal,1640,1
+1822,Portugal,1680,2
+1823,Portugal,1720,2
+1824,Portugal,1740,1
+1825,Portugal,1750,1
+1826,Portugal,1760,3
+1827,Portugal,1770,4
+1828,Portugal,1780,5
+1829,Portugal,1790,4
+1830,Portugal,1800,3
+1831,Portugal,1810,5
+1832,Portugal,1820,6
+1833,Portugal,1840,10
+1834,Portugal,1850,3
+1835,Portugal,1860,11
+1836,Portugal,1870,11
+1837,South America,1500,1
+1838,South America,1520,1
+1839,South America,1560,1
+1840,South America,1580,1
+1841,South America,1600,2
+1842,South America,1610,1
+1843,South America,1620,2
+1844,South America,1640,2
+1845,South America,1650,1
+1846,South America,1660,1
+1847,South America,1690,1
+1848,South America,1700,1
+1849,South America,1710,4
+1850,South America,1720,1
+1851,South America,1730,2
+1852,South America,1740,3
+1853,South America,1770,2
+1854,South America,1780,8
+1855,South America,1790,14
+1856,South America,1800,11
+1857,South America,1810,11
+1858,South America,1820,13
+1859,South America,1830,22
+1860,South America,1840,29
+1861,South America,1850,19
+1862,South America,1860,34
+1863,South America,1870,46
+1864,South East Asia,1580,1
+1865,South East Asia,1600,1
+1866,South East Asia,1630,2
+1867,South East Asia,1650,1
+1868,South East Asia,1660,1
+1869,South East Asia,1670,1
+1870,South East Asia,1680,1
+1871,South East Asia,1690,1
+1872,South East Asia,1700,1
+1873,South East Asia,1750,1
+1874,South East Asia,1760,1
+1875,South East Asia,1770,2
+1876,South East Asia,1780,2
+1877,South East Asia,1790,1
+1878,South East Asia,1800,1
+1879,South East Asia,1810,1
+1880,South East Asia,1820,4
+1881,South East Asia,1830,6
+1882,South East Asia,1840,5
+1883,South East Asia,1850,2
+1884,South East Asia,1860,4
+1885,South East Asia,1870,6
+1886,Southern China,60,1
+1887,Southern China,110,1
+1888,Southern China,140,1
+1889,Southern China,230,1
+1890,Southern China,260,1
+1891,Southern China,460,1
+1892,Southern China,1060,2
+1893,Southern China,1070,1
+1894,Southern China,1080,2
+1895,Southern China,1140,1
+1896,Southern China,1160,1
+1897,Southern China,1170,1
+1898,Southern China,1200,1
+1899,Southern China,1240,1
+1900,Southern China,1270,1
+1901,Southern China,1280,1
+1902,Southern China,1300,1
+1903,Southern China,1310,1
+1904,Southern China,1350,1
+1905,Southern China,1360,1
+1906,Southern China,1540,2
+1907,Southern China,1570,1
+1908,Southern China,1580,1
+1909,Southern China,1600,1
+1910,Southern China,1610,1
+1911,Southern China,1620,1
+1912,Southern China,1630,1
+1913,Southern China,1640,1
+1914,Southern China,1650,1
+1915,Southern China,1660,2
+1916,Southern China,1670,1
+1917,Southern China,1690,1
+1918,Southern China,1720,1
+1919,Southern China,1760,1
+1920,Southern China,1800,3
+1921,Southern China,1810,1
+1922,Southern China,1820,1
+1923,Southern China,1840,2
+1924,Southern China,1850,3
+1925,Southern France,480,1
+1926,Southern France,1270,1
+1927,Southern France,1280,1
+1928,Southern France,1320,2
+1929,Southern France,1340,1
+1930,Southern France,1480,1
+1931,Southern France,1500,1
+1932,Southern France,1520,2
+1933,Southern France,1530,2
+1934,Southern France,1540,8
+1935,Southern France,1550,3
+1936,Southern France,1560,4
+1937,Southern France,1570,2
+1938,Southern France,1580,7
+1939,Southern France,1590,1
+1940,Southern France,1600,3
+1941,Southern France,1610,1
+1942,Southern France,1620,9
+1943,Southern France,1630,4
+1944,Southern France,1640,7
+1945,Southern France,1650,2
+1946,Southern France,1660,8
+1947,Southern France,1670,4
+1948,Southern France,1680,6
+1949,Southern France,1690,16
+1950,Southern France,1700,12
+1951,Southern France,1710,10
+1952,Southern France,1720,10
+1953,Southern France,1730,14
+1954,Southern France,1740,23
+1955,Southern France,1750,18
+1956,Southern France,1760,25
+1957,Southern France,1770,27
+1958,Southern France,1780,46
+1959,Southern France,1790,45
+1960,Southern France,1800,43
+1961,Southern France,1810,50
+1962,Southern France,1820,62
+1963,Southern France,1830,74
+1964,Southern France,1840,112
+1965,Southern France,1850,74
+1966,Southern France,1860,98
+1967,Southern France,1870,79
+1968,Southern India,1150,1
+1969,Southern India,1400,1
+1970,Southern India,1480,1
+1971,Southern India,1540,1
+1972,Southern India,1600,1
+1973,Southern India,1860,3
+1974,Southern India,1870,1
+1975,Southern Italy,-550,1
+1976,Southern Italy,-490,1
+1977,Southern Italy,-200,1
+1978,Southern Italy,-160,1
+1979,Southern Italy,-100,1
+1980,Southern Italy,-60,1
+1981,Southern Italy,-50,1
+1982,Southern Italy,-30,2
+1983,Southern Italy,50,1
+1984,Southern Italy,100,1
+1985,Southern Italy,130,1
+1986,Southern Italy,150,1
+1987,Southern Italy,240,2
+1988,Southern Italy,360,1
+1989,Southern Italy,400,1
+1990,Southern Italy,520,1
+1991,Southern Italy,950,1
+1992,Southern Italy,1100,1
+1993,Southern Italy,1140,2
+1994,Southern Italy,1150,1
+1995,Southern Italy,1250,1
+1996,Southern Italy,1320,2
+1997,Southern Italy,1480,2
+1998,Southern Italy,1490,1
+1999,Southern Italy,1500,3
+2000,Southern Italy,1510,2
+2001,Southern Italy,1520,1
+2002,Southern Italy,1530,2
+2003,Southern Italy,1540,6
+2004,Southern Italy,1550,1
+2005,Southern Italy,1560,4
+2006,Southern Italy,1570,6
+2007,Southern Italy,1580,8
+2008,Southern Italy,1590,3
+2009,Southern Italy,1600,9
+2010,Southern Italy,1610,6
+2011,Southern Italy,1620,9
+2012,Southern Italy,1630,1
+2013,Southern Italy,1640,9
+2014,Southern Italy,1650,8
+2015,Southern Italy,1660,3
+2016,Southern Italy,1670,8
+2017,Southern Italy,1680,4
+2018,Southern Italy,1690,6
+2019,Southern Italy,1700,4
+2020,Southern Italy,1710,1
+2021,Southern Italy,1720,8
+2022,Southern Italy,1730,6
+2023,Southern Italy,1740,9
+2024,Southern Italy,1750,6
+2025,Southern Italy,1760,16
+2026,Southern Italy,1770,15
+2027,Southern Italy,1780,25
+2028,Southern Italy,1790,18
+2029,Southern Italy,1800,28
+2030,Southern Italy,1810,22
+2031,Southern Italy,1820,28
+2032,Southern Italy,1830,21
+2033,Southern Italy,1840,37
+2034,Southern Italy,1850,52
+2035,Southern Italy,1860,29
+2036,Southern Italy,1870,39
+2037,Southern Japan,700,1
+2038,Southern Japan,960,1
+2039,Southern Japan,1610,1
+2040,Southern Japan,1640,1
+2041,Southern Japan,1660,2
+2042,Southern Japan,1670,1
+2043,Southern Japan,1700,1
+2044,Southern Japan,1720,1
+2045,Southern Japan,1730,1
+2046,Southern Japan,1760,2
+2047,Southern Japan,1800,2
+2048,Southern Japan,1810,1
+2049,Southern Japan,1820,3
+2050,Southern Japan,1830,1
+2051,Southern Japan,1840,3
+2052,Southern Japan,1860,1
+2053,Southern Japan,1870,5
+2054,Southwestern Europe,-550,1
+2055,Southwestern Europe,-490,1
+2056,Southwestern Europe,-260,1
+2057,Southwestern Europe,-200,1
+2058,Southwestern Europe,-160,1
+2059,Southwestern Europe,-100,2
+2060,Southwestern Europe,-60,1
+2061,Southwestern Europe,-50,1
+2062,Southwestern Europe,-30,2
+2063,Southwestern Europe,50,1
+2064,Southwestern Europe,60,1
+2065,Southwestern Europe,80,1
+2066,Southwestern Europe,100,2
+2067,Southwestern Europe,130,1
+2068,Southwestern Europe,150,1
+2069,Southwestern Europe,200,1
+2070,Southwestern Europe,240,2
+2071,Southwestern Europe,360,1
+2072,Southwestern Europe,400,1
+2073,Southwestern Europe,440,1
+2074,Southwestern Europe,510,1
+2075,Southwestern Europe,520,1
+2076,Southwestern Europe,820,1
+2077,Southwestern Europe,940,1
+2078,Southwestern Europe,950,1
+2079,Southwestern Europe,970,1
+2080,Southwestern Europe,1040,1
+2081,Southwestern Europe,1100,2
+2082,Southwestern Europe,1140,3
+2083,Southwestern Europe,1150,2
+2084,Southwestern Europe,1210,1
+2085,Southwestern Europe,1220,1
+2086,Southwestern Europe,1240,4
+2087,Southwestern Europe,1250,1
+2088,Southwestern Europe,1260,4
+2089,Southwestern Europe,1270,1
+2090,Southwestern Europe,1280,4
+2091,Southwestern Europe,1290,2
+2092,Southwestern Europe,1300,4
+2093,Southwestern Europe,1310,1
+2094,Southwestern Europe,1320,4
+2095,Southwestern Europe,1330,2
+2096,Southwestern Europe,1340,3
+2097,Southwestern Europe,1360,3
+2098,Southwestern Europe,1380,7
+2099,Southwestern Europe,1390,2
+2100,Southwestern Europe,1400,3
+2101,Southwestern Europe,1410,1
+2102,Southwestern Europe,1420,6
+2103,Southwestern Europe,1430,4
+2104,Southwestern Europe,1440,8
+2105,Southwestern Europe,1450,2
+2106,Southwestern Europe,1460,5
+2107,Southwestern Europe,1470,3
+2108,Southwestern Europe,1480,17
+2109,Southwestern Europe,1490,7
+2110,Southwestern Europe,1500,19
+2111,Southwestern Europe,1510,15
+2112,Southwestern Europe,1520,21
+2113,Southwestern Europe,1530,14
+2114,Southwestern Europe,1540,58
+2115,Southwestern Europe,1550,24
+2116,Southwestern Europe,1560,39
+2117,Southwestern Europe,1570,20
+2118,Southwestern Europe,1580,41
+2119,Southwestern Europe,1590,24
+2120,Southwestern Europe,1600,39
+2121,Southwestern Europe,1610,27
+2122,Southwestern Europe,1620,36
+2123,Southwestern Europe,1630,18
+2124,Southwestern Europe,1640,45
+2125,Southwestern Europe,1650,20
+2126,Southwestern Europe,1660,21
+2127,Southwestern Europe,1670,25
+2128,Southwestern Europe,1680,26
+2129,Southwestern Europe,1690,21
+2130,Southwestern Europe,1700,27
+2131,Southwestern Europe,1710,25
+2132,Southwestern Europe,1720,42
+2133,Southwestern Europe,1730,31
+2134,Southwestern Europe,1740,69
+2135,Southwestern Europe,1750,67
+2136,Southwestern Europe,1760,93
+2137,Southwestern Europe,1770,86
+2138,Southwestern Europe,1780,141
+2139,Southwestern Europe,1790,107
+2140,Southwestern Europe,1800,145
+2141,Southwestern Europe,1810,125
+2142,Southwestern Europe,1820,133
+2143,Southwestern Europe,1830,121
+2144,Southwestern Europe,1840,214
+2145,Southwestern Europe,1850,204
+2146,Southwestern Europe,1860,269
+2147,Southwestern Europe,1870,230
+2148,Spain,820,1
+2149,Spain,940,1
+2150,Spain,1100,1
+2151,Spain,1150,1
+2152,Spain,1220,1
+2153,Spain,1260,1
+2154,Spain,1280,2
+2155,Spain,1290,1
+2156,Spain,1300,1
+2157,Spain,1360,1
+2158,Spain,1380,2
+2159,Spain,1400,1
+2160,Spain,1440,1
+2161,Spain,1480,3
+2162,Spain,1490,1
+2163,Spain,1500,5
+2164,Spain,1510,1
+2165,Spain,1520,9
+2166,Spain,1530,6
+2167,Spain,1540,10
+2168,Spain,1550,8
+2169,Spain,1560,12
+2170,Spain,1570,6
+2171,Spain,1580,10
+2172,Spain,1590,6
+2173,Spain,1600,7
+2174,Spain,1610,4
+2175,Spain,1620,5
+2176,Spain,1630,5
+2177,Spain,1640,4
+2178,Spain,1650,1
+2179,Spain,1660,2
+2180,Spain,1670,4
+2181,Spain,1680,5
+2182,Spain,1690,3
+2183,Spain,1700,7
+2184,Spain,1710,2
+2185,Spain,1720,7
+2186,Spain,1730,8
+2187,Spain,1740,15
+2188,Spain,1750,15
+2189,Spain,1760,15
+2190,Spain,1770,17
+2191,Spain,1780,39
+2192,Spain,1790,30
+2193,Spain,1800,32
+2194,Spain,1810,25
+2195,Spain,1820,16
+2196,Spain,1830,23
+2197,Spain,1840,44
+2198,Spain,1850,37
+2199,Spain,1860,82
+2200,Spain,1870,56
+2201,Sweden,1480,1
+2202,Sweden,1590,1
+2203,Sweden,1600,2
+2204,Sweden,1610,5
+2205,Sweden,1620,4
+2206,Sweden,1630,3
+2207,Sweden,1640,2
+2208,Sweden,1650,4
+2209,Sweden,1660,10
+2210,Sweden,1670,8
+2211,Sweden,1680,10
+2212,Sweden,1690,5
+2213,Sweden,1700,12
+2214,Sweden,1710,7
+2215,Sweden,1720,8
+2216,Sweden,1730,11
+2217,Sweden,1740,21
+2218,Sweden,1750,22
+2219,Sweden,1760,34
+2220,Sweden,1770,32
+2221,Sweden,1780,33
+2222,Sweden,1790,26
+2223,Sweden,1800,19
+2224,Sweden,1810,18
+2225,Sweden,1820,43
+2226,Sweden,1830,29
+2227,Sweden,1840,44
+2228,Sweden,1850,43
+2229,Sweden,1860,66
+2230,Sweden,1870,77
+2231,Switzerland,740,1
+2232,Switzerland,1440,1
+2233,Switzerland,1520,2
+2234,Switzerland,1530,1
+2235,Switzerland,1540,2
+2236,Switzerland,1550,1
+2237,Switzerland,1560,3
+2238,Switzerland,1570,2
+2239,Switzerland,1580,3
+2240,Switzerland,1590,2
+2241,Switzerland,1600,4
+2242,Switzerland,1610,1
+2243,Switzerland,1620,3
+2244,Switzerland,1630,2
+2245,Switzerland,1640,5
+2246,Switzerland,1660,6
+2247,Switzerland,1670,2
+2248,Switzerland,1680,4
+2249,Switzerland,1690,5
+2250,Switzerland,1700,6
+2251,Switzerland,1710,4
+2252,Switzerland,1720,8
+2253,Switzerland,1730,8
+2254,Switzerland,1740,14
+2255,Switzerland,1750,10
+2256,Switzerland,1760,13
+2257,Switzerland,1770,15
+2258,Switzerland,1780,19
+2259,Switzerland,1790,11
+2260,Switzerland,1800,24
+2261,Switzerland,1810,19
+2262,Switzerland,1820,20
+2263,Switzerland,1830,30
+2264,Switzerland,1840,49
+2265,Switzerland,1850,35
+2266,Switzerland,1860,57
+2267,Switzerland,1870,52
+2268,United Kingdom,40,1
+2269,United Kingdom,1040,1
+2270,United Kingdom,1110,1
+2271,United Kingdom,1140,1
+2272,United Kingdom,1160,1
+2273,United Kingdom,1170,1
+2274,United Kingdom,1180,1
+2275,United Kingdom,1200,1
+2276,United Kingdom,1210,2
+2277,United Kingdom,1240,1
+2278,United Kingdom,1260,1
+2279,United Kingdom,1320,1
+2280,United Kingdom,1330,2
+2281,United Kingdom,1340,3
+2282,United Kingdom,1350,1
+2283,United Kingdom,1360,1
+2284,United Kingdom,1420,1
+2285,United Kingdom,1480,1
+2286,United Kingdom,1500,1
+2287,United Kingdom,1510,1
+2288,United Kingdom,1520,2
+2289,United Kingdom,1530,1
+2290,United Kingdom,1540,4
+2291,United Kingdom,1550,5
+2292,United Kingdom,1560,4
+2293,United Kingdom,1570,9
+2294,United Kingdom,1580,15
+2295,United Kingdom,1590,7
+2296,United Kingdom,1600,15
+2297,United Kingdom,1610,12
+2298,United Kingdom,1620,7
+2299,United Kingdom,1630,10
+2300,United Kingdom,1640,25
+2301,United Kingdom,1650,24
+2302,United Kingdom,1660,44
+2303,United Kingdom,1670,24
+2304,United Kingdom,1680,29
+2305,United Kingdom,1690,25
+2306,United Kingdom,1700,35
+2307,United Kingdom,1710,21
+2308,United Kingdom,1720,33
+2309,United Kingdom,1730,33
+2310,United Kingdom,1740,54
+2311,United Kingdom,1750,54
+2312,United Kingdom,1760,69
+2313,United Kingdom,1770,81
+2314,United Kingdom,1780,118
+2315,United Kingdom,1790,100
+2316,United Kingdom,1800,137
+2317,United Kingdom,1810,142
+2318,United Kingdom,1820,197
+2319,United Kingdom,1830,209
+2320,United Kingdom,1840,331
+2321,United Kingdom,1850,314
+2322,United Kingdom,1860,340
+2323,United Kingdom,1870,306
+2324,Western Europe,-550,1
+2325,Western Europe,-490,1
+2326,Western Europe,-260,1
+2327,Western Europe,-200,1
+2328,Western Europe,-160,1
+2329,Western Europe,-100,2
+2330,Western Europe,-60,1
+2331,Western Europe,-50,1
+2332,Western Europe,-30,2
+2333,Western Europe,40,1
+2334,Western Europe,50,1
+2335,Western Europe,60,1
+2336,Western Europe,80,1
+2337,Western Europe,100,2
+2338,Western Europe,130,1
+2339,Western Europe,150,1
+2340,Western Europe,200,1
+2341,Western Europe,240,2
+2342,Western Europe,360,1
+2343,Western Europe,400,1
+2344,Western Europe,440,1
+2345,Western Europe,480,1
+2346,Western Europe,510,1
+2347,Western Europe,520,1
+2348,Western Europe,740,2
+2349,Western Europe,820,2
+2350,Western Europe,830,1
+2351,Western Europe,840,1
+2352,Western Europe,940,1
+2353,Western Europe,950,1
+2354,Western Europe,970,1
+2355,Western Europe,980,1
+2356,Western Europe,1000,1
+2357,Western Europe,1040,2
+2358,Western Europe,1050,1
+2359,Western Europe,1080,1
+2360,Western Europe,1100,2
+2361,Western Europe,1110,1
+2362,Western Europe,1120,1
+2363,Western Europe,1130,1
+2364,Western Europe,1140,4
+2365,Western Europe,1150,2
+2366,Western Europe,1160,1
+2367,Western Europe,1170,1
+2368,Western Europe,1180,4
+2369,Western Europe,1200,2
+2370,Western Europe,1210,4
+2371,Western Europe,1220,2
+2372,Western Europe,1230,2
+2373,Western Europe,1240,6
+2374,Western Europe,1250,1
+2375,Western Europe,1260,5
+2376,Western Europe,1270,2
+2377,Western Europe,1280,8
+2378,Western Europe,1290,2
+2379,Western Europe,1300,7
+2380,Western Europe,1310,1
+2381,Western Europe,1320,9
+2382,Western Europe,1330,5
+2383,Western Europe,1340,9
+2384,Western Europe,1350,3
+2385,Western Europe,1360,7
+2386,Western Europe,1380,10
+2387,Western Europe,1390,2
+2388,Western Europe,1400,6
+2389,Western Europe,1410,1
+2390,Western Europe,1420,9
+2391,Western Europe,1430,6
+2392,Western Europe,1440,16
+2393,Western Europe,1450,2
+2394,Western Europe,1460,11
+2395,Western Europe,1470,5
+2396,Western Europe,1480,31
+2397,Western Europe,1490,11
+2398,Western Europe,1500,41
+2399,Western Europe,1510,24
+2400,Western Europe,1520,48
+2401,Western Europe,1530,36
+2402,Western Europe,1540,115
+2403,Western Europe,1550,62
+2404,Western Europe,1560,110
+2405,Western Europe,1570,68
+2406,Western Europe,1580,133
+2407,Western Europe,1590,70
+2408,Western Europe,1600,132
+2409,Western Europe,1610,102
+2410,Western Europe,1620,145
+2411,Western Europe,1630,97
+2412,Western Europe,1640,172
+2413,Western Europe,1650,114
+2414,Western Europe,1660,178
+2415,Western Europe,1670,136
+2416,Western Europe,1680,198
+2417,Western Europe,1690,157
+2418,Western Europe,1700,173
+2419,Western Europe,1710,154
+2420,Western Europe,1720,189
+2421,Western Europe,1730,186
+2422,Western Europe,1740,354
+2423,Western Europe,1750,325
+2424,Western Europe,1760,506
+2425,Western Europe,1770,457
+2426,Western Europe,1780,722
+2427,Western Europe,1790,602
+2428,Western Europe,1800,777
+2429,Western Europe,1810,759
+2430,Western Europe,1820,932
+2431,Western Europe,1830,1053
+2432,Western Europe,1840,1709
+2433,Western Europe,1850,1534
+2434,Western Europe,1860,1916
+2435,Western Europe,1870,1761
+2436,Yangtze,60,1
+2437,Yangtze,260,1
+2438,Yangtze,460,1
+2439,Yangtze,1070,1
+2440,Yangtze,1140,1
+2441,Yangtze,1160,1
+2442,Yangtze,1170,1
+2443,Yangtze,1200,1
+2444,Yangtze,1270,1
+2445,Yangtze,1300,1
+2446,Yangtze,1350,1
+2447,Yangtze,1360,1
+2448,Yangtze,1540,1
+2449,Yangtze,1570,1
+2450,Yangtze,1580,1
+2451,Yangtze,1600,1
+2452,Yangtze,1610,1
+2453,Yangtze,1620,1
+2454,Yangtze,1640,1
+2455,Yangtze,1650,1
+2456,Yangtze,1660,1
+2457,Yangtze,1690,1
+2458,Yangtze,1720,1
+2459,Yangtze,1760,1
+2460,Yangtze,1800,3
+2461,Yangtze,1810,1
+2462,Yangtze,1820,1
+2463,Yangtze,1840,1
+2464,Yangtze,1850,2
+2465,mediterranean World,-590,1
+2466,mediterranean World,-570,1
+2467,mediterranean World,-560,1
+2468,mediterranean World,-550,2
+2469,mediterranean World,-500,3
+2470,mediterranean World,-490,1
+2471,mediterranean World,-460,6
+2472,mediterranean World,-450,1
+2473,mediterranean World,-420,1
+2474,mediterranean World,-410,1
+2475,mediterranean World,-400,2
+2476,mediterranean World,-390,1
+2477,mediterranean World,-380,1
+2478,mediterranean World,-370,1
+2479,mediterranean World,-360,1
+2480,mediterranean World,-350,1
+2481,mediterranean World,-340,2
+2482,mediterranean World,-330,1
+2483,mediterranean World,-320,2
+2484,mediterranean World,-300,3
+2485,mediterranean World,-290,1
+2486,mediterranean World,-280,2
+2487,mediterranean World,-270,3
+2488,mediterranean World,-260,1
+2489,mediterranean World,-250,1
+2490,mediterranean World,-240,3
+2491,mediterranean World,-230,1
+2492,mediterranean World,-220,1
+2493,mediterranean World,-200,2
+2494,mediterranean World,-170,1
+2495,mediterranean World,-160,1
+2496,mediterranean World,-150,1
+2497,mediterranean World,-120,3
+2498,mediterranean World,-110,1
+2499,mediterranean World,-100,5
+2500,mediterranean World,-60,1
+2501,mediterranean World,-50,1
+2502,mediterranean World,-30,2
+2503,mediterranean World,-20,1
+2504,mediterranean World,0,1
+2505,mediterranean World,40,2
+2506,mediterranean World,50,2
+2507,mediterranean World,60,1
+2508,mediterranean World,80,3
+2509,mediterranean World,100,5
+2510,mediterranean World,130,1
+2511,mediterranean World,140,3
+2512,mediterranean World,150,1
+2513,mediterranean World,160,1
+2514,mediterranean World,200,1
+2515,mediterranean World,240,4
+2516,mediterranean World,280,3
+2517,mediterranean World,320,1
+2518,mediterranean World,340,1
+2519,mediterranean World,360,1
+2520,mediterranean World,370,1
+2521,mediterranean World,400,2
+2522,mediterranean World,440,2
+2523,mediterranean World,450,1
+2524,mediterranean World,470,1
+2525,mediterranean World,480,2
+2526,mediterranean World,510,2
+2527,mediterranean World,520,1
+2528,mediterranean World,540,1
+2529,mediterranean World,610,1
+2530,mediterranean World,630,1
+2531,mediterranean World,690,1
+2532,mediterranean World,1160,1
+2533,mediterranean World,1230,1
+2534,mediterranean World,1280,1
+2535,mediterranean World,1380,2
+2536,mediterranean World,1400,1
+2537,mediterranean World,1420,1
+2538,mediterranean World,1600,2
+2539,mediterranean World,1700,1
+2540,mediterranean World,1730,1
+2541,mediterranean World,1750,1
+2542,mediterranean World,1770,1
+2543,mediterranean World,1790,2
+2544,mediterranean World,1800,5
+2545,mediterranean World,1810,2
+2546,mediterranean World,1820,3
+2547,mediterranean World,1830,2
+2548,mediterranean World,1840,7
+2549,mediterranean World,1850,9
+2550,mediterranean World,1860,16
+2551,mediterranean World,1870,4

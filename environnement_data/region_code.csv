@@ -1,59 +1,59 @@
 ,region_code,region_name
 0,re_german_world,German world
-42092,re_germany,Germany
-73839,re_northwestern_europe,Northwestern Europe
-181434,re_western_europe,Western Europe
-316102,re_korea,Korea
-316322,re_north_france,Northern France
-332327,re_france,France
-358223,re_central_europe,Central Europe
-370396,re_eastern_europe,Eastern Europe
-391616,re_british_islands,British Islands
-409591,re_united_kingdom,United Kingdom
-426838,re_ireland,Ireland
-427641,re_north_america,North America
-437300,re_austria,Austria
-444154,re_indian_world,Indian world
-444897,re_balkans,Balkans
-446800,re_greece,Greece
-447437,re_greek_world,Greek World
-449133,re_mediterreanean,mediterranean World
-451084,re_ottoman_world,Ottoman world
-453594,re_southwestern_europe,Southwestern Europe
-480667,re_spain,Spain
-487926,re_belgium,Belgium
-492304,re_low_countries,Low countries
-504558,re_netherlands,Netherlands
-512432,re_north_italy,Northern Italy
-525955,re_italy,Italy
-544690,re_nordic_countries,Nordic countries
-553993,re_sweden,Sweden
-558715,re_east_slavic,East Slavic
-564233,re_south_italy,Southern Italy
-568003,re_portugal,Portugal
-569076,re_arabic_world,Arabic world
-570820,re_muslim_world,Muslim world
-573197,re_south_america,South America
-574815,re_finland,Finland
-575663,re_denmark,Denmark
-578508,re_south_france,Southern France
-583907,re_switzerland,Switzerland
-587402,re_central_america,Central America
-588168,re_north_china,Northern China
-588526,re_chinese_world,Chinese world
-590783,re_south_india,Southern India
-590902,re_south_china,Southern China
-591492,re_latin,Latin World
-591944,re_norway,Norway
-592671,re_south_japan,Southern Japan
-593144,re_japan,Japan
-594916,re_north_india,Northern India
-595378,re_oceania,Oceania
-596564,re_persian_world,Persian world
-597252,re_yangtze,Yangtze
-597642,re_africa,Africa
-597906,re_ottoman_turkey,Ottoman Turkey
-598090,re_arabian_peninsula,Arabian peninsula
-598264,re_north_japan,Northern Japan
-598554,re_south_east_asia,South East Asia
-598840,re_iceland,Iceland
+1,re_germany,Germany
+2,re_northwestern_europe,Northwestern Europe
+3,re_western_europe,Western Europe
+4,re_balkans,Balkans
+5,re_eastern_europe,Eastern Europe
+6,re_greece,Greece
+7,re_greek_world,Greek World
+8,re_mediterreanean,mediterranean World
+9,re_ottoman_world,Ottoman world
+10,re_low_countries,Low countries
+11,re_netherlands,Netherlands
+15,re_east_slavic,East Slavic
+16,re_north_america,North America
+17,re_north_france,Northern France
+18,re_france,France
+29,re_british_islands,British Islands
+31,re_united_kingdom,United Kingdom
+35,re_switzerland,Switzerland
+37,re_portugal,Portugal
+38,re_southwestern_europe,Southwestern Europe
+45,re_japan,Japan
+54,re_nordic_countries,Nordic countries
+56,re_sweden,Sweden
+70,re_austria,Austria
+75,re_spain,Spain
+88,re_south_america,South America
+109,re_central_europe,Central Europe
+111,re_north_italy,Northern Italy
+112,re_italy,Italy
+159,re_south_japan,Southern Japan
+163,re_norway,Norway
+203,re_south_italy,Southern Italy
+207,re_belgium,Belgium
+211,re_south_france,Southern France
+264,re_chinese_world,Chinese world
+369,re_denmark,Denmark
+411,re_arabic_world,Arabic world
+412,re_muslim_world,Muslim world
+424,re_central_america,Central America
+493,re_finland,Finland
+667,re_oceania,Oceania
+693,re_africa,Africa
+1031,re_latin,Latin World
+1035,re_indian_world,Indian world
+1284,re_north_india,Northern India
+1312,re_persian_world,Persian world
+1452,re_north_japan,Northern Japan
+1470,re_south_east_asia,South East Asia
+1691,re_ireland,Ireland
+1771,re_south_india,Southern India
+1877,re_ottoman_turkey,Ottoman Turkey
+2830,re_south_china,Southern China
+2831,re_yangtze,Yangtze
+3609,re_north_china,Northern China
+3641,re_arabian_peninsula,Arabian peninsula
+3657,re_korea,Korea
+4013,re_iceland,Iceland
