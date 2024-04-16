@@ -105,8 +105,6 @@ base_model_fitted = base_model.fit(
 
 models[equation] = base_model_fitted
 
-az.waic(models[equation])
-
 
 # MODEL 3
 equation = "y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)"
@@ -130,9 +128,7 @@ base_model_fitted = base_model.fit(
 
 models[equation] = base_model_fitted
 
-az.waic(models[equation])
-
-# MODEL 3
+# MODEL 4
 equation = "y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)"
 
 
