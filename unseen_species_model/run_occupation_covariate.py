@@ -5,6 +5,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 
+import numpyro
+import jax
+print(jax.local_device_count())
+
+numpyro.set_host_device_count(4)
+
 df = pd.read_csv("data/df_indi_works_occupations.csv", index_col=0)
 print(df.occupation.value_counts())
 
@@ -48,8 +54,7 @@ knots = np.linspace(df["century"].min(), df["century"].max(), num_knots)
 iknots = knots[1:-1]
 
 sample = df_m.copy()
-# sample = sample.sample(2000, random_state=42)
-
+#sample = sample.sample(4000, random_state=42)
 
 # DIFFERENT EQUATIONS
 
@@ -139,7 +144,6 @@ priors = {
 
 base_model = bmb.Model(equation, sample, family="bernoulli", priors=priors)
 
-
 base_model_fitted = base_model.fit(
     draws=1000,
     chains=4,
@@ -200,8 +204,6 @@ az.waic(models[equation])
 #         ),
 #     },
 # )
-
-
 # equation =  "y ~ (bs(decade, knots=iknots, intercept=True) + (1|region)"
 # equation =   "y ~ (bs(decade, knots=iknots, intercept=True)|region_name) + occupation"
 # equation =  "y ~ (bs(decade, knots=iknots, intercept=True)|region_name)) + (1|occupation)"
@@ -286,9 +288,7 @@ fig = compare_plot.get_figure()
 fig.set_size_inches(20, 4)  # Adjust size as needed
 fig.tight_layout()
 
-
 fig.savefig("results/occupation/compare_plot_waic.png")
-
 
 # Comparison Dataset
 
