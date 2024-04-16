@@ -42,17 +42,13 @@ df_m = df.copy()
 df_m = df_m[df_m["count"].isin({0, 1, 2})]  # Not more ?
 df_m["y"] = df_m["count"].map({0: 0, 1: 0, 2: 1})
 
-<<<<<<< HEAD
-=======
-
->>>>>>> dd1ebcd32dd685c4e36f482ae50dd2127160accf
 # knots
 num_knots = 10
 knots = np.linspace(df["century"].min(), df["century"].max(), num_knots)
 iknots = knots[1:-1]
 
 sample = df_m.copy()
-#sample = sample.sample(2000, random_state=42)
+# sample = sample.sample(2000, random_state=42)
 
 
 # DIFFERENT EQUATIONS
@@ -60,7 +56,7 @@ sample = df_m.copy()
 models = {}
 
 
-#MODEL 1
+# MODEL 1
 equation = "y ~ 1"
 
 base_model = bmb.Model(
@@ -83,19 +79,16 @@ models[equation] = base_model_fitted
 az.waic(models[equation])
 
 
-#MODEL 2
-equation = 'y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)'
+# MODEL 2
+equation = "y ~ bs(decade, knots=iknots, intercept=True)"
 priors = {
     "Intercept": bmb.Prior("Normal", mu=0, sigma=5),
     "common": bmb.Prior("Normal", mu=0, sigma=5),
-    "1|region_name": bmb.Prior("Normal", mu=0, sigma=bmb.Prior("HalfNormal", sigma=5))
 }
 
 base_model = bmb.Model(
-    equation, 
-    sample[['decade','region_name', 'y']], 
-    family='bernoulli', 
-    priors=priors)
+    equation, sample[["decade", "y"]], family="bernoulli", priors=priors
+)
 
 
 base_model_fitted = base_model.fit(
@@ -105,28 +98,22 @@ base_model_fitted = base_model.fit(
     idata_kwargs={"log_likelihood": True},
 )  # important to run faster and sample more efficiently
 
-models[equation] = (
-    base_model_fitted
-)
+models[equation] = base_model_fitted
 
-az.waic(
-    models[equation]
-)
+az.waic(models[equation])
 
-#MODEL 3
-equation = 'y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)'
-# SECOND MODEL
+
+# MODEL 3
+equation = "y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)"
 priors = {
     "Intercept": bmb.Prior("Normal", mu=0, sigma=5),
     "common": bmb.Prior("Normal", mu=0, sigma=5),
-    "1|region_name": bmb.Prior("Normal", mu=0, sigma=bmb.Prior("HalfNormal", sigma=5))
+    "1|region_name": bmb.Prior("Normal", mu=0, sigma=bmb.Prior("HalfNormal", sigma=5)),
 }
 
 base_model = bmb.Model(
-    equation, 
-    sample, 
-    family='bernoulli', 
-    priors=priors)
+    equation, sample[["decade", "region_name", "y"]], family="bernoulli", priors=priors
+)
 
 
 base_model_fitted = base_model.fit(
@@ -136,17 +123,33 @@ base_model_fitted = base_model.fit(
     idata_kwargs={"log_likelihood": True},
 )  # important to run faster and sample more efficiently
 
-models[equation] = (
-    base_model_fitted
-)
+models[equation] = base_model_fitted
 
-az.waic(
-    models[equation]
-)
+az.waic(models[equation])
 
-models[model_equation] = occupation_model_variance_fitted
-az.waic(models[model_equation])
+# MODEL 3
+equation = "y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)"
 
+
+priors = {
+    "Intercept": bmb.Prior("Normal", mu=0, sigma=5),
+    "common": bmb.Prior("Normal", mu=0, sigma=5),
+    "1|region_name": bmb.Prior("Normal", mu=0, sigma=bmb.Prior("HalfNormal", sigma=5)),
+}
+
+base_model = bmb.Model(equation, sample, family="bernoulli", priors=priors)
+
+
+base_model_fitted = base_model.fit(
+    draws=1000,
+    chains=4,
+    inference_method="nuts_numpyro",
+    idata_kwargs={"log_likelihood": True},
+)  # important to run faster and sample more efficiently
+
+models[equation] = base_model_fitted
+
+az.waic(models[equation])
 
 
 # equation = "y ~ 1 + (bs(decade, knots=iknots, intercept=True)|region_name)"
@@ -177,8 +180,8 @@ az.waic(models[model_equation])
 
 # az.waic(models[equation])
 
-#equation =   "y ~ (bs(decade, knots=iknots, intercept=True)|region_name) + occupation"
-#equation = "y ~ 1 + (bs(decade, knots=iknots, intercept=True)|region_name)"
+# equation =   "y ~ (bs(decade, knots=iknots, intercept=True)|region_name) + occupation"
+# equation = "y ~ 1 + (bs(decade, knots=iknots, intercept=True)|region_name)"
 
 
 # #equation =  "y ~ (bs(decade, knots=iknots, intercept=True) + (1|region) + occupation"
@@ -199,11 +202,9 @@ az.waic(models[model_equation])
 # )
 
 
-
-
-#equation =  "y ~ (bs(decade, knots=iknots, intercept=True) + (1|region)"
-#equation =   "y ~ (bs(decade, knots=iknots, intercept=True)|region_name) + occupation"
-#equation =  "y ~ (bs(decade, knots=iknots, intercept=True)|region_name)) + (1|occupation)"
+# equation =  "y ~ (bs(decade, knots=iknots, intercept=True) + (1|region)"
+# equation =   "y ~ (bs(decade, knots=iknots, intercept=True)|region_name) + occupation"
+# equation =  "y ~ (bs(decade, knots=iknots, intercept=True)|region_name)) + (1|occupation)"
 # OCCUPATION MODEL
 # occupation_model_variance = bmb.Model(
 #     equation,
@@ -238,15 +239,15 @@ az.waic(models[model_equation])
 #     "1|region_name": bmb.Prior("Normal", mu=0, sigma=bmb.Prior("HalfNormal", sigma=5))}
 
 # category_model = bmb.Model(
-#     'y ~ bs(decade, knots=iknots, intercept=True) + category + (1|region_name)', 
-#     sample[['decade','region_name', 'category', 'y']], 
-#     family='bernoulli', 
+#     'y ~ bs(decade, knots=iknots, intercept=True) + category + (1|region_name)',
+#     sample[['decade','region_name', 'category', 'y']],
+#     family='bernoulli',
 #     priors=priors)
 
 # category_model_fitted = category_model.fit(
 #     draws=1000, chains=4, inference_method='nuts_numpyro',idata_kwargs={"log_likelihood": True}
 
-# ) 
+# )
 
 # models[
 #    equation
@@ -277,7 +278,6 @@ az.waic(models[model_equation])
 
 print("Save model comparison")
 
-
 # Comparison Dataset
 waic_compare = az.compare(models, ic="waic")
 # Comparison Plot
@@ -301,7 +301,6 @@ fig = compare_plot.get_figure()
 fig.set_size_inches(20, 4)  # Adjust size as needed
 fig.tight_layout()
 fig.savefig("results/occupation/compare_plot.png")
-
 
 
 forest_plot = az.plot_forest(
