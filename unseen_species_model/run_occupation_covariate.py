@@ -11,8 +11,32 @@ print(jax.local_device_count())
 
 numpyro.set_host_device_count(4)
 
+PATH = 'results_50'
+import os
+
+
+
+# Check if the directory exists
+if os.path.exists(PATH):
+    files = os.listdir(PATH)
+    if files:
+        for file_name in files:
+            file_path = os.path.join(PATH, file_name)
+            if os.path.isfile(file_path):
+                os.remove(file_path)
+                print(f"Deleted file: {file_path}")
+        print("All files deleted successfully.")
+    else:
+        print("No files found in the directory.")
+else:
+    print("Directory not found.")
+
+
 df = pd.read_csv("data/df_indi_works_occupations.csv", index_col=0)
 print(df.occupation.value_counts())
+
+df['decade'] = df['decade'].apply(lambda x: 50 * round(x / 50))
+df = df[df['decade']<=1850]
 
 regions = pd.read_csv(
     "data/ENS - Cultural Index - Countries Databases - region_level.csv"
@@ -54,7 +78,7 @@ knots = np.linspace(df["century"].min(), df["century"].max(), num_knots)
 iknots = knots[1:-1]
 
 sample = df_m.copy()
-#sample = sample.sample(4000, random_state=42)
+#sample = sample.sample(2000, random_state=42)
 
 # DIFFERENT EQUATIONS
 
@@ -284,7 +308,7 @@ fig = compare_plot.get_figure()
 fig.set_size_inches(20, 4)  # Adjust size as needed
 fig.tight_layout()
 
-fig.savefig("results/occupation/compare_plot_waic.png")
+fig.savefig(PATH + "/compare_plot_waic.png")
 
 # Comparison Dataset
 
@@ -296,7 +320,7 @@ compare_plot = az.plot_compare(waic_compare, insample_dev=True)
 fig = compare_plot.get_figure()
 fig.set_size_inches(20, 4)  # Adjust size as needed
 fig.tight_layout()
-fig.savefig("results/occupation/compare_plot.png")
+fig.savefig(PATH + "/compare_plot.png")
 
 
 forest_plot = az.plot_forest(
@@ -312,8 +336,7 @@ forest_plot = az.plot_forest(
 fig = forest_plot[0].get_figure()
 fig.set_size_inches(8, 4)  # Adjust size as needed
 fig.tight_layout()
-fig.savefig("results/occupation/forest_plot.png")
-
+fig.savefig(PATH + "/forest_plot.png")
 
 # Save models CSV
 list_summaries = []
@@ -328,7 +351,7 @@ df_summaries = pd.concat([x for x in list_summaries])
 # Add a column with the current time
 current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 df_summaries["time"] = current_time
-df_summaries.to_csv("results/occupation/model_results.csv")
+df_summaries.to_csv(PATH + "/model_results.csv")
 
 ## Add the final results
 

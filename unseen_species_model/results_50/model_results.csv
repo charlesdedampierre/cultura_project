@@ -1,0 +1,89 @@
+,mean,sd,hdi_3%,hdi_97%,mcse_mean,mcse_sd,ess_bulk,ess_tail,r_hat,model,time
+Intercept,-3.005,0.015,-3.032,-2.975,0.0,0.0,1586.0,2138.0,1.0,y ~ 1,2024-04-23 18:22:39
+Intercept,-2.517,1.476,-5.35,0.109,0.073,0.052,410.0,392.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[0]",0.905,2.103,-3.002,4.83,0.073,0.052,819.0,1342.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[1]",0.763,1.968,-3.135,4.261,0.073,0.052,720.0,1458.0,1.01,"y ~ bs(decade, knots=iknots, intercept=True)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[2]",-0.418,1.682,-3.706,2.567,0.073,0.052,525.0,794.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[3]",0.083,1.585,-2.985,3.029,0.073,0.052,472.0,726.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[4]",-0.203,1.555,-2.94,2.871,0.073,0.052,456.0,704.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[5]",1.398,1.532,-1.517,4.174,0.073,0.052,438.0,626.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[6]",-0.448,1.529,-3.285,2.363,0.073,0.052,436.0,540.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[7]",0.405,1.514,-2.422,3.192,0.074,0.052,422.0,592.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[8]",0.145,1.485,-2.536,3.016,0.073,0.052,416.0,463.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[9]",-0.719,1.483,-3.435,2.047,0.073,0.052,412.0,452.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[10]",-0.641,1.478,-3.368,2.13,0.073,0.052,412.0,394.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[11]",-0.462,1.476,-3.117,2.348,0.073,0.052,410.0,398.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True)",2024-04-23 18:22:39
+Intercept,-2.362,1.421,-5.088,0.219,0.063,0.044,510.0,868.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[0]",1.169,2.048,-2.663,5.0,0.07,0.049,852.0,1609.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[1]",0.757,1.936,-2.837,4.478,0.062,0.044,972.0,1749.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[2]",-0.087,1.66,-3.373,2.859,0.067,0.047,620.0,1014.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[3]",0.094,1.557,-2.563,3.255,0.064,0.045,593.0,1136.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[4]",-0.582,1.51,-3.238,2.427,0.065,0.046,544.0,1072.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[5]",1.19,1.488,-1.633,3.952,0.063,0.044,560.0,1041.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[6]",-0.629,1.483,-3.493,2.105,0.063,0.045,546.0,983.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[7]",0.134,1.451,-2.591,2.887,0.064,0.045,520.0,905.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[8]",-0.08,1.441,-2.722,2.684,0.064,0.045,503.0,837.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[9]",-0.82,1.432,-3.472,1.906,0.064,0.045,499.0,839.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[10]",-0.771,1.43,-3.376,1.991,0.064,0.045,502.0,856.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[11]",-0.577,1.429,-3.26,2.103,0.064,0.045,499.0,816.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name_sigma,0.395,0.081,0.256,0.545,0.003,0.002,876.0,1536.0,1.01,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[Arabic world],-0.011,0.16,-0.322,0.276,0.004,0.003,1664.0,1996.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[Central Europe],-0.73,0.126,-0.964,-0.49,0.004,0.003,1001.0,1603.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[Chinese world],0.413,0.133,0.16,0.658,0.004,0.003,1259.0,1956.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[East Slavic],-0.37,0.137,-0.625,-0.112,0.004,0.003,1101.0,1729.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[France],0.263,0.106,0.07,0.471,0.004,0.003,708.0,1150.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[German world],-0.4,0.107,-0.598,-0.192,0.004,0.003,713.0,1233.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[Greek World],-0.393,0.193,-0.75,-0.03,0.004,0.003,2502.0,2471.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[Indian world],0.356,0.2,-0.013,0.735,0.004,0.003,2405.0,2584.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[Italy],-0.195,0.111,-0.418,0.001,0.004,0.003,765.0,1244.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[Japan],0.236,0.159,-0.058,0.547,0.004,0.003,1447.0,2138.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[Korea],0.063,0.263,-0.396,0.584,0.005,0.004,3393.0,2752.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[Latin World],0.257,0.233,-0.174,0.694,0.004,0.003,3134.0,2840.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[Low countries],0.499,0.111,0.292,0.713,0.004,0.003,736.0,1115.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[Nordic countries],-0.079,0.123,-0.293,0.166,0.004,0.003,854.0,1357.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[Persian world],-0.084,0.208,-0.485,0.297,0.004,0.003,2658.0,2565.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[Portugal],-0.287,0.202,-0.667,0.09,0.005,0.003,1924.0,2255.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[Spain],-0.011,0.123,-0.232,0.229,0.004,0.003,904.0,1554.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+1|region_name[United Kingdom],0.327,0.109,0.115,0.522,0.004,0.003,731.0,1212.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + (1|region_name)",2024-04-23 18:22:39
+Intercept,-2.993,1.438,-5.724,-0.389,0.065,0.046,497.0,766.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[0]",1.624,2.039,-2.054,5.472,0.066,0.047,974.0,1620.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[1]",0.719,1.956,-2.875,4.383,0.069,0.049,803.0,1511.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[2]",-0.611,1.674,-3.685,2.561,0.066,0.046,652.0,1228.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[3]",0.095,1.547,-2.777,3.001,0.066,0.047,552.0,981.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[4]",-0.564,1.541,-3.527,2.239,0.066,0.047,554.0,1103.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[5]",1.302,1.495,-1.481,4.098,0.065,0.046,530.0,849.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[6]",-0.494,1.486,-3.158,2.384,0.065,0.046,518.0,1018.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[7]",0.184,1.456,-2.705,2.749,0.065,0.046,508.0,813.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[8]",0.119,1.445,-2.514,2.875,0.065,0.046,496.0,776.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[9]",-1.022,1.437,-3.76,1.537,0.065,0.046,489.0,781.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[10]",-0.883,1.436,-3.532,1.793,0.065,0.046,489.0,798.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+"bs(decade, knots=iknots, intercept=True)[11]",-0.88,1.433,-3.552,1.744,0.065,0.046,488.0,765.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+occupation[Historian],0.524,0.113,0.315,0.737,0.003,0.002,1246.0,2001.0,1.01,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+occupation[Musician],-1.261,0.147,-1.558,-1.0,0.004,0.003,1730.0,2152.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+occupation[Painter],1.729,0.092,1.558,1.902,0.003,0.002,934.0,1404.0,1.01,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+occupation[Poet],0.653,0.103,0.455,0.842,0.003,0.002,1112.0,1756.0,1.01,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+occupation[Scientist],0.778,0.097,0.599,0.966,0.003,0.002,1016.0,1379.0,1.01,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+occupation[Sculptor],1.301,0.102,1.109,1.5,0.003,0.002,1073.0,1596.0,1.01,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+occupation[Theater-related Artist],0.486,0.142,0.227,0.758,0.003,0.002,1685.0,2343.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+occupation[Theologian],-0.56,0.142,-0.84,-0.308,0.003,0.002,1702.0,2310.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+occupation[Visual Artist],1.165,0.114,0.949,1.376,0.003,0.002,1326.0,2102.0,1.01,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+occupation[Writer],0.523,0.106,0.326,0.724,0.003,0.002,1148.0,1626.0,1.01,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name_sigma,0.324,0.069,0.206,0.451,0.002,0.002,758.0,1723.0,1.01,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[Arabic world],0.044,0.147,-0.221,0.322,0.003,0.002,2349.0,2522.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[Central Europe],-0.533,0.115,-0.752,-0.325,0.003,0.002,1372.0,2194.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[Chinese world],0.298,0.125,0.071,0.534,0.003,0.002,1855.0,2425.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[East Slavic],-0.222,0.125,-0.452,0.021,0.003,0.002,1649.0,2394.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[France],0.264,0.093,0.097,0.442,0.003,0.002,937.0,1482.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[German world],-0.324,0.094,-0.505,-0.153,0.003,0.002,1007.0,1578.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[Greek World],-0.322,0.175,-0.64,0.014,0.003,0.002,3247.0,3063.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[Indian world],0.432,0.193,0.083,0.799,0.004,0.003,2433.0,2803.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[Italy],-0.322,0.097,-0.497,-0.133,0.003,0.002,1022.0,1713.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[Japan],-0.053,0.147,-0.332,0.221,0.003,0.002,2243.0,2906.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[Korea],-0.002,0.229,-0.412,0.435,0.004,0.003,3250.0,2979.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[Latin World],0.231,0.216,-0.181,0.622,0.004,0.003,3260.0,3252.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[Low countries],0.223,0.099,0.035,0.407,0.003,0.002,1114.0,1495.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[Nordic countries],0.015,0.109,-0.191,0.222,0.003,0.002,1182.0,1799.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[Persian world],-0.033,0.185,-0.378,0.309,0.003,0.003,3026.0,3206.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[Portugal],-0.095,0.193,-0.444,0.275,0.004,0.003,2392.0,2419.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[Spain],0.019,0.109,-0.197,0.211,0.003,0.002,1306.0,1774.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
+1|region_name[United Kingdom],0.393,0.095,0.226,0.584,0.003,0.002,964.0,1463.0,1.0,"y ~ bs(decade, knots=iknots, intercept=True) + occupation +(1|region_name)",2024-04-23 18:22:39
