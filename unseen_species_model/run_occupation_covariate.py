@@ -7,13 +7,13 @@ from tqdm import tqdm
 
 import numpyro
 import jax
+
 print(jax.local_device_count())
 
 numpyro.set_host_device_count(4)
 
-PATH = 'results_50'
+PATH = "results_50"
 import os
-
 
 
 # Check if the directory exists
@@ -35,8 +35,8 @@ else:
 df = pd.read_csv("data/df_indi_works_occupations.csv", index_col=0)
 print(df.occupation.value_counts())
 
-df['decade'] = df['decade'].apply(lambda x: 50 * round(x / 50))
-df = df[df['decade']<=1850]
+df["decade"] = df["decade"].apply(lambda x: 50 * round(x / 50))
+df = df[df["decade"] <= 1850]
 
 regions = pd.read_csv(
     "data/ENS - Cultural Index - Countries Databases - region_level.csv"
@@ -78,7 +78,7 @@ knots = np.linspace(df["century"].min(), df["century"].max(), num_knots)
 iknots = knots[1:-1]
 
 sample = df_m.copy()
-#sample = sample.sample(2000, random_state=42)
+# sample = sample.sample(2000, random_state=42)
 
 # DIFFERENT EQUATIONS
 
