@@ -86,7 +86,7 @@ plot_cultural_index <- function(df_decade, df_indi, region_name, min_time, max_t
     myplot <- ggplot(df_decade, aes(x = decade, y = score)) +
         # geom_line(alpha = 0.3, linewidth = 0.5, colour = "darkblue") +
         # geom_bar(stat = "identity", color = "transparent", alpha = 0.2, fill = "blue") +
-        geom_smooth(method = "loess", span = span, level = 0.95, linewidth = 1.5, colour = "darkblue") +
+        geom_smooth(method = "loess", span = span, level = 0.95, linewidth = 1.5, colour = "#00008b") +
 
         # scale_x_continuous(breaks = seq(500, 1800, by = 500)) +
         scale_x_continuous(breaks = seq(floor(min_time / 100) * 100, floor(max_time / 100) * 100, 100)) +
